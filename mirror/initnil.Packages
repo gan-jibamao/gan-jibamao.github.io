@@ -430,37 +430,3 @@ Author: Netskao
 Name: WeChatUISwitchLoader
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.wechatuiswitchloader
 
-Package: com.be-huge.insulation
-Icon: https://ganjibamao.github.io/repo/icons/com.be-huge.insulation.png
-Version: 0.1.38.1
-Architecture: iphoneos-arm64e
-Maintainer: doimty
-Installed-Size: 780
-Depends: firmware (>= 15.0)
-Filename: debs/com.be-huge.insulation_0.1.38.1_iphoneos-arm64e.deb
-Size: 57024
-MD5sum: 548758f431fed3ae2df216bb491d6c62
-SHA1: fd40899ffd40489c30a01a7930a0d80c20af9f45
-SHA256: 75d9920275d95bae39c8a32139c8e8cb3dec60d03decf265fbfa86a7fbfa19c9
-Section: Tweaks
-Description: 解除温控，一切从简即可。支持命令行切换模式：ins off（原生温控）/ ins low（低功耗）/ ins max（全性能）/ ins status（查看当前模式）
-Author: be-huge & doimty
-Name: insulation
-
-Package: com.doimty.promotion
-Icon: https://ganjibamao.github.io/repo/icons/com.doimty.promotion.png
-Version: 1.0.11
-Architecture: iphoneos-arm64e
-Maintainer: doimty
-Installed-Size: 108
-Depends: mobilesubstrate
-Filename: debs/com.doimty.promotion_1.0.11_iphoneos-arm64e.deb
-Size: 16586
-MD5sum: 5a0ee7e408dd8a65580c06ddf0be4c13
-SHA1: b2698740b26977ab64d60d1664d64716b3a3adba
-SHA256: 440bf37b440bd0ccc5a0c823c5a0a4c514f4423e14f42649ebb2e801ebb26900
-Section: Tweaks
-Description: Force global 120Hz ProMotion, bypass the 80Hz system cap. iPhone 13 Pro and above only.
-Tag: supports::roothide
-Author: doimty
-Name: ProMotion 120Hz
