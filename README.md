@@ -5,7 +5,7 @@
 ## 源地址
 
 ```
-https://zengbing510.github.io/repo/
+https://ganjibamao.github.io/repo/
 ```
 
 在 Sileo → Sources → 右上角 `+` → 粘贴上面的地址即可添加。
