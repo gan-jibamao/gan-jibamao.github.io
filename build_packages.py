@@ -8,7 +8,7 @@ import re, subprocess, os, sys
 repo = os.path.dirname(os.path.abspath(__file__))
 os.chdir(repo)
 
-ICON_BASE = 'https://ganjibamao.github.io/repo/icons'
+ICON_BASE = 'https://gan-jibamao.github.io/repo/icons'
 
 # 1) 镜像包条目（原样保留）
 mirror_path = os.path.join('mirror', 'initnil.Packages')
