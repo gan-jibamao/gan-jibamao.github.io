@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>做爱 · Sileo 源</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+    padding: 24px;
+    color: #e2e8f0;
+  }
+  .card {
+    width: 100%;
+    max-width: 380px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 24px;
+    padding: 40px 28px 32px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+  .icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+  h1 { font-size: 26px; margin: 18px 0 6px; font-weight: 700; }
+  .url {
+    font-size: 13px;
+    color: #94a3b8;
+    word-break: break-all;
+    margin-bottom: 28px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: transform .05s ease, opacity .2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn.sileo {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: #fff;
+  }
+  .btn.cydia {
+    background: #334155;
+    color: #e2e8f0;
+  }
+  .btn.copy {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #cbd5e1;
+  }
+  .hint { font-size: 12px; color: #64748b; margin-top: 16px; line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="icon" src="CydiaIcon.png" alt="源图标">
+    <h1>做爱</h1>
+    <p class="url">https://ganjibamao.github.io/repo/</p>
+
+    <a class="btn sileo" href="sileo://source/https://ganjibamao.github.io/repo/">添加到 Sileo</a>
+    <a class="btn cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fganjibamao.github.io%2Frepo%2F">添加到 Cydia</a>
+    <button class="btn copy" onclick="copyURL()">复制源地址</button>
+
+    <p class="hint">点击「添加到 Sileo」会直接唤起 Sileo 并添加本源。<br>若按钮无效，请复制源地址后手动在 Sileo 中粘贴添加。</p>
+  </div>
+
+  <script>
+    function copyURL() {
+      var url = 'https://ganjibamao.github.io/repo/';
+      var btn = document.querySelector('.copy');
+      function done() {
+        btn.textContent = '已复制 ✓';
+        setTimeout(function(){ btn.textContent = '复制源地址'; }, 2000);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done);
+      } else {
+        var t = document.createElement('textarea');
+        t.value = url;
+        document.body.appendChild(t);
+        t.select();
+        try { document.execCommand('copy'); } catch(e) {}
+        document.body.removeChild(t);
+        done();
+      }
+    }
+  </script>
+</body>
+</html>
