@@ -43,7 +43,8 @@ if gpg --list-secret-keys 2>/dev/null | grep -q .; then
   gpg --batch --yes --armor --detach-sign -o "$REPO_ROOT/Release.gpg" "$REPO_ROOT/Release"
   echo "✅ 已签名 Release -> Release.gpg"
 else
-  echo "⚠️  未找到 GPG 密钥，已跳过签名（源将显示为 unsigned）"
+  rm -f "$REPO_ROOT/Release.gpg"
+  echo "⚠️  未找到 GPG 密钥，已移除旧签名（源显示为 unsigned）"
 fi
 
 echo "✅ 完成：Packages / Packages.gz / Packages.bz2 / Release 已生成。"
