@@ -8,8 +8,6 @@ import re, subprocess, os, sys
 repo = os.path.dirname(os.path.abspath(__file__))
 os.chdir(repo)
 
-ICON_BASE = 'https://gan-jibamao.github.io/repo/icons'
-
 # 1) 镜像包条目（原样保留）
 mirror_path = os.path.join('mirror', 'initnil.Packages')
 if os.path.exists(mirror_path):
@@ -31,19 +29,8 @@ for para in all_entries:
     if m and m.group(1) not in initnil_names:
         local_entries.append(para)
 
-# 4) 给本地条目注入 Icon
-local_final = []
-for para in local_entries:
-    m = re.search(r'^Package:\s*(\S+)', para, re.M)
-    name = m.group(1)
-    icon = f'Icon: {ICON_BASE}/{name}.png'
-    lines = para.split('\n')
-    new = []
-    for line in lines:
-        new.append(line)
-        if line.startswith('Package:'):
-            new.append(icon)
-    local_final.append('\n'.join(new))
+# 4) 本地条目（不注入图标）
+local_final = local_entries
 
 # 5) 合并写入
 parts = [p for p in ([initnil] + local_final) if p]
