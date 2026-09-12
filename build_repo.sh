@@ -48,4 +48,4 @@ else
 fi
 
 echo "✅ 完成：Packages / Packages.gz / Packages.bz2 / Release 已生成。"
-ls -l "$REPO_ROOT"/Packages* "$REPO_ROOT/Release" "$REPO_ROOT"/Release.gpg 2>/dev/null
+ls -l "$REPO_ROOT"/Packages* "$REPO_ROOT/Release" 2>/dev/null || true
