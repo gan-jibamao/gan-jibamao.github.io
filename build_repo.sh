@@ -20,7 +20,7 @@ bzip2 -9 -c "$REPO_ROOT/Packages" > "$REPO_ROOT/Packages.bz2"
   echo "Suite: stable"
   echo "Version: 1.0"
   echo "Codename: ios"
-  echo "Architectures: iphoneos-arm iphoneos-arm64"
+  echo "Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e"
   echo "Components: main"
   echo "Description: My Sileo repository"
   echo

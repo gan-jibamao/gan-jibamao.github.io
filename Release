@@ -3,19 +3,19 @@ Label: 做爱
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm iphoneos-arm64
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: My Sileo repository
 
 MD5Sum:
- ca5ee6f58bbebca5a835491880eb0f80 1188 Packages
- 198b9177c51039c5331ad23092bb1257 731 Packages.gz
- 5e68197bc594ecbefaeee8d38482f271 813 Packages.bz2
+ b0725574692102cb8d75f2142c999371 1190 Packages
+ 1201a79c5f90859d32c942006a17bde4 729 Packages.gz
+ 340430f4ef5d3eab22e3d6aadf877295 818 Packages.bz2
 SHA1:
- 25e561cdbb09dea3fe4662cc10b18bcc17b83b02 1188 Packages
- 707e30f55ad6c5d1c0766c9ac07ae7c8ad213222 731 Packages.gz
- d9628c0252ca2b356f16e0b1d68628d1242da2f8 813 Packages.bz2
+ cacd5ae07fe5cf6223e328925ca9dd28a97a1b21 1190 Packages
+ 632425439e67b4bef604bbccdb6cd1e668e9328f 729 Packages.gz
+ 98bd3778e94db969b7daed02b236442e67b14e0f 818 Packages.bz2
 SHA256:
- 13f4c3d4dae51eef084aeb2c9bfcfe50c075b2d11985373df8028db6981314bc 1188 Packages
- 60b62238413c3ef46e9d880de578140b7bf799b9ea8c6c6010d168faf767c060 731 Packages.gz
- 4a677e978bed2387ee3e349fa3afe2512a0c549f1f89afccc3f8579c7826eff6 813 Packages.bz2
+ 114306c7d36c81f218b1265d6f733633b6c01237c1571e3679cc0c88b9744143 1190 Packages
+ 14f820d7a12b88ec2afeaae6d2d2b2daffcf98f87e6eaf46b46dd4598acdad77 729 Packages.gz
+ e103fdba0ddfa2c356fdcd58a98d7cc602f34aff8731628590e5d51443a90832 818 Packages.bz2
