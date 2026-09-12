@@ -5,9 +5,8 @@ set -e
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_ROOT"
 
-# 1) 生成 Packages 索引（-m 开启 multiarch；debs/ 里放所有 .deb）
-# 注意：必须用相对路径 "debs"，否则 Filename 字段会写成绝对路径导致下载 404
-dpkg-scanpackages -m debs > "$REPO_ROOT/Packages"
+# 1) 生成 Packages 索引（合并镜像包 + 本地包，见 build_packages.py）
+python3 "$REPO_ROOT/build_packages.py"
 
 # 2) 压缩索引（Sileo 优先读 .bz2 / .gz）
 gzip  -9 -c "$REPO_ROOT/Packages" > "$REPO_ROOT/Packages.gz"
