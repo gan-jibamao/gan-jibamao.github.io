@@ -1,0 +1,13 @@
+{
+  "class": "FeaturedBannersView",
+  "itemSize": "{263, 148}",
+  "itemCornerRadius": 8,
+  "banners": [
+    {
+      "url": "https://你的用户名.github.io/你的仓库名/banner.png",
+      "title": "我的第一个 Tweaks",
+      "package": "com.example.yourtweak",
+      "hideShadow": false
+    }
+  ]
+}
