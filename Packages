@@ -1,0 +1,33 @@
+Package: com.be-huge.insulation
+Version: 0.1.38.1
+Architecture: iphoneos-arm64
+Maintainer: doimty
+Installed-Size: 828
+Depends: firmware (>= 15.0)
+Filename: debs/com.be-huge.insulation_0.1.38.1_iphoneos-arm64.deb
+Size: 59732
+MD5sum: 28b27349aa2d8a560702ccb8a74f4b77
+SHA1: 417817a74178c65d908c657c908cb3cb15276a58
+SHA256: a16ad08ba16a39e9f4e4b681f4e4925f2f3ca1832f3c5c0d104224801042e7f7
+Section: Tweaks
+Description: 解除温控，一切从简即可。支持命令行切换模式：ins off（原生温控）/ ins low（低功耗）/ ins max（全性能）/ ins status（查看当前模式）
+Author: be-huge & doimty
+Name: insulation
+
+Package: com.doimty.promotion
+Version: 1.0.11
+Architecture: iphoneos-arm64e
+Maintainer: doimty
+Installed-Size: 108
+Depends: mobilesubstrate
+Filename: debs/com.doimty.promotion_1.0.11_iphoneos-arm64e.deb
+Size: 16586
+MD5sum: 5a0ee7e408dd8a65580c06ddf0be4c13
+SHA1: b2698740b26977ab64d60d1664d64716b3a3adba
+SHA256: 440bf37b440bd0ccc5a0c823c5a0a4c514f4423e14f42649ebb2e801ebb26900
+Section: Tweaks
+Description: Force global 120Hz ProMotion, bypass the 80Hz system cap. iPhone 13 Pro and above only.
+Tag: supports::roothide
+Author: doimty
+Name: ProMotion 120Hz
+
