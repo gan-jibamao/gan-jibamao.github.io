@@ -38,5 +38,13 @@ bzip2 -9 -c "$REPO_ROOT/Packages" > "$REPO_ROOT/Packages.bz2"
   done
 } > "$REPO_ROOT/Release"
 
+# 4) 签名 Release（需要本机已生成 GPG 密钥；没有则跳过并提示）
+if gpg --list-secret-keys 2>/dev/null | grep -q .; then
+  gpg --batch --yes --armor --detach-sign -o "$REPO_ROOT/Release.gpg" "$REPO_ROOT/Release"
+  echo "✅ 已签名 Release -> Release.gpg"
+else
+  echo "⚠️  未找到 GPG 密钥，已跳过签名（源将显示为 unsigned）"
+fi
+
 echo "✅ 完成：Packages / Packages.gz / Packages.bz2 / Release 已生成。"
-ls -l "$REPO_ROOT"/Packages* "$REPO_ROOT/Release"
+ls -l "$REPO_ROOT"/Packages* "$REPO_ROOT/Release" "$REPO_ROOT"/Release.gpg 2>/dev/null
