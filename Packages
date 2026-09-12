@@ -1,3 +1,42 @@
+Package: com.initnil.flreadercrack
+Version: 1.1-1
+Architecture: iphoneos-arm64
+Maintainer: INITNIL
+Installed-Size: 576
+Depends: firmware (>= 13.0), mobilesubstrate
+Conflicts: com.netskao.flreadercrack
+Replaces: com.netskao.flreadercrack
+Filename: debs/com.initnil.flreadercrack_1.1-1_iphoneos-arm64.deb
+Size: 203924
+MD5sum: d015532cbeb020a24f37451d335666a4
+SHA1: 4ac0308464ea4a676562c187dfda7ed98337805a
+SHA256: d5763a2a913a19ae00f69674590709df9fa37f590e77a98b80282e1514eaacb2
+Section: INITNIL-Tweaks
+Description: 千阅解锁全功能
+Author: INITNIL
+Markdowndescription: 千阅解锁全功能<br><br>• v1.1-1: 修复自签疯狂弹出AppleID登陆的问题
+Name: 千阅 Crack
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.initnil.flreadercrack
+
+Package: com.initnil.imgplaycrack
+Version: 1.1-1
+Architecture: iphoneos-arm64
+Maintainer: INITNIL
+Installed-Size: 964
+Depends: firmware (>= 15.0), mobilesubstrate
+Conflicts: com.netskao.imgplaycrack
+Replaces: com.netskao.imgplaycrack
+Filename: debs/com.initnil.imgplaycrack_1.1-1_iphoneos-arm64.deb
+Size: 333096
+MD5sum: ac6c2b2284523e4c1e1d226d737dc292
+SHA1: 8947fcb16f673a09bd870ceddb70c1cb06fa7c40
+SHA256: ee85aa2aa6bf4732f8b710b3b6c5de9a0747ad8a9357e0f2a883c9867f45c79f
+Section: INITNIL-Tweaks
+Description: ImgPlay Crack
+Author: INITNIL
+Name: ImgPlay Crack
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.initnil.imgplaycrack
+
 Package: com.netskao.awemealwaysshowtime
 Version: 1.1-1
 Architecture: iphoneos-arm64
@@ -15,6 +54,23 @@ Author: Netskao
 Name: AwemeAlwaysShowTime
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.awemealwaysshowtime
 
+Package: com.netskao.awemedisablebar
+Version: 1.1-6
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 708
+Depends: firmware (>= 12.0), mobilesubstrate
+Filename: debs/com.netskao.awemedisablebar_1.1-6_iphoneos-arm64.deb
+Size: 305032
+MD5sum: 80478cdedbbb46f81e680d8c177b9353
+SHA1: 4bd6e0164b0b6eebb6f0508a6aeeb86b9cdd7a3c
+SHA256: 2101eedb9fe0f03716c59020f81d4f507d32255eb4585d94517e55cdd57b6ea5
+Section: Netskao-Tweaks
+Description: Aweme Disable Top/Bottom/Right Tab Button. Tested only on version 30.3.0 and above
+Author: Netskao
+Name: AwemeDisableBar
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.awemedisablebar
+
 Package: com.netskao.awemedownloadmedia
 Version: 1.1-8
 Architecture: iphoneos-arm64
@@ -31,6 +87,23 @@ Description: Aweme No Watermark Download Media. Tested only on version 31.7.0 an
 Author: Netskao
 Name: AwemeDownloadMedia
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.awemedownloadmedia
+
+Package: com.netskao.awemefullscreen
+Version: 1.3-7
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 448
+Depends: firmware (>= 12.0), mobilesubstrate
+Filename: debs/com.netskao.awemefullscreen_1.3-7_iphoneos-arm64.deb
+Size: 191608
+MD5sum: 7b9913a1aaa297ef8139c5d97b5eda85
+SHA1: 7ccb3aabe41b91a19d0a35b20d1c1061af2a36d8
+SHA256: bde814dc852b87222ee96007f6d9a5f798379b18cff41b9d0fadfb71a297049c
+Section: Netskao-Tweaks
+Description: Aweme HomePage Full Screen. Supported only for version 35.0.0 and above
+Author: Netskao
+Name: AwemeFullScreen
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.awemefullscreen
 
 Package: com.netskao.awemevideotime
 Version: 1.1-2
@@ -82,6 +155,58 @@ Description: Quickly enable or disable Wake on Lift from Control Center, Support
 Author: Netskao
 Name: CCLiftToWake
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.cclifttowake
+
+Package: com.netskao.ccquantumultxswitch
+Version: 1.1-3
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 1144
+Depends: firmware (>= 15.0), mobilesubstrate, com.opa334.ccsupport
+Filename: debs/com.netskao.ccquantumultxswitch_1.1-3_iphoneos-arm64.deb
+Size: 703680
+MD5sum: f2ff3f4aef7f47106dd369f9104f3db7
+SHA1: 31d27e0f62e2904e09fff038ad3c4d3efd72d518
+SHA256: 648ea21993e6488d97eaa28e59d349261746fdbe51669947d895d5d7c19cd755
+Section: Netskao-Tweaks
+Description: Add a quick toggle for Quantumult X VPN status in Control Center
+Author: Netskao
+Markdowndescription: Add a quick toggle for Quantumult X VPN status in Control Center<br><br>• v1.1-3: Fixed potential icon status synchronization issues
+Name: CCQuantumultXSwitch
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.ccquantumultxswitch
+
+Package: com.netskao.classickeyboardxs
+Version: 1.1-9
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 1044
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: debs/com.netskao.classickeyboardxs_1.1-9_iphoneos-arm64.deb
+Size: 276120
+MD5sum: f03a14a5680deac9f5740ea74bfa59a8
+SHA1: b239d642dbb3c1ad7f0b66519144f560cc746585
+SHA256: 4070e48c8f511667d67141b2fb2e0407887be77e4cb3bfe4157d90c926dc54cf
+Section: Netskao-Tweaks
+Description: Customize the height of the bottom of the X-keyboard, the height of the bottom of the earth, etc.
+Author: Netskao
+Name: ClassicKeyboardXS
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.classickeyboardxs
+
+Package: com.netskao.dazzcameracrack
+Version: 1.1-6
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 804
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: debs/com.netskao.dazzcameracrack_1.1-6_iphoneos-arm64.deb
+Size: 278424
+MD5sum: 312b4de13a51f4b7fe4148ca977c6d24
+SHA1: d3a16c824664f967a83a5c847fd2106e6a3ecd67
+SHA256: d548e5991d9bba7bd382729eb7620dbbb6eb2d02cb90d77ba6a23a4ab99f98f3
+Section: Netskao-Tweaks
+Description: DazzCamera Crack
+Author: Netskao
+Name: DazzCamera Crack
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.dazzcameracrack
 
 Package: com.netskao.disablebottombarlrswipe
 Version: 1.1-2
@@ -151,6 +276,23 @@ Author: Netskao
 Name: 爱笔思画X Crack
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.ibispaintxcrack
 
+Package: com.netskao.injectipa
+Version: 1.5-7
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 1688
+Depends: firmware (>= 14.0)
+Filename: debs/com.netskao.injectipa_1.5-7_iphoneos-arm64.deb
+Size: 417840
+MD5sum: a8daf88db3b03e99c612ea9229807e89
+SHA1: ea1cad8490b65128fd3425686eac84374524ccd4
+SHA256: 3f7d1f50810d844b433d505b681d3e1c4a19292896b5eca38b348157a5f8d849
+Section: Netskao-Tweaks
+Description: InjectIPA Tool
+Author: Netskao
+Name: injectipa
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.injectipa
+
 Package: com.netskao.lbbrowsercrack
 Version: 1.1-2
 Architecture: iphoneos-arm64
@@ -167,6 +309,23 @@ Description: 李白浏览器解锁全功能
 Author: Netskao
 Name: 李白浏览器 Crack
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.lbbrowsercrack
+
+Package: com.netskao.leoreadercrack
+Version: 1.1-3
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 740
+Depends: firmware (>= 13.0), mobilesubstrate
+Filename: debs/com.netskao.leoreadercrack_1.1-3_iphoneos-arm64.deb
+Size: 300512
+MD5sum: 567440db28d06fe19a8edcc6e7616729
+SHA1: 7b51a36fd4ec666535301c96f2861c3f933598a2
+SHA256: 9c19a1574c64d03bdc5cae8f6187c4a0be42cbaca21b2feb348ac32808f71988
+Section: Netskao-Tweaks
+Description: 极简阅读解锁全功能
+Author: Netskao
+Name: 极简阅读 Crack
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.leoreadercrack
 
 Package: com.netskao.mangaboxcrack
 Version: 1.1-5
@@ -237,6 +396,23 @@ Author: Netskao
 Name: WCMyPageInfoCenter
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.wcmypageinfocenter
 
+Package: com.netskao.wctimelinereplacefind
+Version: 1.1-3
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 836
+Depends: mobilesubstrate, firmware (>= 14.0)
+Filename: debs/com.netskao.wctimelinereplacefind_1.1-3_iphoneos-arm64.deb
+Size: 337960
+MD5sum: 400626fb3820e3f9f89df0741024c9f0
+SHA1: faa994b4a35dc192af16b3f88b64359c28a829a7
+SHA256: d62724eb42da8587e527b275c28210aabcf44d993014d1e0c3ae17682f336bc2
+Section: Netskao-Tweaks
+Description: 使用朋友圈替换发现底栏
+Author: Netskao
+Name: WCTimeLineReplaceFind
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.wctimelinereplacefind
+
 Package: com.netskao.wechatuiswitchloader
 Version: 1.1-5
 Architecture: iphoneos-arm64
@@ -263,8 +439,8 @@ Depends: firmware (>= 15.0)
 Filename: debs/com.be-huge.insulation_0.1.38.1_iphoneos-arm64e.deb
 Size: 57024
 MD5sum: 548758f431fed3ae2df216bb491d6c62
-SHA1: fd40899ffd40489c30a01a7930a0d80c20af9f45
-SHA256: 75d9920275d95bae39c8a32139c8e8cb3dec60d03decf265fbfa86a7fbfa19c9
+SHA1: fd40899f9d37489c30a01a79d245d80c20af9f45
+SHA256: 75d9920232145bae39c8a3217091e8cb3dec60d0074df265fbfa86a7d44e19c9
 Section: Tweaks
 Description: 解除温控，一切从简即可。支持命令行切换模式：ins off（原生温控）/ ins low（低功耗）/ ins max（全性能）/ ins status（查看当前模式）
 Author: be-huge & doimty
@@ -279,8 +455,8 @@ Depends: mobilesubstrate
 Filename: debs/com.doimty.promotion_1.0.11_iphoneos-arm64e.deb
 Size: 16586
 MD5sum: 5a0ee7e408dd8a65580c06ddf0be4c13
-SHA1: b2698740b26977ab64d60d1664d64716b3a3adba
-SHA256: 440bf37b440bd0ccc5a0c823c5a0a4c514f4423e14f42649ebb2e801ebb26900
+SHA1: b2698740b46b77ab64d60d16e6044716b3a3adba
+SHA256: 440bf37bc3cdd0ccc5a0c823e861a4c514f4423e91dc2649ebb2e801c3596900
 Section: Tweaks
 Description: Force global 120Hz ProMotion, bypass the 80Hz system cap. iPhone 13 Pro and above only.
 Tag: supports::roothide
