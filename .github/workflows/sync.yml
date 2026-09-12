@@ -22,6 +22,17 @@ jobs:
       - name: Sync packages from jailrepo.initnil.com
         run: python3 sync_initnil.py
 
+      - name: Import GPG key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          if [ -n "$GPG_PRIVATE_KEY" ]; then
+            echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+            echo "GPG key imported"
+          else
+            echo "no GPG key, will skip signing"
+          fi
+
       - name: Build index + Release
         run: sh build_repo.sh
 
