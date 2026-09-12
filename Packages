@@ -431,7 +431,6 @@ Name: WeChatUISwitchLoader
 Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.wechatuiswitchloader
 
 Package: com.be-huge.insulation
-Icon: https://ganjibamao.github.io/repo/icons/com.be-huge.insulation.png
 Version: 0.1.38.1
 Architecture: iphoneos-arm64e
 Maintainer: doimty
@@ -448,7 +447,6 @@ Author: be-huge & doimty
 Name: insulation
 
 Package: com.doimty.promotion
-Icon: https://ganjibamao.github.io/repo/icons/com.doimty.promotion.png
 Version: 1.0.11
 Architecture: iphoneos-arm64e
 Maintainer: doimty
