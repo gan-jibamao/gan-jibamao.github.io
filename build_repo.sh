@@ -14,8 +14,8 @@ bzip2 -9 -c "$REPO_ROOT/Packages" > "$REPO_ROOT/Packages.bz2"
 
 # 3) 生成 Release（哈希校验清单，Sileo 用 SHA256 核对）
 {
-  echo "Origin: MyRepo"
-  echo "Label: MyRepo"
+  echo "Origin: 做爱"
+  echo "Label: 做爱"
   echo "Suite: stable"
   echo "Version: 1.0"
   echo "Codename: ios"
