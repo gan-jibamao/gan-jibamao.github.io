@@ -509,7 +509,7 @@ Maintainer: hang
 Installed-Size: 180
 Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.hang.zzzj_0.0.1-8+debug_iphoneos-arm64e(1).deb
+Filename: debs/com.hang.zzzj_0.0.1-8+debug_iphoneos-arm64e.deb
 Size: 47406
 MD5sum: be8085baf53a0e6713c84e918bb1ff77
 SHA1: bb66b5db310a2b4c238fadae4b6535516e54fe9c
