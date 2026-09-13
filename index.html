@@ -69,6 +69,11 @@
   }
   .btn.sileo:hover { box-shadow: 0 14px 40px rgba(99,102,241,0.55); }
   .btn.cydia { background: #334155; color: #e2e8f0; }
+  .btn.browse {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #a5b4fc;
+  }
   .btn.copy {
     background: transparent;
     border: 1px solid var(--border);
@@ -93,10 +98,12 @@
         <span class="badge">30+ 插件</span>
         <span class="badge">已签名</span>
         <span class="badge">自动同步</span>
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=gan-jibamao.repo" alt="访问量" style="height:23px;border-radius:12px;">
       </div>
 
       <a class="btn sileo" href="sileo://source/https://gan-jibamao.github.io/repo/">添加到 Sileo</a>
       <a class="btn cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fgan-jibamao.github.io%2Frepo%2F">添加到 Cydia</a>
+      <a class="btn browse" href="packages.html">浏览全部插件</a>
       <button class="btn copy" onclick="copyURL()">复制源地址</button>
 
       <p class="hint">点击「添加到 Sileo」会直接唤起 Sileo 并添加本源。<br>若按钮无效，请复制源地址后手动在 Sileo 中粘贴添加。</p>
