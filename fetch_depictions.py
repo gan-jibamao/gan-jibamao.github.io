@@ -49,9 +49,13 @@ for p in mirror.split('\n\n'):
         if hdr not in seen_img:
             ext = '.jpg' if 'jpg' in hdr.lower() else '.png'
             local = 'header' + ext
-            open(os.path.join(IMG_DIR, local), 'wb').write(get(hdr))
+            dst = os.path.join(IMG_DIR, local)
+            if not os.path.exists(dst):
+                open(dst, 'wb').write(get(hdr))
+                print('头图已下载:', local)
+            else:
+                print('头图已缓存，跳过下载')
             seen_img[hdr] = local
-            print('头图已下载:', local)
         data['headerImage'] = f'{SELF_BASE}/images/{seen_img[hdr]}'
     open(os.path.join(DEP_DIR, f'{name}.json'), 'w', encoding='utf-8').write(json.dumps(data, ensure_ascii=False))
 
