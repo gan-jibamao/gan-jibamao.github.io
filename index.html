@@ -74,22 +74,6 @@
     border: 1px solid var(--border);
     color: #cbd5e1;
   }
-  .feat { margin-top: 26px; text-align: left; }
-  .feat h2 {
-    font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
-    color: var(--muted); margin-bottom: 12px; font-weight: 600;
-  }
-  .feat-row { display: flex; gap: 10px; }
-  .feat-item {
-    flex: 1; border-radius: 14px; overflow: hidden;
-    border: 1px solid var(--border); background: rgba(0,0,0,0.25);
-    transition: transform .15s ease;
-  }
-  .feat-item:active { transform: scale(0.96); }
-  .feat-item img { width: 100%; height: 62px; object-fit: cover; display: block; }
-  .feat-item p {
-    font-size: 11px; padding: 8px 10px; color: #cbd5e1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
   .badge-row { display: flex; gap: 8px; justify-content: center; margin-bottom: 22px; flex-wrap: wrap; }
   .badge {
     font-size: 11px; padding: 5px 12px; border-radius: 20px;
@@ -114,24 +98,6 @@
       <a class="btn sileo" href="sileo://source/https://gan-jibamao.github.io/repo/">添加到 Sileo</a>
       <a class="btn cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fgan-jibamao.github.io%2Frepo%2F">添加到 Cydia</a>
       <button class="btn copy" onclick="copyURL()">复制源地址</button>
-
-      <div class="feat">
-        <h2>精选插件</h2>
-        <div class="feat-row">
-          <a class="feat-item" href="sileo://package/aweme.x">
-            <img src="assets/banners/aweme.x.png" alt="抖音图层">
-            <p>抖音图层</p>
-          </a>
-          <a class="feat-item" href="sileo://package/com.be-huge.insulation">
-            <img src="assets/banners/insulation.png" alt="解除温控">
-            <p>解除温控</p>
-          </a>
-          <a class="feat-item" href="sileo://package/com.doimty.promotion">
-            <img src="assets/banners/promotion.png" alt="ProMotion">
-            <p>120Hz</p>
-          </a>
-        </div>
-      </div>
 
       <p class="hint">点击「添加到 Sileo」会直接唤起 Sileo 并添加本源。<br>若按钮无效，请复制源地址后手动在 Sileo 中粘贴添加。</p>
     </div>
