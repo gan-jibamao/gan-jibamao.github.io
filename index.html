@@ -95,7 +95,7 @@
       <p class="url">https://gan-jibamao.github.io/repo/</p>
 
       <div class="badge-row">
-        <span class="badge">30+ 插件</span>
+        <span class="badge" id="pkgcount">— 插件</span>
         <span class="badge">已签名</span>
         <span class="badge">自动同步</span>
         <img src="https://visitor-badge.laobi.icu/badge?page_id=gan-jibamao.repo" alt="访问量" style="height:23px;border-radius:12px;">
@@ -112,6 +112,9 @@
   </div>
 
   <script>
+    fetch('status.json').then(function(r){return r.json();}).then(function(d){
+      if (d.package_count) document.getElementById('pkgcount').textContent = d.package_count + ' 插件';
+    }).catch(function(){});
     function copyURL() {
       var url = 'https://gan-jibamao.github.io/repo/';
       var btn = document.querySelector('.copy');
