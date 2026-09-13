@@ -4,9 +4,21 @@
   "itemCornerRadius": 8,
   "banners": [
     {
-      "url": "https://你的用户名.github.io/你的仓库名/banner.png",
-      "title": "我的第一个 Tweaks",
-      "package": "com.example.yourtweak",
+      "url": "https://gan-jibamao.github.io/repo/assets/banners/aweme.x.png",
+      "title": "抖音图层",
+      "package": "aweme.x",
+      "hideShadow": false
+    },
+    {
+      "url": "https://gan-jibamao.github.io/repo/assets/banners/insulation.png",
+      "title": "解除温控",
+      "package": "com.be-huge.insulation",
+      "hideShadow": false
+    },
+    {
+      "url": "https://gan-jibamao.github.io/repo/assets/banners/promotion.png",
+      "title": "ProMotion 120Hz",
+      "package": "com.doimty.promotion",
       "hideShadow": false
     }
   ]
