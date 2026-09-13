@@ -1,23 +1,37 @@
 #!/usr/bin/env python3
 """生成合并后的 Packages 索引：
-- 镜像包（mirror/initnil.Packages）原样保留全部字段（含 Sileodepiction 等）
-- 本地包（debs/ 中不在镜像里的）由 dpkg-scanpackages 生成，并注入 Icon 字段
+- 镜像包（mirror/initnil.Packages）：Sileodepiction 重写为自托管地址
+- 本地包（debs/ 中不在镜像里的）：由 scanpackages 生成，注入自托管 Sileodepiction
 """
-import re, subprocess, os, sys
+import re, subprocess, os
 
 repo = os.path.dirname(os.path.abspath(__file__))
 os.chdir(repo)
 
-# 1) 镜像包条目（原样保留）
+DEP_BASE = 'https://gan-jibamao.github.io/repo/depictions'
+
+# 1) 镜像包条目：Sileodepiction 重写为自托管地址
 mirror_path = os.path.join('mirror', 'initnil.Packages')
 if os.path.exists(mirror_path):
-    initnil = open(mirror_path, encoding='utf-8').read().strip()
-    initnil_names = set(re.findall(r'^Package:\s*(\S+)', initnil, re.M))
+    raw = open(mirror_path, encoding='utf-8').read().strip()
+    initnil_names = set(re.findall(r'^Package:\s*(\S+)', raw, re.M))
+    paras = []
+    for para in raw.split('\n\n'):
+        m = re.search(r'^Package:\s*(\S+)', para, re.M)
+        if m:
+            name = m.group(1)
+            dep = f'Sileodepiction: {DEP_BASE}/{name}.json'
+            if re.search(r'^Sileodepiction:', para, re.M):
+                para = re.sub(r'^Sileodepiction:.*$', dep, para, flags=re.M)
+            else:
+                para += '\n' + dep
+        paras.append(para)
+    initnil = '\n\n'.join(paras)
 else:
     initnil = ''
     initnil_names = set()
 
-# 2) 用 scanpackages 生成全部条目（含正确 Filename/Size/哈希）
+# 2) scanpackages 生成全部条目
 out = subprocess.run(['dpkg-scanpackages', '-m', 'debs'],
                      capture_output=True, text=True)
 all_entries = [p for p in out.stdout.split('\n\n') if p.strip()]
@@ -29,8 +43,19 @@ for para in all_entries:
     if m and m.group(1) not in initnil_names:
         local_entries.append(para)
 
-# 4) 本地条目（不注入图标）
-local_final = local_entries
+# 4) 给本地条目注入自托管 Sileodepiction
+local_final = []
+for para in local_entries:
+    m = re.search(r'^Package:\s*(\S+)', para, re.M)
+    name = m.group(1)
+    dep = f'Sileodepiction: {DEP_BASE}/{name}.json'
+    lines = para.split('\n')
+    new = []
+    for line in lines:
+        new.append(line)
+        if line.startswith('Package:'):
+            new.append(dep)
+    local_final.append('\n'.join(new))
 
 # 5) 合并写入
 parts = [p for p in ([initnil] + local_final) if p]
