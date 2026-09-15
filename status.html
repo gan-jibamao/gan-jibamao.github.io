@@ -20,26 +20,22 @@
     flex:1; text-align:center; padding:18px 8px; border-radius:18px;
     background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
   }
-  .card .num { font-size:28px; font-weight:800; background:linear-gradient(90deg,#60a5fa,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .card .num { font-size:26px; font-weight:800; background:linear-gradient(90deg,#60a5fa,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent; }
   .card .label { font-size:11px; color:#94a3b8; margin-top:6px; }
-  .sec { margin-bottom:24px; }
   .sec h2 { font-size:14px; color:#94a3b8; margin-bottom:10px; font-weight:600; letter-spacing:1px; }
-  .hist {
-    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
-    border-radius:18px; padding:6px 16px;
-  }
-  .hist-item {
-    display:flex; justify-content:space-between; align-items:center;
-    padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.06);
-  }
+  .hist { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:18px; padding:4px 16px; }
+  .hist-item { padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
   .hist-item:last-child { border-bottom:none; }
+  .hist-head { display:flex; justify-content:space-between; align-items:center; }
   .hist-time { font-size:13px; color:#cbd5e1; }
   .hist-time small { color:#64748b; font-size:11px; margin-left:8px; }
-  .hist-count {
-    font-size:13px; color:#a5b4fc; background:rgba(99,102,241,0.15);
-    padding:3px 10px; border-radius:20px;
-  }
-  .back { display:inline-block; color:#94a3b8; font-size:14px; text-decoration:none; margin-top:4px; }
+  .hist-count { font-size:12px; color:#a5b4fc; background:rgba(99,102,241,0.15); padding:3px 10px; border-radius:20px; }
+  .chg { font-size:13px; margin-top:8px; line-height:1.6; }
+  .chg.add { color:#86efac; }
+  .chg.upd { color:#93c5fd; }
+  .chg.del { color:#fca5a5; }
+  .chg.note { color:#64748b; }
+  .back { display:inline-block; color:#94a3b8; font-size:14px; text-decoration:none; margin-top:18px; }
   .loading { text-align:center; color:#64748b; padding:30px; }
 </style>
 </head>
@@ -53,11 +49,11 @@
   <div class="cards">
     <div class="card"><div class="num" id="count">—</div><div class="label">当前包数</div></div>
     <div class="card"><div class="num" id="changes">—</div><div class="label">initnil 变化次数</div></div>
-    <div class="card"><div class="num" id="lastsync" style="font-size:16px;">—</div><div class="label">最后同步</div></div>
+    <div class="card"><div class="num" id="lastsync" style="font-size:15px;">—</div><div class="label">最后同步</div></div>
   </div>
 
   <div class="sec">
-    <h2>initnil 更新历史</h2>
+    <h2>initnil 变更日志</h2>
     <div class="hist" id="hist"><div class="loading">加载中…</div></div>
   </div>
 
@@ -66,24 +62,41 @@
 
 <script>
   function rel(t) {
-    var d = new Date(t), n = Date.now();
-    var s = Math.floor((n - d.getTime()) / 1000);
+    var d = new Date(t), s = Math.floor((Date.now() - d.getTime()) / 1000);
     if (s < 60) return '刚刚';
     if (s < 3600) return Math.floor(s/60) + ' 分钟前';
     if (s < 86400) return Math.floor(s/3600) + ' 小时前';
     return Math.floor(s/86400) + ' 天前';
   }
-  fetch('status.json').then(r => r.json()).then(function(st) {
-    document.getElementById('count').textContent = st.package_count ?? '—';
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[<>&"]/g, function(c) {
+      return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+    });
+  }
+  fetch('status.json').then(function(r){return r.json();}).then(function(st) {
+    document.getElementById('count').textContent = st.package_count != null ? st.package_count : '—';
     document.getElementById('changes').textContent = (st.history || []).length;
     document.getElementById('lastsync').textContent = st.last_sync ? rel(st.last_sync) : '—';
     var h = document.getElementById('hist');
-    if (!st.history || !st.history.length) { h.innerHTML = '<div class="loading">暂无历史记录</div>'; return; }
+    if (!st.history || !st.history.length) { h.innerHTML = '<div class="loading">暂无记录</div>'; return; }
     var html = '';
     st.history.slice().reverse().forEach(function(e) {
-      html += '<div class="hist-item"><span class="hist-time">' + e.time.replace('T',' ').replace('Z','') +
-              '<small>' + rel(e.time) + '</small></span>' +
-              '<span class="hist-count">' + e.packages + ' 个包</span></div>';
+      var ch = e.changes || {};
+      var item = '<div class="hist-item"><div class="hist-head">' +
+        '<span class="hist-time">' + esc(e.time.replace('T',' ').replace('Z','')) +
+        '<small>' + rel(e.time) + '</small></span>' +
+        '<span class="hist-count">' + e.packages + ' 个包</span></div>';
+      if (e.initial) {
+        item += '<div class="chg note">📸 建立初始快照</div>';
+      } else {
+        var n = 0;
+        (ch.added || []).forEach(function(x){ item += '<div class="chg add">➕ ' + esc(x.name) + ' ' + esc(x.version) + '</div>'; n++; });
+        (ch.updated || []).forEach(function(x){ item += '<div class="chg upd">⬆️ ' + esc(x.name) + ' ' + esc(x.from) + ' → ' + esc(x.to) + '</div>'; n++; });
+        (ch.removed || []).forEach(function(x){ item += '<div class="chg del">➖ ' + esc(x.name) + ' ' + esc(x.version) + '</div>'; n++; });
+        if (!n) item += '<div class="chg note">无内容变化（仅重新同步）</div>';
+      }
+      item += '</div>';
+      html += item;
     });
     h.innerHTML = html;
   }).catch(function() {
