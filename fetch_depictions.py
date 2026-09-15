@@ -11,7 +11,7 @@ DEP_DIR = os.path.join(REPO_DIR, 'depictions')
 IMG_DIR = os.path.join(DEP_DIR, 'images')
 MIRROR_PKG = os.path.join(REPO_DIR, 'mirror', 'initnil.Packages')
 DEBS_DIR = os.path.join(REPO_DIR, 'debs')
-SELF_BASE = 'https://gan-jibamao.github.io/repo/depictions'
+SELF_BASE = 'https://gan-jibamao.github.io/depictions'
 UA = {'User-Agent': 'Sileo/3.1 CFNetwork/1568 Darwin/24.0'}
 
 os.makedirs(IMG_DIR, exist_ok=True)
