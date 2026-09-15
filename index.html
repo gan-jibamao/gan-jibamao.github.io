@@ -92,7 +92,7 @@
     <div class="card">
       <img class="icon" src="CydiaIcon.png" alt="源图标">
       <h1>做爱</h1>
-      <p class="url">https://gan-jibamao.github.io/repo/</p>
+      <p class="url">https://gan-jibamao.github.io/</p>
 
       <div class="badge-row">
         <span class="badge" id="pkgcount">— 插件</span>
@@ -101,8 +101,8 @@
         <img src="https://visitor-badge.laobi.icu/badge?page_id=gan-jibamao.repo" alt="访问量" style="height:23px;border-radius:12px;">
       </div>
 
-      <a class="btn sileo" href="sileo://source/https://gan-jibamao.github.io/repo/">添加到 Sileo</a>
-      <a class="btn cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fgan-jibamao.github.io%2Frepo%2F">添加到 Cydia</a>
+      <a class="btn sileo" href="sileo://source/https://gan-jibamao.github.io/">添加到 Sileo</a>
+      <a class="btn cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fgan-jibamao.github.io%2F%2F">添加到 Cydia</a>
       <a class="btn browse" href="packages.html">浏览全部插件</a>
       <a class="btn browse" href="status.html">查看源状态</a>
       <button class="btn copy" onclick="copyURL()">复制源地址</button>
@@ -116,7 +116,7 @@
       if (d.package_count) document.getElementById('pkgcount').textContent = d.package_count + ' 插件';
     }).catch(function(){});
     function copyURL() {
-      var url = 'https://gan-jibamao.github.io/repo/';
+      var url = 'https://gan-jibamao.github.io/';
       var btn = document.querySelector('.copy');
       function done() {
         btn.textContent = '已复制 ✓';
