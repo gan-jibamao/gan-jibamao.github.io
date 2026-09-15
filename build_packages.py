@@ -8,7 +8,7 @@ import re, subprocess, os
 repo = os.path.dirname(os.path.abspath(__file__))
 os.chdir(repo)
 
-DEP_BASE = 'https://gan-jibamao.github.io/repo/depictions'
+DEP_BASE = 'https://gan-jibamao.github.io/depictions'
 
 # 1) 镜像包条目：Sileodepiction 重写为自托管地址
 mirror_path = os.path.join('mirror', 'initnil.Packages')
