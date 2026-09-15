@@ -16,7 +16,7 @@ Description: 千阅解锁全功能
 Author: INITNIL
 Markdowndescription: 千阅解锁全功能<br><br>• v1.1-1: 修复自签疯狂弹出AppleID登陆的问题
 Name: 千阅 Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.initnil.flreadercrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.initnil.flreadercrack.json
 
 Package: com.initnil.imgplaycrack
 Version: 1.1-1
@@ -35,7 +35,7 @@ Section: INITNIL-Tweaks
 Description: ImgPlay Crack
 Author: INITNIL
 Name: ImgPlay Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.initnil.imgplaycrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.initnil.imgplaycrack.json
 
 Package: com.netskao.awemealwaysshowtime
 Version: 1.1-1
@@ -52,7 +52,7 @@ Section: Netskao-Tweaks
 Description: Aweme always shows the video creation time
 Author: Netskao
 Name: AwemeAlwaysShowTime
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.awemealwaysshowtime.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.awemealwaysshowtime.json
 
 Package: com.netskao.awemedisablebar
 Version: 1.1-6
@@ -69,7 +69,7 @@ Section: Netskao-Tweaks
 Description: Aweme Disable Top/Bottom/Right Tab Button. Tested only on version 30.3.0 and above
 Author: Netskao
 Name: AwemeDisableBar
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.awemedisablebar.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.awemedisablebar.json
 
 Package: com.netskao.awemedownloadmedia
 Version: 1.1-8
@@ -86,7 +86,7 @@ Section: Netskao-Tweaks
 Description: Aweme No Watermark Download Media. Tested only on version 31.7.0 and above
 Author: Netskao
 Name: AwemeDownloadMedia
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.awemedownloadmedia.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.awemedownloadmedia.json
 
 Package: com.netskao.awemefullscreen
 Version: 1.3-7
@@ -103,7 +103,7 @@ Section: Netskao-Tweaks
 Description: Aweme HomePage Full Screen. Supported only for version 35.0.0 and above
 Author: Netskao
 Name: AwemeFullScreen
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.awemefullscreen.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.awemefullscreen.json
 
 Package: com.netskao.awemevideotime
 Version: 1.1-2
@@ -120,7 +120,7 @@ Section: Netskao-Tweaks
 Description: Aweme Video Show Time. Tested only on version 30.3.0 and above
 Author: Netskao
 Name: AwemeVideoTime
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.awemevideotime.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.awemevideotime.json
 
 Package: com.netskao.ccbadgeclear
 Version: 1.2-6
@@ -137,7 +137,7 @@ Section: Netskao-Tweaks
 Description: Quickly clean up all red badge on desktop via Control Center, Support iOS15+
 Author: Netskao
 Name: CCBadgeClear
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.ccbadgeclear.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.ccbadgeclear.json
 
 Package: com.netskao.cclifttowake
 Version: 1.1-1
@@ -154,7 +154,7 @@ Section: Netskao-Tweaks
 Description: Quickly enable or disable Wake on Lift from Control Center, Support iOS15+
 Author: Netskao
 Name: CCLiftToWake
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.cclifttowake.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.cclifttowake.json
 
 Package: com.netskao.ccquantumultxswitch
 Version: 1.1-3
@@ -172,7 +172,7 @@ Description: Add a quick toggle for Quantumult X VPN status in Control Center
 Author: Netskao
 Markdowndescription: Add a quick toggle for Quantumult X VPN status in Control Center<br><br>• v1.1-3: Fixed potential icon status synchronization issues
 Name: CCQuantumultXSwitch
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.ccquantumultxswitch.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.ccquantumultxswitch.json
 
 Package: com.netskao.classickeyboardxs
 Version: 1.1-9
@@ -189,7 +189,7 @@ Section: Netskao-Tweaks
 Description: Customize the height of the bottom of the X-keyboard, the height of the bottom of the earth, etc.
 Author: Netskao
 Name: ClassicKeyboardXS
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.classickeyboardxs.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.classickeyboardxs.json
 
 Package: com.netskao.dazzcameracrack
 Version: 1.1-6
@@ -206,7 +206,7 @@ Section: Netskao-Tweaks
 Description: DazzCamera Crack
 Author: Netskao
 Name: DazzCamera Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.dazzcameracrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.dazzcameracrack.json
 
 Package: com.netskao.disablebottombarlrswipe
 Version: 1.1-2
@@ -223,7 +223,7 @@ Section: Netskao-Tweaks
 Description: Disable bottom bar left/right swipe
 Author: Netskao
 Name: DisableBottomBarLRSwipe
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.disablebottombarlrswipe.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.disablebottombarlrswipe.json
 
 Package: com.netskao.evilmeowcrack
 Version: 1.1-2
@@ -240,7 +240,7 @@ Section: Netskao-Tweaks
 Description: 让我喵喵解锁会员, 支持1.6.8及以上版本(当前最新版1.7.0已测试)
 Author: Netskao
 Name: 让我喵喵 Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.evilmeowcrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.evilmeowcrack.json
 
 Package: com.netskao.filzacrack
 Version: 1.1-9
@@ -257,7 +257,7 @@ Section: Netskao-Tweaks
 Description: Filza Crack
 Author: Netskao
 Name: Filza Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.filzacrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.filzacrack.json
 
 Package: com.netskao.ibispaintxcrack
 Version: 1.1-1
@@ -274,7 +274,7 @@ Section: Netskao-Tweaks
 Description: 爱笔思画X解锁高级功能
 Author: Netskao
 Name: 爱笔思画X Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.ibispaintxcrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.ibispaintxcrack.json
 
 Package: com.netskao.injectipa
 Version: 1.5-7
@@ -291,7 +291,7 @@ Section: Netskao-Tweaks
 Description: InjectIPA Tool
 Author: Netskao
 Name: injectipa
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.injectipa.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.injectipa.json
 
 Package: com.netskao.lbbrowsercrack
 Version: 1.1-2
@@ -308,7 +308,7 @@ Section: Netskao-Tweaks
 Description: 李白浏览器解锁全功能
 Author: Netskao
 Name: 李白浏览器 Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.lbbrowsercrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.lbbrowsercrack.json
 
 Package: com.netskao.leoreadercrack
 Version: 1.1-3
@@ -325,7 +325,7 @@ Section: Netskao-Tweaks
 Description: 极简阅读解锁全功能
 Author: Netskao
 Name: 极简阅读 Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.leoreadercrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.leoreadercrack.json
 
 Package: com.netskao.mangaboxcrack
 Version: 1.1-5
@@ -343,7 +343,7 @@ Description: MangaBox Crack, Supports version 1.2.4 and above
 Author: Netskao
 Markdowndescription: MangaBox Crack, Supports version 1.2.4 and above<br><br>• v1.1.5: Quickly launch the app
 Name: MangaBox Crack
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.mangaboxcrack.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.mangaboxcrack.json
 
 Package: com.netskao.qqnotiavatar
 Version: 1.2-3
@@ -360,7 +360,7 @@ Section: Netskao-Tweaks
 Description: Display Notification Avatars for QQ App using iOS15+ APIs
 Author: Netskao
 Name: QQNotiAvatar
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.qqnotiavatar.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.qqnotiavatar.json
 
 Package: com.netskao.storeswitchaccounts
 Version: 1.1-4
@@ -377,7 +377,7 @@ Section: Netskao-Tweaks
 Description: Conveniently switch between logged-in accounts, long press the desktop AppStore icon to switch
 Author: Netskao
 Name: StoreSwitchAccounts
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.storeswitchaccounts.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.storeswitchaccounts.json
 
 Package: com.netskao.wcmypageinfocenter
 Version: 1.2-2
@@ -394,7 +394,7 @@ Section: Netskao-Tweaks
 Description: WeChat My Page Info Center, Supported only for version 8.0.31 and above
 Author: Netskao
 Name: WCMyPageInfoCenter
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.wcmypageinfocenter.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.wcmypageinfocenter.json
 
 Package: com.netskao.wctimelinereplacefind
 Version: 1.1-3
@@ -411,7 +411,7 @@ Section: Netskao-Tweaks
 Description: 使用朋友圈替换发现底栏
 Author: Netskao
 Name: WCTimeLineReplaceFind
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.wctimelinereplacefind.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.wctimelinereplacefind.json
 
 Package: com.netskao.wechatuiswitchloader
 Version: 1.1-5
@@ -428,10 +428,10 @@ Section: Netskao-Tweaks
 Description: WeChat UISwitch Loader
 Author: Netskao
 Name: WeChatUISwitchLoader
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.netskao.wechatuiswitchloader.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.wechatuiswitchloader.json
 
 Package: aweme.x
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/aweme.x.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/aweme.x.json
 Version: 2.6.2
 Architecture: iphoneos-arm64
 Maintainer: 𝙓
@@ -450,7 +450,7 @@ Author: 𝙓
 Name: 抖音图层
 
 Package: cn.agricu.nspeed
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/cn.agricu.nspeed.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/cn.agricu.nspeed.json
 Version: 0.1.1-10
 Architecture: iphoneos-arm64
 Maintainer: Agricu
@@ -467,7 +467,7 @@ Author: Agricu
 Name: Nspeed
 
 Package: com.be-huge.insulation
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.be-huge.insulation.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
 Version: 0.1.38.1
 Architecture: iphoneos-arm64e
 Maintainer: doimty
@@ -484,7 +484,7 @@ Author: be-huge & doimty
 Name: insulation
 
 Package: com.doimty.promotion
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.doimty.promotion.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.doimty.promotion.json
 Version: 1.0.11
 Architecture: iphoneos-arm64e
 Maintainer: doimty
@@ -502,7 +502,7 @@ Author: doimty
 Name: ProMotion 120Hz
 
 Package: com.hang.zzzj
-Sileodepiction: https://gan-jibamao.github.io/repo/depictions/com.hang.zzzj.json
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.hang.zzzj.json
 Version: 0.0.1-8+debug
 Architecture: iphoneos-arm64e
 Maintainer: hang
