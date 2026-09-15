@@ -4,9 +4,122 @@
       "time": "2026-09-13T11:13:57Z",
       "packages": 30,
       "fingerprint": "5fc04882c8cf4d0c"
+    },
+    {
+      "time": "2026-09-15T14:47:36Z",
+      "packages": 30,
+      "fingerprint": "94c8193c20a5253d",
+      "changes": {
+        "added": [],
+        "updated": [],
+        "removed": []
+      },
+      "initial": true
     }
   ],
-  "last_sync": "2026-09-15T14:17:50Z",
+  "last_sync": "2026-09-15T14:47:36Z",
   "package_count": 30,
-  "last_fingerprint": "5fc04882c8cf4d0c"
+  "last_fingerprint": "94c8193c20a5253d",
+  "last_packages": {
+    "com.initnil.flreadercrack": {
+      "version": "1.1-1",
+      "name": "千阅 Crack"
+    },
+    "com.initnil.imgplaycrack": {
+      "version": "1.1-1",
+      "name": "ImgPlay Crack"
+    },
+    "com.netskao.awemealwaysshowtime": {
+      "version": "1.1-1",
+      "name": "AwemeAlwaysShowTime"
+    },
+    "com.netskao.awemedisablebar": {
+      "version": "1.1-6",
+      "name": "AwemeDisableBar"
+    },
+    "com.netskao.awemedownloadmedia": {
+      "version": "1.1-8",
+      "name": "AwemeDownloadMedia"
+    },
+    "com.netskao.awemefullscreen": {
+      "version": "1.3-7",
+      "name": "AwemeFullScreen"
+    },
+    "com.netskao.awemevideotime": {
+      "version": "1.1-2",
+      "name": "AwemeVideoTime"
+    },
+    "com.netskao.ccbadgeclear": {
+      "version": "1.2-6",
+      "name": "CCBadgeClear"
+    },
+    "com.netskao.cclifttowake": {
+      "version": "1.1-1",
+      "name": "CCLiftToWake"
+    },
+    "com.netskao.ccquantumultxswitch": {
+      "version": "1.1-3",
+      "name": "CCQuantumultXSwitch"
+    },
+    "com.netskao.classickeyboardxs": {
+      "version": "1.1-9",
+      "name": "ClassicKeyboardXS"
+    },
+    "com.netskao.dazzcameracrack": {
+      "version": "1.1-6",
+      "name": "DazzCamera Crack"
+    },
+    "com.netskao.disablebottombarlrswipe": {
+      "version": "1.1-2",
+      "name": "DisableBottomBarLRSwipe"
+    },
+    "com.netskao.evilmeowcrack": {
+      "version": "1.1-2",
+      "name": "让我喵喵 Crack"
+    },
+    "com.netskao.filzacrack": {
+      "version": "1.1-9",
+      "name": "Filza Crack"
+    },
+    "com.netskao.ibispaintxcrack": {
+      "version": "1.1-1",
+      "name": "爱笔思画X Crack"
+    },
+    "com.netskao.injectipa": {
+      "version": "1.5-7",
+      "name": "injectipa"
+    },
+    "com.netskao.lbbrowsercrack": {
+      "version": "1.1-2",
+      "name": "李白浏览器 Crack"
+    },
+    "com.netskao.leoreadercrack": {
+      "version": "1.1-3",
+      "name": "极简阅读 Crack"
+    },
+    "com.netskao.mangaboxcrack": {
+      "version": "1.1-5",
+      "name": "MangaBox Crack"
+    },
+    "com.netskao.qqnotiavatar": {
+      "version": "1.2-3",
+      "name": "QQNotiAvatar"
+    },
+    "com.netskao.storeswitchaccounts": {
+      "version": "1.1-4",
+      "name": "StoreSwitchAccounts"
+    },
+    "com.netskao.wcmypageinfocenter": {
+      "version": "1.2-2",
+      "name": "WCMyPageInfoCenter"
+    },
+    "com.netskao.wctimelinereplacefind": {
+      "version": "1.1-3",
+      "name": "WCTimeLineReplaceFind"
+    },
+    "com.netskao.wechatuiswitchloader": {
+      "version": "1.1-5",
+      "name": "WeChatUISwitchLoader"
+    }
+  }
 }
