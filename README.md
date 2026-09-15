@@ -5,7 +5,7 @@
 ## 源地址
 
 ```
-https://gan-jibamao.github.io/repo/
+https://gan-jibamao.github.io/
 ```
 
 在 Sileo → Sources → 右上角 `+` → 粘贴上面的地址。
@@ -14,9 +14,9 @@ https://gan-jibamao.github.io/repo/
 
 | 页面 | 地址 |
 |---|---|
-| 落地页（添加源入口） | [index.html](https://gan-jibamao.github.io/repo/) |
-| 插件列表（可搜索） | [packages.html](https://gan-jibamao.github.io/repo/packages.html) |
-| 源状态（同步历史） | [status.html](https://gan-jibamao.github.io/repo/status.html) |
+| 落地页（添加源入口） | [index.html](https://gan-jibamao.github.io/) |
+| 插件列表（可搜索） | [packages.html](https://gan-jibamao.github.io/packages.html) |
+| 源状态（同步历史） | [status.html](https://gan-jibamao.github.io/status.html) |
 
 ## 自动化
 
