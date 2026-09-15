@@ -2,7 +2,7 @@
 """从 Packages 索引生成网页版包列表 packages.html。"""
 import re, html
 
-BASE = 'https://gan-jibamao.github.io/repo'
+BASE = 'https://gan-jibamao.github.io'
 
 def parse(path):
     paras = [p for p in open(path, encoding='utf-8').read().split('\n\n') if p.strip()]
