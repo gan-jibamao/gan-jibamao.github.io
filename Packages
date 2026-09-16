@@ -442,8 +442,8 @@ Replaces: com.xx.dyhook
 Filename: debs/aweme.x_2.6.2_iphoneos-arm64.deb
 Size: 3610948
 MD5sum: b1c2c21e59cfd5c3a25ab12e4d80b41b
-SHA1: e51d934ee51d27d9920617ae9206150fb3a25e7f
-SHA256: 232fe911232f2e1420efc98620ef8e652f524e112f52ee587de32d4d7de3d825
+SHA1: e51d934e39c027d9920617ae8c3e150fb3a25e7f
+SHA256: 232fe911b3432e1420efc986dfbe8e652f524e1185b4ee587de32d4d8407d825
 Section: Tweaks
 Description: 自用
 Author: 𝙓
@@ -459,8 +459,8 @@ Depends: mobilesubstrate
 Filename: debs/cn.agricu.nspeed_0.1.1-10_iphoneos-arm64.deb
 Size: 7944
 MD5sum: d1014f3f1c68ba2066f99256268eb489
-SHA1: 8afc694c8afc77bbe9222caee922690392b0ed72
-SHA256: cfa47262cfa4009bb9753013b9751d5b2761947c2761ae4678190b60781965a2
+SHA1: 8afc694c871e77bbe9222cae5086690392b0ed72
+SHA256: cfa472627b99009bb975301342261d5b2761947c8892ae4678190b60483c65a2
 Section: Tweaks
 Description: Always show network speed on right-upper corner.
 Author: Agricu
@@ -476,8 +476,8 @@ Depends: firmware (>= 15.0)
 Filename: debs/com.be-huge.insulation_0.1.38.1_iphoneos-arm64e.deb
 Size: 57024
 MD5sum: 548758f431fed3ae2df216bb491d6c62
-SHA1: fd40899ffd40489c30a01a7930a0d80c20af9f45
-SHA256: 75d9920275d95bae39c8a32139c8e8cb3dec60d03decf265fbfa86a7fbfa19c9
+SHA1: fd40899f9d37489c30a01a79d245d80c20af9f45
+SHA256: 75d9920232145bae39c8a3217091e8cb3dec60d0074df265fbfa86a7d44e19c9
 Section: Tweaks
 Description: 解除温控，一切从简即可。支持命令行切换模式：ins off（原生温控）/ ins low（低功耗）/ ins max（全性能）/ ins status（查看当前模式）
 Author: be-huge & doimty
@@ -493,8 +493,8 @@ Depends: mobilesubstrate
 Filename: debs/com.doimty.promotion_1.0.11_iphoneos-arm64e.deb
 Size: 16586
 MD5sum: 5a0ee7e408dd8a65580c06ddf0be4c13
-SHA1: b2698740b26977ab64d60d1664d64716b3a3adba
-SHA256: 440bf37b440bd0ccc5a0c823c5a0a4c514f4423e14f42649ebb2e801ebb26900
+SHA1: b2698740b46b77ab64d60d16e6044716b3a3adba
+SHA256: 440bf37bc3cdd0ccc5a0c823e861a4c514f4423e91dc2649ebb2e801c3596900
 Section: Tweaks
 Description: Force global 120Hz ProMotion, bypass the 80Hz system cap. iPhone 13 Pro and above only.
 Tag: supports::roothide
@@ -512,8 +512,8 @@ Depends: mobilesubstrate (>= 0.9.5000)
 Filename: debs/com.hang.zzzj_0.0.1-8+debug_iphoneos-arm64e.deb
 Size: 47406
 MD5sum: be8085baf53a0e6713c84e918bb1ff77
-SHA1: bb66b5dbbb662b4c238fadae238f35516e54fe9c
-SHA256: 136ff8f5136ff62208076ed40807d093e2f0d220e2f02fda5595b7a0559534aa
+SHA1: bb66b5db310a2b4c238fadae4b6535516e54fe9c
+SHA256: 136ff8f5fd44f62208076ed493add093e2f0d220ee5a2fda5595b7a0366734aa
 Section: Tweaks
 Description: 转转搜索筛选助手：悬浮球面板，按机型/电池/系统版本/成色筛选，带复制链接
 Author: hang
@@ -529,8 +529,8 @@ Depends: mobilesubstrate
 Filename: debs/com.xuuz.disablehotupdate_1.0.0_iphoneos-arm64.deb
 Size: 3788
 MD5sum: 71163abbf2f3aed8fc5bb6eccb00c4fe
-SHA1: bb63c7f9bb63ffaab0709810b070e6bc513052db
-SHA256: b6d0ebebb6d0001bee6ce901ee6c2e0c113d9d70113df086cc41422bcc41279d
+SHA1: bb63c7f9b891ffaab070981093ade6bc513052db
+SHA256: b6d0ebebdc41001bee6ce90199b42e0c113d9d70de5df086cc41422b05fb279d
 Section: Tweaks
 Description: 禁用抖音 AWE 框架的动态补丁（热更新）数据模型 AWEDynamicPatchModel，热更新补丁静默失效。从 DouyinHelper 2.2-6 提取。
 Author: xuuz
