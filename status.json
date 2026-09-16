@@ -15,35 +15,6 @@
         "removed": []
       },
       "initial": true
-    },
-    {
-      "time": "2026-09-15T09:53:25Z",
-      "packages": 25,
-      "fingerprint": "simulated000",
-      "changes": {
-        "added": [
-          {
-            "package": "com.initnil.flreadercrack",
-            "version": "1.1-1",
-            "name": "千阅 Crack"
-          }
-        ],
-        "updated": [
-          {
-            "package": "com.netskao.evilmeowcrack",
-            "name": "让我喵喵 Crack",
-            "from": "1.1-1",
-            "to": "1.1-2"
-          }
-        ],
-        "removed": [
-          {
-            "package": "com.initnil.removeddemo",
-            "version": "1.0",
-            "name": "已移除的演示包"
-          }
-        ]
-      }
     }
   ],
   "last_sync": "2026-09-16T16:31:23Z",
