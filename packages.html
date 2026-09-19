@@ -50,11 +50,20 @@
 <div class="wrap">
   <header>
     <h1>插件列表</h1>
-    <p>共 31 个插件 · 点击下载或直接在 Sileo 打开</p>
+    <p>共 32 个插件 · 点击下载或直接在 Sileo 打开</p>
   </header>
   <input class="search" id="q" placeholder="搜索插件名 / 描述..." oninput="filter()">
   <div class="count" id="count"></div>
   <div id="list">
+    <div class="item" data-search="appdata com.netskao.appdata view &amp; manage applications data from your home screen">
+      <div class="head"><span class="pname">AppData</span><span class="pver">v1.4.7</span></div>
+      <div class="pauthor">Fouad Raheb</div>
+      <div class="pdesc">View &amp; Manage Applications Data from your Home Screen</div>
+      <div class="btns">
+        <a class="btn dl" href="https://gan-jibamao.github.io/debs/com.netskao.appdata_1.4.7_iphoneos-arm64.deb">下载 deb</a>
+        <a class="btn sileo" href="sileo://package/com.netskao.appdata">在 Sileo 打开</a>
+      </div>
+    </div>
     <div class="item" data-search="awemealwaysshowtime com.netskao.awemealwaysshowtime aweme always shows the video creation time">
       <div class="head"><span class="pname">AwemeAlwaysShowTime</span><span class="pver">v1.1-1</span></div>
       <div class="pauthor">Netskao</div>
@@ -346,7 +355,7 @@
       it.style.display = hit ? '' : 'none';
       if (hit) n++;
     });
-    document.getElementById('count').textContent = n === 31 ? '' : '显示 ' + n + ' / 31 个';
+    document.getElementById('count').textContent = n === 32 ? '' : '显示 ' + n + ' / 32 个';
   }
 </script>
 </body>

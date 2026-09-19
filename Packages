@@ -519,6 +519,25 @@ Description: 转转搜索筛选助手：悬浮球面板，按机型/电池/系�
 Author: hang
 Name: 转转找鸡
 
+Package: com.netskao.appdata
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.appdata.json
+Version: 1.4.7
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 5156
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: debs/com.netskao.appdata_1.4.7_iphoneos-arm64.deb
+Size: 1499508
+MD5sum: ea33319f32ec352ea0901e805e9def05
+SHA1: f13eb02f808968119ff06a52c601db199b0c3397
+SHA256: 824005157bb87b227a753d0fba98d2f044126562f346db771756d8e176327175
+Section: Netskao-Tweaks
+Description: View & Manage Applications Data from your Home Screen
+Author: Fouad Raheb
+Markdowndescription: View & Manage Applications Data from your Home Screen<br><br>• v1.4.7: Fix app failed to downgrade<br><br>• v1.4.6: Fix iOS15 crash issues<br><br>• v1.4.5: Modify the API interface for obtaining the downgraded version number of an application
+Name: AppData
+Sileodepiction: https://jailrepo.initnil.com/api?Package=com.netskao.appdata
+
 Package: com.xuuz.disablehotupdate
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.xuuz.disablehotupdate.json
 Version: 1.0.0-1+debug
