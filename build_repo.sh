@@ -5,6 +5,12 @@ set -e
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_ROOT"
 
+# 分片重组：chunks/appdata.* → debs/com.netskao.appdata_1.4.7_iphoneos-arm64.deb
+if ls "$REPO_ROOT/chunks/appdata."* >/dev/null 2>&1; then
+  cat "$REPO_ROOT/chunks/appdata."* | base64 -d > "$REPO_ROOT/debs/com.netskao.appdata_1.4.7_iphoneos-arm64.deb"
+  rm -rf "$REPO_ROOT/chunks/"
+fi
+
 # 1) 生成 Packages 索引（合并镜像包 + 本地包，见 build_packages.py）
 python3 "$REPO_ROOT/build_packages.py"
 
