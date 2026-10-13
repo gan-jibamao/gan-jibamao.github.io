@@ -9,6 +9,7 @@ BASE = 'https://jailrepo.initnil.com/'
 REPO_DIR = os.path.dirname(os.path.abspath(__file__))
 DEP_DIR = os.path.join(REPO_DIR, 'depictions')
 IMG_DIR = os.path.join(DEP_DIR, 'images')
+MANUAL_FILE = os.path.join(DEP_DIR, 'manual.txt')
 MIRROR_PKG = os.path.join(REPO_DIR, 'mirror', 'initnil.Packages')
 DEBS_DIR = os.path.join(REPO_DIR, 'debs')
 SELF_BASE = 'https://gan-jibamao.github.io/depictions'
@@ -59,12 +60,22 @@ for p in mirror.split('\n\n'):
         data['headerImage'] = f'{SELF_BASE}/images/{seen_img[hdr]}'
     open(os.path.join(DEP_DIR, f'{name}.json'), 'w', encoding='utf-8').write(json.dumps(data, ensure_ascii=False))
 
-# ---- 2) 本地包：生成简单详情 ----
+# ---- 2) 本地包：生成简单详情（清单中的包跳过，保留手工维护版）----
+manual = set()
+if os.path.exists(MANUAL_FILE):
+    for ln in open(MANUAL_FILE, encoding='utf-8'):
+        ln = ln.strip()
+        if ln and not ln.startswith('#'):
+            manual.add(ln)
+
 for deb in sorted(os.listdir(DEBS_DIR)):
     if not deb.endswith('.deb'):
         continue
     pkg = deb_field(os.path.join(DEBS_DIR, deb), 'Package')
     if not pkg or pkg in mirror_names:
+        continue
+    if pkg in manual:
+        print('手工维护，跳过:', pkg)
         continue
     name = deb_field(os.path.join(DEBS_DIR, deb), 'Name') or pkg
     version = deb_field(os.path.join(DEBS_DIR, deb), 'Version')

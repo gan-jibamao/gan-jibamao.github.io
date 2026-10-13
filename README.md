@@ -23,7 +23,7 @@ https://gan-jibamao.github.io/
 GitHub Actions 每 6 小时自动：
 
 1. 从 `jailrepo.initnil.com` 拉取最新 Packages + 全部 deb（只增不删）
-2. 抓取/更新原生详情页（depictions）
+2. 抓取/更新原生详情页（depictions，`manual.txt` 清单中的包跳过）
 3. 用 GPG 私钥（GitHub Secret）签名 Release
 4. 重建插件列表页 + 状态页
 5. 提交推送
@@ -34,7 +34,7 @@ GitHub Actions 每 6 小时自动：
 |---|---|
 | `debs/` | 所有 .deb 包（镜像 + 本地） |
 | `Packages*` / `Release*` | 源索引与签名（自动生成） |
-| `depictions/` | 原生详情页 JSON + 头图 |
+| `depictions/` | 原生详情页 JSON + 头图（`manual.txt` 手工清单，列出的包不自动覆盖） |
 | `mirror/initnil.Packages` | initnil 源的包清单快照 |
 | `.github/workflows/sync.yml` | 自动同步工作流 |
 | `sync_initnil.py` | 拉取 initnil 包（增量） |

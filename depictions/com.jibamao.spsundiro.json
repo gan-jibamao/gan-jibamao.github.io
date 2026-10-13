@@ -1,0 +1,84 @@
+{
+  "minVersion": "0.1",
+  "tintColor": "#1F91DC",
+  "class": "DepictionTabView",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionLabelView",
+          "text": "插件描述",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "新大洲本田蓝牙**无感解锁**，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "安装说明",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "**RootHide / Dopamine-roothide** 选 `arm64e`；**rootless / Dopamine** 选 `arm64`。两个架构**不可同时安装**。\n\n装完执行 `killall -9 SpringBoard` 或注销桌面生效。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "安全阀",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "创建 `/var/mobile/Library/Preferences/com.jibamao.spsundiro.off` 后注销桌面即停用；删除后重新注销即恢复。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "jibamao"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "版本",
+          "text": "1.2.3"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "架构",
+          "text": "iphoneos-arm64e / iphoneos-arm64"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "依赖",
+          "text": "mobilesubstrate"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
