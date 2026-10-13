@@ -556,6 +556,44 @@ Description: 转转搜索筛选助手：悬浮球面板，按机型/电池/系�
 Author: hang
 Name: 转转找鸡
 
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.3
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 220
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.3_iphoneos-arm64.deb
+Size: 23668
+MD5sum: 8e0de22c97fe9f408ec7100748710a78
+SHA1: 608e0ddc53222dc6a515b4c56174d4f07dd26d6c
+SHA256: 7855fa626de6f152789e943da14da4f50cee4445afaae8bfde9d4761f7bef270
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.3
+Architecture: iphoneos-arm64e
+Maintainer: jibamao
+Installed-Size: 220
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.3_iphoneos-arm64e.deb
+Size: 23634
+MD5sum: a03b00b3a8cd0723bce3fd31212165f7
+SHA1: f8100c40b2eeaab095686fb6f044a21f9c1630a3
+SHA256: 60f1e1d017a777c0dd0b8a8500f4b4fe7edf6cae455bdd262fa046685957b94d
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
 Package: com.netskao.appdata
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.netskao.appdata.json
 Version: 1.4.7
