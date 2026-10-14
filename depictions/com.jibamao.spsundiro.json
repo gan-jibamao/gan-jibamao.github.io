@@ -25,6 +25,22 @@
         },
         {
           "class": "DepictionLabelView",
+          "text": "1.2.4 更新",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "修复「按车没解锁、隔几十秒再按才响应」：车端未下发 42 受理凭证的轮次不再被误判为成功，插件将自动换链重试（不再有 45 秒空窗）。解锁协议与配对表零改动。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
           "text": "安装说明",
           "fontWeight": "semibold",
           "fontSize": 16,
@@ -63,7 +79,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.2.3"
+          "text": "1.2.4"
         },
         {
           "class": "DepictionTableTextView",
