@@ -10,8 +10,6 @@ https://gan-jibamao.github.io/
 
 在 Sileo → Sources → 右上角 `+` → 粘贴上面的地址。
 
-旧地址 `https://gan-jibamao.github.io/repo/` 由 CI 生成兼容镜像，同样可用（两份内容逐字节一致）。
-
 ## 相关页面
 
 | 页面 | 地址 |
@@ -43,4 +41,3 @@ GitHub Actions 每 6 小时自动：
 | `fetch_depictions.py` | 抓取详情页 |
 | `build_packages.py` / `build_repo.sh` | 生成索引 + Release + 签名 |
 | `gen_packages_html.py` / `gen_status.py` | 生成网页 |
-| `build_legacy_mirror.sh` | 生成 `/repo` 旧地址兼容镜像（复制站点产物到 `repo/`） |
