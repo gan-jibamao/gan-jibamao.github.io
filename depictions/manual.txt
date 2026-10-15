@@ -2,3 +2,4 @@
 # 每行一个包名，# 开头为注释。留空的包由 fetch_depictions.py 自动生成。
 com.jibamao.spsundiro
 com.be-huge.insulation
+com.82flex.colorsubstitute
