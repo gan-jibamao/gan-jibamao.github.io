@@ -1,0 +1,46 @@
+{
+  "minVersion": "0.1",
+  "tintColor": "#1F91DC",
+  "class": "DepictionTabView",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "**解除温控**，阻止温度过高导致的降频。\n\n本插件由原作者 **be-huge** 开源（https://github.com/be-huge/insulation），本仓库同时提供两版共存：\n\n* **0.1.38.1（增强版）** — 由 be-huge & doimty 维护，额外支持命令行切换温控模式：`ins off`（原生温控）/ `ins low`（低功耗）/ `ins max`（全性能）/ `ins status`（查看当前模式）。\n* **0.0.3（原版）** — be-huge 原始版本，支持温控锁定 CPU 频率值 + 模拟降频档位（无 / 轻微 / 中度 / 重度）。\n\nSileo 默认安装版本号更高的 **0.1.38.1**，如需原版可在「降级」中选择 **0.0.3**。"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "⚠️ 安装前必读：依赖 Orion",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "本插件依赖 `dev.theos.orion`（Swift 编写的插件运行时），**本源未内置该依赖**，请先添加以下源之一，Sileo 便会自动一并安装：\n\n* RootHide 官方源：`https://roothide.github.io/`\n* Chariz 源：`https://repo.chariz.com/`\n\n若安装时报「依赖无法满足」，多半是缺少上述源。"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "be-huge（原版） / be-huge & doimty（增强版）"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "可选版本",
+          "text": "0.1.38.1（增强版） / 0.0.3（原版）"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "架构",
+          "text": "iphoneos-arm64 / iphoneos-arm64e"
+        }
+      ]
+    }
+  ]
+}

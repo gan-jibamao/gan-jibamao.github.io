@@ -1,0 +1,4 @@
+# 手工维护清单 —— 列出的包不自动覆盖其 depiction
+# 每行一个包名，# 开头为注释。留空的包由 fetch_depictions.py 自动生成。
+com.jibamao.spsundiro
+com.be-huge.insulation
