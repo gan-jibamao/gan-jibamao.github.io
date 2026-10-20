@@ -7,37 +7,161 @@
       "tabname": "Details",
       "class": "DepictionStackView",
       "views": [
-        {"class": "DepictionLabelView", "text": "ColorSubstitute", "fontWeight": "semibold", "fontSize": 17, "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "把 **Face ID 动画**染成任意单色——基于 82Flex 原版源码的定制版，注入 CoreAuthUI，使用系统单色滤镜，**不联网、不采集任何数据**。"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "功能", "fontWeight": "semibold", "fontSize": 16, "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "- 设置 → ColorSubstitute 面板：总开关 + HEX 颜色输入\n- **系统取色器**：色轮 / 滑杆 / 吸管选任意颜色（拖动实时生效，任何方式关闭都不丢色）\n- 默认色 `#F483D1` 樱花粉；非法 HEX 自动回退默认\n- 改动即时生效：Face ID 下次唤醒即用新色；关闭开关恢复原生彩色动画\n- 配置写入越狱隐根 Preferences，不会被 var 清理误删"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "0.4.0 更新", "fontWeight": "semibold", "fontSize": 16, "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "- 移除预设色板，面板更精简（手输 HEX + 系统取色器双通道已够用）\n- 修复取色器选色不生效（轮询保证通道，回调不触发也能拿到颜色）\n- 设置面板新增 Face ID 图标"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "安装", "fontWeight": "semibold", "fontSize": 16, "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "RootHide 设备选 `iphoneos-arm64e` 版本；rootless/Dopamine 选 `iphoneos-arm`。安装后注销或重启用户空间一次（CoreAuthUI 需重载插件）。"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "来源", "fontWeight": "semibold", "fontSize": 15, "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "原版 © [82Flex](https://github.com/82flex)；定制与维护：gan-jibamao（[源码](https://github.com/gan-jibamao/ColorSubstitute)）"}
+        {
+          "class": "DepictionLabelView",
+          "text": "ColorSubstitute",
+          "fontWeight": "semibold",
+          "fontSize": 17,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "把 **Face ID 动画**染成任意单色——基于 82Flex 原版源码的定制版，注入 CoreAuthUI，使用系统单色滤镜，**不联网、不采集任何数据**。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "功能",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "- 设置 → ColorSubstitute 面板：总开关 + HEX 颜色输入\n- **系统取色器**：色轮 / 滑杆 / 吸管选任意颜色（拖动实时生效，任何方式关闭都不丢色）\n- 默认色 `#F483D1` 樱花粉；非法 HEX 自动回退默认\n- 改动即时生效：Face ID 下次唤醒即用新色；关闭开关恢复原生彩色动画\n- 配置写入越狱隐根 Preferences，不会被 var 清理误删"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "0.4.1 更新",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "- 修复取色器 delegate 方法名拼写错误，拖动**真正实时**生效（轮询保留为兜底）\n- 接上下滑关闭回调，任何方式关闭都不丢色\n- 滤镜创建失败时安全降级，不再可能拖垮 CoreAuthUI（Face ID 进程）\n- 配置迁移改为进程内一次，去掉每次读配置的全目录扫描与删除\n- 补 `preferenceloader` / `firmware (>= 14.0)` 依赖，安装更稳"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "安装",
+          "fontWeight": "semibold",
+          "fontSize": 16,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "RootHide 设备选 `iphoneos-arm64e` 版本；rootless/Dopamine 选 `iphoneos-arm`。安装后注销或重启用户空间一次（CoreAuthUI 需重载插件）。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "来源",
+          "fontWeight": "semibold",
+          "fontSize": 15,
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "原版 © [82Flex](https://github.com/82flex)；定制与维护：gan-jibamao（[源码](https://github.com/gan-jibamao/ColorSubstitute)）"
+        }
       ]
     },
     {
       "tabname": "Changelog",
       "class": "DepictionStackView",
       "views": [
-        {"class": "DepictionLabelView", "text": "0.4.0", "fontWeight": "semibold", "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "移除预设色板；整理源码。"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "0.3.3", "fontWeight": "semibold", "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "取色器轮询保证通道（回调不触发也能选色）。"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "0.3.1", "fontWeight": "semibold", "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "修复开关打不开；设置列表新增图标。"},
-        {"class": "DepictionSpacerView"},
-        {"class": "DepictionLabelView", "text": "0.2.2", "fontWeight": "semibold", "useMargins": true, "margins": "{10,0,10,0}"},
-        {"class": "DepictionMarkdownView", "useRawFormat": true, "markdown": "修复输入颜色不保存（隐根多路径别名误删）。"}
+        {
+          "class": "DepictionLabelView",
+          "text": "0.4.1",
+          "fontWeight": "semibold",
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "修复取色器回调方法名（真正实时生效）；滤镜空值护栏；配置迁移一次化；补依赖。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "0.4.0",
+          "fontWeight": "semibold",
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "移除预设色板；整理源码。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "0.3.3",
+          "fontWeight": "semibold",
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "取色器轮询保证通道（回调不触发也能选色）。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "0.3.1",
+          "fontWeight": "semibold",
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "修复开关打不开；设置列表新增图标。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "0.2.2",
+          "fontWeight": "semibold",
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "修复输入颜色不保存（隐根多路径别名误删）。"
+        }
       ]
     }
   ]
