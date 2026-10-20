@@ -34,14 +34,14 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "- 设置 → ColorSubstitute 面板：总开关 + HEX 颜色输入\n- **系统取色器**：色轮 / 滑杆 / 吸管选任意颜色（拖动实时生效，任何方式关闭都不丢色）\n- 默认色 `#F483D1` 樱花粉；非法 HEX 自动回退默认\n- 改动即时生效：Face ID 下次唤醒即用新色；关闭开关恢复原生彩色动画\n- 配置写入越狱隐根 Preferences，不会被 var 清理误删"
+          "markdown": "- 设置 → ColorSubstitute 面板：总开关 + HEX 颜色输入\n- **系统取色器**：色轮 / 滑杆 / 吸管选任意颜色（拖动实时生效，任何方式关闭都不丢色）\n- 默认色 `#F483D1` 樱花粉；非法 HEX 自动回退默认\n- 改动在下一次 Face ID 动画生效（Face ID 唤醒即用新色）；关闭开关恢复原生彩色动画\n- 配置写入越狱隐根 Preferences，不会被 var 清理误删"
         },
         {
           "class": "DepictionSpacerView"
         },
         {
           "class": "DepictionLabelView",
-          "text": "0.4.1 更新",
+          "text": "0.4.3 更新",
           "fontWeight": "semibold",
           "fontSize": 16,
           "useMargins": true,
@@ -50,7 +50,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "- 修复取色器 delegate 方法名拼写错误，拖动**真正实时**生效（轮询保留为兜底）\n- 接上下滑关闭回调，任何方式关闭都不丢色\n- 滤镜创建失败时安全降级，不再可能拖垮 CoreAuthUI（Face ID 进程）\n- 配置迁移改为进程内一次，去掉每次读配置的全目录扫描与删除\n- 补 `preferenceloader` / `firmware (>= 14.0)` 依赖，安装更稳"
+          "markdown": "- 通知状态加入时间戳仲裁，**落盘失败也广播**：开关/颜色不再\"面板改了、Face ID 不跟\"\n- 修正隐根 `.jbroot-<UUID>` 解析（完整 UUID、最后一个 `/var/mobile`、双目录扫描），面板与插件不再各读各的配置\n- 滤镜**只增删自己那一枚**，不再覆盖或清空系统 `filters`；关闭后原生动画完整恢复\n- 取色器轮询改在呈现完成后启动；隐根解析失败不再被一次性锁死\n- 诊断日志打印**实际生效色**；文案统一为\"下一次 Face ID 动画生效\""
         },
         {
           "class": "DepictionSpacerView"
@@ -90,6 +90,21 @@
       "tabname": "Changelog",
       "class": "DepictionStackView",
       "views": [
+        {
+          "class": "DepictionLabelView",
+          "text": "0.4.3",
+          "fontWeight": "semibold",
+          "useMargins": true,
+          "margins": "{10,0,10,0}"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "通知状态时间戳仲裁（落盘失败也广播）；修正 `.jbroot-<UUID>` 解析；滤镜只增删自己那一枚，关闭后原生动画完整恢复；轮询改在呈现完成后启动；隐根解析失败可重试；诊断日志打印实际生效色。"
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
         {
           "class": "DepictionLabelView",
           "text": "0.4.1",
