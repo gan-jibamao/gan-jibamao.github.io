@@ -500,6 +500,40 @@ Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
 Name: ColorSubstitute
 
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.1
+Architecture: iphoneos-arm64e
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 400
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
+Filename: debs/com.82flex.colorsubstitute_0.4.1_iphoneos-arm64e.deb
+Size: 32418
+MD5sum: 6170ad2b20ea8bec0defba96696f32ac
+SHA1: 90b2e8f3ab4f3a7c1ffa15399e7dac7532e35bde
+SHA256: 7c409ded5103294a7a1b8d53df6b0db393a04ebc8ec10151863ed05f35f98b3a
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.1
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 400
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
+Filename: debs/com.82flex.colorsubstitute_0.4.1_iphoneos-arm64.deb
+Size: 32492
+MD5sum: cc1a8e6c42623fd77644a04535efd1e7
+SHA1: f9ba71c395a75fb6d48d79006e9047bdde350948
+SHA256: 1a8015575267687186c31734ed2199479d2feb6ebd8cf5e53dfe71f918866e29
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
 Version: 0.0.3
