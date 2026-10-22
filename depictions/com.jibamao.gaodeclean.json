@@ -18,14 +18,14 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "高德地图 UI **精简**：去掉冗余视觉干扰，并把搜索栏、天气行、连接车机、2D·3D、定位·路线胶囊**按高德原生关系归位**。\n\n纯运行时 hook（不抓网络、不改 IPA、不采集任何数据），全版本自适应 —— 按类名与几何特征判定，不依赖具体高德版本号。"
+          "markdown": "**高德地图界面精简**：把多余的视觉干扰去掉，把该在的位置摆回原样。\n\n纯本地运行 —— 不抓取网络、不修改 App 安装包、不采集任何数据。"
         },
         {
           "class": "DepictionSpacerView"
         },
         {
           "class": "DepictionLabelView",
-          "text": "0.9.20 更新",
+          "text": "主要功能",
           "fontWeight": "semibold",
           "fontSize": 16,
           "useMargins": true,
@@ -34,14 +34,24 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "**清探针清日志 + 最高级加固混淆**（功能与已验收的 0.9.19 同源，摆放逻辑零改动）。\n\n- 删掉全部诊断探针与自定义日志（正式包内 `[GaodeClean]` 计数 **0**）\n- 编译链接加固：`-fvisibility=hidden` + `-Wl,-x` 剥全部本地符号（残留 **0**）+ `-Wl,-dead_strip`\n- **441 处字面量 / 295 条唯一串全部加密存储、运行时解密** —— `strings` 再也读不到高德私有类名与 selector\n- 混淆自证：主机用同一份解码数学把 295 条全部解回明文逐条比对，**295/295 逐字节一致**"
+          "markdown": "**界面精简**\n- 去掉底栏「上拉发现」引导提示\n- 去掉上拉白雾与闪白\n- 去掉顶部高斯模糊带\n- 去掉首页白块"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "**位置归位（对表高德原生布局）**\n- 搜索栏、天气行、连接车机、2D·3D、定位·路线胶囊各归其位\n- 2D·3D 按钮回到定位·路线胶囊正上方\n- 连接车机按钮位于天气行上方，天气行与按钮左对齐"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useRawFormat": true,
+          "markdown": "**稳定不闪**\n- 切换页面、切换 2D·3D 不再跳动\n- 冷启动全程不会在屏幕中部闪出按钮"
         },
         {
           "class": "DepictionSpacerView"
         },
         {
           "class": "DepictionLabelView",
-          "text": "主要效果",
+          "text": "适配与兼容",
           "fontWeight": "semibold",
           "fontSize": 16,
           "useMargins": true,
@@ -50,7 +60,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "- 去底栏「上拉发现」引导提示，去上拉白雾 / 闪白\n- 去顶部高斯模糊带，去首页白块\n- 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊按原生位置归位\n- 切页与切 2D/3D 不再跳动；冷启动也不会在屏幕中部闪出按钮"
+          "markdown": "**全版本自适应**：按控件特征判定，不绑定具体高德版本号。\n\n只改界面显示，不影响搜索、导航、路线规划等任何原有功能。"
         },
         {
           "class": "DepictionSpacerView"
@@ -66,7 +76,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "**RootHide** 选 `iphoneos-arm64e`；**rootless / Dopamine** 选 `iphoneos-arm64`。两个架构**不可同时安装**。\n\n装完请注销桌面（`sbreload`）或重启用户空间，再打开高德。"
+          "markdown": "**RootHide** 选 `iphoneos-arm64e`；**Dopamine / rootless** 选 `iphoneos-arm64`。两个架构**不可同时安装**。\n\n装完注销桌面（`sbreload`）或重启用户空间，再打开高德。"
         },
         {
           "class": "DepictionSpacerView"
@@ -108,7 +118,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.20\n清探针清日志 + **最高级加固混淆**：全量字符串加密（295 条）、链接期剥全部本地符号、去死代码；混淆回环 295/295 自证通过。\n\n### 0.9.19\n2D/3D 按钮真身 `WINPermanentCompassView`：识别器三级重写 + 类名直钩 + 间隙 13.3。\n\n### 0.9.18\n车机钮独立间隙 50pt（不再与胶囊共用）；天气行回「钮下左对齐」；2D/3D 摆位首修。\n\n### 0.9.17\n⊙/↰「连接车机」间隙 8pt → 20pt：整组上移 12.4pt，恢复与 2D/3D 的原生间隙。\n\n### 0.9.16\n冷启动「右下按钮屏幕中部裸奔」根治：真凶是 App 原生 `WINLiteWidgetGroupView`（出生即藏 + 未定格按住 + 定格后同刻放行）。真机 0 帧。\n\n### 0.9.8\n源码审计修复 15 项（崩溃面 / 兜底失效 / 热路径 / 构建链）。\n\n### 0.9.7\n200 米比例尺误关修复。\n\n更早版本见仓库 `HISTORY.md`。"
+          "markdown": "### 0.9.20\n细节打磨与稳定性优化（界面效果与 0.9.19 一致）。\n\n### 0.9.19\n2D·3D 按钮回到定位·路线胶囊正上方。\n\n### 0.9.18\n连接车机按钮移到天气行上方，天气行与按钮左对齐；2D·3D 摆位修正。\n\n### 0.9.17\n恢复定位·路线胶囊与 2D·3D 之间的原生间距，整组不再偏高。\n\n### 0.9.16\n冷启动时右下按钮不再在屏幕中部闪出。\n\n### 0.9.8\n稳定性与性能优化，长时间使用更稳。\n\n### 0.9.7\n修复 200 米比例尺被误关。"
         }
       ]
     }
