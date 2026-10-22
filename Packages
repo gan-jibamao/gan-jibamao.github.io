@@ -571,23 +571,6 @@ Name: ColorSubstitute
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
 Version: 0.0.3
-Architecture: iphoneos-arm64e
-Maintainer: be-huge
-Installed-Size: 484
-Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
-Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64e.deb
-Size: 55684
-MD5sum: ab1f86df8034120327cc605912c7b035
-SHA1: a71a39700ffc10e5ce7a85e8862d92410934dc38
-SHA256: 9517499c4907c91362c53301b78b20dcac56b2d6319112502e907910698ff463
-Section: Tweaks
-Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
-Author: be-huge
-Name: insulation(解除温控)-roothide
-
-Package: com.be-huge.insulation
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
-Version: 0.0.3
 Architecture: iphoneos-arm64
 Maintainer: be-huge
 Installed-Size: 484
@@ -601,6 +584,23 @@ Section: Tweaks
 Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
 Author: be-huge
 Name: insulation(解除温控)-rootless
+
+Package: com.be-huge.insulation
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
+Version: 0.0.3
+Architecture: iphoneos-arm64e
+Maintainer: be-huge
+Installed-Size: 484
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
+Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64e.deb
+Size: 55684
+MD5sum: ab1f86df8034120327cc605912c7b035
+SHA1: a71a39700ffc10e5ce7a85e8862d92410934dc38
+SHA256: 9517499c4907c91362c53301b78b20dcac56b2d6319112502e907910698ff463
+Section: Tweaks
+Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
+Author: be-huge
+Name: insulation(解除温控)-roothide
 
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
@@ -836,6 +836,88 @@ Description: 高德地图界面精简 · 纯本地运行
 Author: jibamao
 Name: GaodeClean 高德精简
 
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.22
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 368
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.22_iphoneos-arm64.deb
+Size: 62072
+MD5sum: 9502aaef93c48219809076874c7506b4
+SHA1: 29c1ab7eaafe07a370ebb2bd964c5e92354d6516
+SHA256: fc37fb869f75450092d0c4c6571482f8baae463cb111f97fba48a05f0eeaa93e
+Section: jibamao-Tweaks
+Description: 高德地图界面精简 · 纯本地运行
+ 把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
+ .
+ 添加源 https://gan-jibamao.github.io 后搜索 GaodeClean 即可安装（RootHide 选 arm64e，
+ Dopamine / rootless 选 arm64，两者不可同时安装）。
+ .
+ 界面精简：
+  • 去底栏「上拉发现」引导提示，去上拉白雾与闪白
+  • 去顶部高斯模糊带，去首页白块
+  • 搜索栏与底栏收窄：两侧留白更利落，两条栏同宽对齐
+ .
+ 位置归位（对表高德原生布局）：
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，各归其位
+  • 2D·3D 按钮回到定位·路线胶囊正上方
+  • 连接车机按钮位于天气行上方，天气行与按钮左对齐
+ .
+ 稳定不闪：
+  • 切页、切 2D·3D 不再跳动
+  • 冷启动全程不会在屏幕中部闪出按钮
+ .
+ 全版本自适应：按控件特征判定，不绑定具体高德版本号。
+ 只改界面显示，不影响搜索、导航、路线规划等原有功能。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.22
+Architecture: iphoneos-arm64e
+Maintainer: jibamao
+Installed-Size: 368
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.22_iphoneos-arm64e.deb
+Size: 62072
+MD5sum: 9a2c825e0bb706a578670d4a388b2c26
+SHA1: 5b4b03f301f4849f02bbae0acf11592108c52889
+SHA256: caed6c6f6ed50d397fa6e18d2e4c3096f2ae03399aee08c5b6ccb4efac55dafd
+Section: jibamao-Tweaks
+Description: 高德地图界面精简 · 纯本地运行
+ 把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
+ .
+ 添加源 https://gan-jibamao.github.io 后搜索 GaodeClean 即可安装（RootHide 选 arm64e，
+ Dopamine / rootless 选 arm64，两者不可同时安装）。
+ .
+ 界面精简：
+  • 去底栏「上拉发现」引导提示，去上拉白雾与闪白
+  • 去顶部高斯模糊带，去首页白块
+  • 搜索栏与底栏收窄：两侧留白更利落，两条栏同宽对齐
+ .
+ 位置归位（对表高德原生布局）：
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，各归其位
+  • 2D·3D 按钮回到定位·路线胶囊正上方
+  • 连接车机按钮位于天气行上方，天气行与按钮左对齐
+ .
+ 稳定不闪：
+  • 切页、切 2D·3D 不再跳动
+  • 冷启动全程不会在屏幕中部闪出按钮
+ .
+ 全版本自适应：按控件特征判定，不绑定具体高德版本号。
+ 只改界面显示，不影响搜索、导航、路线规划等原有功能。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
 Version: 1.2.3
@@ -877,25 +959,6 @@ Name: Sundiro BLE Unlock (SpringBoard)
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
 Version: 1.2.4
-Architecture: iphoneos-arm64e
-Maintainer: jibamao
-Installed-Size: 236
-Depends: mobilesubstrate
-Conflicts: com.huayuarc.spsundiro
-Replaces: com.huayuarc.spsundiro
-Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64e.deb
-Size: 23654
-MD5sum: 85efa2c80c05c3237a2089bfdba5fc8c
-SHA1: 9253e507d532574451dff624f9cc131976a5c524
-SHA256: cf798dbbb63566668dca019df3d341cd75292d40970053aae3fc60cce8305248
-Section: Tweaks
-Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
-Author: jibamao
-Name: Sundiro BLE Unlock (SpringBoard)
-
-Package: com.jibamao.spsundiro
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
-Version: 1.2.4
 Architecture: iphoneos-arm64
 Maintainer: jibamao
 Installed-Size: 236
@@ -907,6 +970,25 @@ Size: 23632
 MD5sum: 24fa48bcce266defd7a7e6049e55604c
 SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
 SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.4
+Architecture: iphoneos-arm64e
+Maintainer: jibamao
+Installed-Size: 236
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64e.deb
+Size: 23654
+MD5sum: 85efa2c80c05c3237a2089bfdba5fc8c
+SHA1: 9253e507d532574451dff624f9cc131976a5c524
+SHA256: cf798dbbb63566668dca019df3d341cd75292d40970053aae3fc60cce8305248
 Section: Tweaks
 Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
 Author: jibamao
