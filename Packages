@@ -571,23 +571,6 @@ Name: ColorSubstitute
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
 Version: 0.0.3
-Architecture: iphoneos-arm64
-Maintainer: be-huge
-Installed-Size: 484
-Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
-Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64.deb
-Size: 57810
-MD5sum: 73404d4650e3d1e099210c5216dc6717
-SHA1: 9cc54cb851309c4e448da948e0f626967d50da37
-SHA256: 48c543616e3eca34a3d90fa682969efaa9e1f39c004533f41d22c6e010033114
-Section: Tweaks
-Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
-Author: be-huge
-Name: insulation(解除温控)-rootless
-
-Package: com.be-huge.insulation
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
-Version: 0.0.3
 Architecture: iphoneos-arm64e
 Maintainer: be-huge
 Installed-Size: 484
@@ -601,6 +584,23 @@ Section: Tweaks
 Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
 Author: be-huge
 Name: insulation(解除温控)-roothide
+
+Package: com.be-huge.insulation
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
+Version: 0.0.3
+Architecture: iphoneos-arm64
+Maintainer: be-huge
+Installed-Size: 484
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
+Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64.deb
+Size: 57810
+MD5sum: 73404d4650e3d1e099210c5216dc6717
+SHA1: 9cc54cb851309c4e448da948e0f626967d50da37
+SHA256: 48c543616e3eca34a3d90fa682969efaa9e1f39c004533f41d22c6e010033114
+Section: Tweaks
+Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
+Author: be-huge
+Name: insulation(解除温控)-rootless
 
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
@@ -692,6 +692,70 @@ Description: 转转搜索筛选助手：悬浮球面板，按机型/电池/系�
 Author: hang
 Name: 转转找鸡
 
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.20
+Architecture: iphoneos-arm64e
+Maintainer: jibamao
+Installed-Size: 352
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.20_iphoneos-arm64e.deb
+Size: 60092
+MD5sum: c9c6c0a86f83c347199caf49d4c3617f
+SHA1: 83926e0c1b61f521a3314483420be2c1e26696b5
+SHA256: 138a811d60a33a67417ecabbba89bc8041f87b011286e71653a86d4180a25c82
+Section: jibamao-Tweaks
+Description: 高德地图 UI 精简 · 纯运行时 hook
+ 按原生关系归位、去冗余视觉干扰；不抓网络、不改 IPA、不采集任何数据。
+ .
+ 主要效果：
+  • 去底栏「上拉发现」引导提示、去上拉白雾/闪白
+  • 去顶部高斯模糊带、去首页白块
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，按原生位置归位
+  • 切页与切 2D/3D 不再跳动；冷启动也不会在屏幕中部闪出按钮
+ .
+ 已加固：链接期剥离全部本地符号，内部字符串一律混淆加密存储、运行时解密，
+ 无任何诊断埋点与自定义日志。
+ .
+ 全版本自适应：按类名与几何特征判定，不依赖具体高德版本号。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.20
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 352
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.20_iphoneos-arm64.deb
+Size: 60096
+MD5sum: d372e20f0d16a0c25c3a39a5319151a9
+SHA1: 0c8321c51c3d383bcfce4b6d93e63a7d9052483b
+SHA256: b4e0641070f8342ad66e8b7862bb4ea6e80f3f7f978aeebb59aeb2793d8dff34
+Section: jibamao-Tweaks
+Description: 高德地图 UI 精简 · 纯运行时 hook
+ 按原生关系归位、去冗余视觉干扰；不抓网络、不改 IPA、不采集任何数据。
+ .
+ 主要效果：
+  • 去底栏「上拉发现」引导提示、去上拉白雾/闪白
+  • 去顶部高斯模糊带、去首页白块
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，按原生位置归位
+  • 切页与切 2D/3D 不再跳动；冷启动也不会在屏幕中部闪出按钮
+ .
+ 已加固：链接期剥离全部本地符号，内部字符串一律混淆加密存储、运行时解密，
+ 无任何诊断埋点与自定义日志。
+ .
+ 全版本自适应：按类名与几何特征判定，不依赖具体高德版本号。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
 Version: 1.2.3
@@ -733,25 +797,6 @@ Name: Sundiro BLE Unlock (SpringBoard)
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
 Version: 1.2.4
-Architecture: iphoneos-arm64
-Maintainer: jibamao
-Installed-Size: 236
-Depends: mobilesubstrate
-Conflicts: com.huayuarc.spsundiro
-Replaces: com.huayuarc.spsundiro
-Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64.deb
-Size: 23632
-MD5sum: 24fa48bcce266defd7a7e6049e55604c
-SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
-SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
-Section: Tweaks
-Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
-Author: jibamao
-Name: Sundiro BLE Unlock (SpringBoard)
-
-Package: com.jibamao.spsundiro
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
-Version: 1.2.4
 Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 236
@@ -763,6 +808,25 @@ Size: 23654
 MD5sum: 85efa2c80c05c3237a2089bfdba5fc8c
 SHA1: 9253e507d532574451dff624f9cc131976a5c524
 SHA256: cf798dbbb63566668dca019df3d341cd75292d40970053aae3fc60cce8305248
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.4
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 236
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64.deb
+Size: 23632
+MD5sum: 24fa48bcce266defd7a7e6049e55604c
+SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
+SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
 Section: Tweaks
 Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
 Author: jibamao
