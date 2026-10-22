@@ -1,131 +1,131 @@
 {
-  "minVersion": "0.1",
-  "tintColor": "#1F91DC",
-  "class": "DepictionTabView",
-  "tabs": [
+ "minVersion": "0.1",
+ "tintColor": "#1F91DC",
+ "class": "DepictionTabView",
+ "tabs": [
+  {
+   "tabname": "详情",
+   "class": "DepictionStackView",
+   "views": [
     {
-      "tabname": "详情",
-      "class": "DepictionStackView",
-      "views": [
-        {
-          "class": "DepictionLabelView",
-          "text": "插件描述",
-          "fontWeight": "semibold",
-          "fontSize": 16,
-          "useMargins": true,
-          "margins": "{10,0,10,0}"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "**高德地图界面精简**：把多余的视觉干扰去掉，把该在的位置摆回原样。\n\n纯本地运行 —— 不抓取网络、不修改 App 安装包、不采集任何数据。"
-        },
-        {
-          "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionLabelView",
-          "text": "主要功能",
-          "fontWeight": "semibold",
-          "fontSize": 16,
-          "useMargins": true,
-          "margins": "{10,0,10,0}"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "**界面精简**\n- 去掉底栏「上拉发现」引导提示\n- 去掉上拉白雾与闪白\n- 去掉顶部高斯模糊带\n- 去掉首页白块\n- 搜索栏与底栏收窄：两侧留白更利落，两条栏同宽对齐"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "**位置归位（对表高德原生布局）**\n- 搜索栏、天气行、连接车机、2D·3D、定位·路线胶囊各归其位\n- 2D·3D 按钮回到定位·路线胶囊正上方\n- 连接车机按钮位于天气行上方，天气行与按钮左对齐"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "**稳定不闪**\n- 切换页面、切换 2D·3D 不再跳动\n- 冷启动全程不会在屏幕中部闪出按钮"
-        },
-        {
-          "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionLabelView",
-          "text": "适配与兼容",
-          "fontWeight": "semibold",
-          "fontSize": 16,
-          "useMargins": true,
-          "margins": "{10,0,10,0}"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "**全版本自适应**：按控件特征判定，不绑定具体高德版本号。\n\n只改界面显示，不影响搜索、导航、路线规划等任何原有功能。"
-        },
-        {
-          "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionLabelView",
-          "text": "安装说明",
-          "fontWeight": "semibold",
-          "fontSize": 16,
-          "useMargins": true,
-          "margins": "{10,0,10,0}"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "在 Sileo 中添加源 `https://gan-jibamao.github.io` → 搜索 **GaodeClean** 即可安装。\n\n**RootHide** 选 `iphoneos-arm64e`；**Dopamine / rootless** 选 `iphoneos-arm64`。两个架构**不可同时安装**。\n\n装完注销桌面（`sbreload`）或重启用户空间，再打开高德。"
-        },
-        {
-          "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "作者",
-          "text": "jibamao"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "版本",
-          "text": "0.9.25"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "架构",
-          "text": "iphoneos-arm64e / iphoneos-arm64"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "依赖",
-          "text": "mobilesubstrate"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "适用",
-          "text": "高德地图 17.x（全版本自适应）"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "源地址",
-          "text": "https://gan-jibamao.github.io"
-        },
-        {
-          "class": "DepictionSpacerView"
-        }
-      ]
+     "class": "DepictionLabelView",
+     "text": "插件描述",
+     "fontWeight": "semibold",
+     "fontSize": 16,
+     "useMargins": true,
+     "margins": "{10,0,10,0}"
     },
     {
-      "tabname": "更新日志",
-      "class": "DepictionStackView",
-      "views": [
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "### 0.9.25\n搜索栏与底栏重新等宽：修 0.9.24 搜索栏偏窄（两条栏宽度不一致）的问题。\n\n             ### 0.9.23\n底栏（首页 / 我的）也可缩窄了：修 0.9.22 只有搜索栏生效的问题，现在两条栏一起收窄。\n\n### 0.9.22\n搜索栏与底栏缩窄，两侧留白更利落，两条栏同宽对齐（其余效果不变）。\n\n### 0.9.21\n插件说明优化：补充功能分项与源地址（界面效果与 0.9.20 一致）。\n\n### 0.9.20\n细节打磨与稳定性优化（界面效果与 0.9.19 一致）。\n\n### 0.9.19\n2D·3D 按钮回到定位·路线胶囊正上方。\n\n### 0.9.18\n连接车机按钮移到天气行上方，天气行与按钮左对齐；2D·3D 摆位修正。\n\n### 0.9.17\n恢复定位·路线胶囊与 2D·3D 之间的原生间距，整组不再偏高。\n\n### 0.9.16\n冷启动时右下按钮不再在屏幕中部闪出。\n\n### 0.9.8\n稳定性与性能优化，长时间使用更稳。\n\n### 0.9.7\n修复 200 米比例尺被误关。"
-        }
-      ]
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "**高德地图界面精简**：把多余的视觉干扰去掉，把该在的位置摆回原样。\n\n纯本地运行 —— 不抓取网络、不修改 App 安装包、不采集任何数据。"
+    },
+    {
+     "class": "DepictionSpacerView"
+    },
+    {
+     "class": "DepictionLabelView",
+     "text": "主要功能",
+     "fontWeight": "semibold",
+     "fontSize": 16,
+     "useMargins": true,
+     "margins": "{10,0,10,0}"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "**界面精简**\n- 去掉底栏「上拉发现」引导提示\n- 去掉上拉白雾与闪白\n- 去掉顶部高斯模糊带\n- 去掉首页白块\n- 搜索栏与底栏收窄：两侧留白更利落，两条栏同宽对齐"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "**位置归位（对表高德原生布局）**\n- 搜索栏、天气行、连接车机、2D·3D、定位·路线胶囊各归其位\n- 2D·3D 按钮回到定位·路线胶囊正上方\n- 连接车机按钮位于天气行上方，天气行与按钮左对齐"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "**稳定不闪**\n- 切换页面、切换 2D·3D 不再跳动\n- 冷启动全程不会在屏幕中部闪出按钮"
+    },
+    {
+     "class": "DepictionSpacerView"
+    },
+    {
+     "class": "DepictionLabelView",
+     "text": "适配与兼容",
+     "fontWeight": "semibold",
+     "fontSize": 16,
+     "useMargins": true,
+     "margins": "{10,0,10,0}"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "**全版本自适应**：按控件特征判定，不绑定具体高德版本号。\n\n只改界面显示，不影响搜索、导航、路线规划等任何原有功能。"
+    },
+    {
+     "class": "DepictionSpacerView"
+    },
+    {
+     "class": "DepictionLabelView",
+     "text": "安装说明",
+     "fontWeight": "semibold",
+     "fontSize": 16,
+     "useMargins": true,
+     "margins": "{10,0,10,0}"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "在 Sileo 中添加源 `https://gan-jibamao.github.io` → 搜索 **GaodeClean** 即可安装。\n\n**RootHide** 选 `iphoneos-arm64e`；**Dopamine / rootless** 选 `iphoneos-arm64`。两个架构**不可同时安装**。\n\n装完注销桌面（`sbreload`）或重启用户空间，再打开高德。"
+    },
+    {
+     "class": "DepictionSpacerView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "作者",
+     "text": "jibamao"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "版本",
+     "text": "0.9.26"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "架构",
+     "text": "iphoneos-arm64e / iphoneos-arm64"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "依赖",
+     "text": "mobilesubstrate"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "适用",
+     "text": "高德地图 17.x（全版本自适应）"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "源地址",
+     "text": "https://gan-jibamao.github.io"
+    },
+    {
+     "class": "DepictionSpacerView"
     }
-  ]
+   ]
+  },
+  {
+   "tabname": "更新日志",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "useRawFormat": true,
+     "markdown": "### 0.9.26\n搜索栏与底栏缩窄重新生效并保持等宽：修 0.9.25 搜索栏未缩窄（与原生同宽）、底栏偏窄的问题，两条栏现在都稳定停在 345pt。\n\n### 0.9.25\n搜索栏与底栏重新等宽：修 0.9.24 搜索栏偏窄（两条栏宽度不一致）的问题。\n\n### 0.9.23\n底栏（首页 / 我的）也可缩窄了：修 0.9.22 只有搜索栏生效的问题，现在两条栏一起收窄。\n\n### 0.9.22\n搜索栏与底栏缩窄，两侧留白更利落，两条栏同宽对齐（其余效果不变）。\n\n### 0.9.21\n插件说明优化：补充功能分项与源地址（界面效果与 0.9.20 一致）。\n\n### 0.9.20\n细节打磨与稳定性优化（界面效果与 0.9.19 一致）。\n\n### 0.9.19\n2D·3D 按钮回到定位·路线胶囊正上方。\n\n### 0.9.18\n连接车机按钮移到天气行上方，天气行与按钮左对齐；2D·3D 摆位修正。\n\n### 0.9.17\n恢复定位·路线胶囊与 2D·3D 之间的原生间距，整组不再偏高。\n\n### 0.9.16\n冷启动时右下按钮不再在屏幕中部闪出。\n\n### 0.9.8\n稳定性与性能优化，长时间使用更稳。\n\n### 0.9.7\n修复 200 米比例尺被误关。"
+    }
+   ]
+  }
+ ]
 }
