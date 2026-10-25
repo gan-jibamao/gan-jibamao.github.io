@@ -469,23 +469,6 @@ Name: Nspeed
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
 Version: 0.4.0
-Architecture: iphoneos-arm64
-Maintainer: 82Flex <82flex@gmail.com>
-Installed-Size: 400
-Depends: mobilesubstrate
-Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64.deb
-Size: 31282
-MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
-SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
-SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
-Section: Tweaks
-Description: Face ID animation colorizer, with a settings panel.
-Author: 82Flex <82flex@gmail.com>
-Name: ColorSubstitute
-
-Package: com.82flex.colorsubstitute
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.0
 Architecture: iphoneos-arm64e
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 400
@@ -502,16 +485,16 @@ Name: ColorSubstitute
 
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.1
-Architecture: iphoneos-arm64e
+Version: 0.4.0
+Architecture: iphoneos-arm64
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 400
-Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
-Filename: debs/com.82flex.colorsubstitute_0.4.1_iphoneos-arm64e.deb
-Size: 32418
-MD5sum: 6170ad2b20ea8bec0defba96696f32ac
-SHA1: 90b2e8f3ab4f3a7c1ffa15399e7dac7532e35bde
-SHA256: 7c409ded5103294a7a1b8d53df6b0db393a04ebc8ec10151863ed05f35f98b3a
+Depends: mobilesubstrate
+Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64.deb
+Size: 31282
+MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
+SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
+SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -529,6 +512,23 @@ Size: 32492
 MD5sum: cc1a8e6c42623fd77644a04535efd1e7
 SHA1: f9ba71c395a75fb6d48d79006e9047bdde350948
 SHA256: 1a8015575267687186c31734ed2199479d2feb6ebd8cf5e53dfe71f918866e29
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.1
+Architecture: iphoneos-arm64e
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 400
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
+Filename: debs/com.82flex.colorsubstitute_0.4.1_iphoneos-arm64e.deb
+Size: 32418
+MD5sum: 6170ad2b20ea8bec0defba96696f32ac
+SHA1: 90b2e8f3ab4f3a7c1ffa15399e7dac7532e35bde
+SHA256: 7c409ded5103294a7a1b8d53df6b0db393a04ebc8ec10151863ed05f35f98b3a
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -839,15 +839,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.29
-Architecture: iphoneos-arm64e
+Architecture: iphoneos-arm64
 Maintainer: jibamao
 Installed-Size: 368
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.29_iphoneos-arm64e.deb
-Size: 64488
-MD5sum: e93e1889da79f3aa9056777699cfeb6f
-SHA1: 9962451eb18dfd5d5e1710a8d25b3dc63cba4e83
-SHA256: 4f3c34bb787e62a8bf355757d50687cb23de62e3c9ad123b903b77b09b384c69
+Filename: debs/com.jibamao.gaodeclean_0.9.29_iphoneos-arm64.deb
+Size: 64610
+MD5sum: 0770fba619e55bb077256a74e7ceea3b
+SHA1: ea9a34289e821876af906745eb64817e050417f9
+SHA256: dc757128a90b0a7720ede2f50670b19107faa7bb3939273e5debba504bf40ea7
 Section: jibamao-Tweaks
 Description: 高德地图界面精简 · 纯本地运行
  把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
@@ -879,15 +879,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.29
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 368
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.29_iphoneos-arm64.deb
-Size: 64610
-MD5sum: 0770fba619e55bb077256a74e7ceea3b
-SHA1: ea9a34289e821876af906745eb64817e050417f9
-SHA256: dc757128a90b0a7720ede2f50670b19107faa7bb3939273e5debba504bf40ea7
+Filename: debs/com.jibamao.gaodeclean_0.9.29_iphoneos-arm64e.deb
+Size: 64488
+MD5sum: e93e1889da79f3aa9056777699cfeb6f
+SHA1: 9962451eb18dfd5d5e1710a8d25b3dc63cba4e83
+SHA256: 4f3c34bb787e62a8bf355757d50687cb23de62e3c9ad123b903b77b09b384c69
 Section: jibamao-Tweaks
 Description: 高德地图界面精简 · 纯本地运行
  把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
