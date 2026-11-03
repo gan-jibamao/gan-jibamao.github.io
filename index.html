@@ -83,6 +83,17 @@
     font-size: 11px; padding: 5px 12px; border-radius: 20px;
     background: rgba(255,255,255,0.08); border: 1px solid var(--border); color: #cbd5e1;
   }
+  .counter {
+    display: inline-flex; align-items: stretch; height: 26px;
+    border-radius: 20px; overflow: hidden; vertical-align: middle;
+    font-size: 11px; font-weight: 600; line-height: 26px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  }
+  .counter-label { background: #555; color: #fff; padding: 0 11px; letter-spacing: 0.02em; }
+  .counter-num {
+    background: #1283c3; color: #fff; padding: 0 11px; min-width: 30px;
+    text-align: center; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
   .hint { font-size: 12px; color: #64748b; margin-top: 18px; line-height: 1.6; }
 </style>
 </head>
@@ -97,7 +108,9 @@
         <span class="badge" id="pkgcount">— 插件</span>
         <span class="badge">已签名</span>
         <span class="badge">自动同步</span>
-        <img src="https://visitor-badge.laobi.icu/badge?page_id=gan-jibamao.repo" alt="访问量" style="height:23px;border-radius:12px;">
+        <span class="counter" title="访问量">
+          <span class="counter-label">访问量</span><span class="counter-num" id="hitnum">—</span>
+        </span>
       </div>
 
       <a class="btn sileo" href="sileo://source/https://gan-jibamao.github.io/">添加到 Sileo</a>
@@ -113,6 +126,12 @@
     fetch('status.json').then(function(r){return r.json();}).then(function(d){
       if (d.package_count) document.getElementById('pkgcount').textContent = d.package_count + ' 插件';
     }).catch(function(){});
+
+    // 访问量：abacus 计数服务，每次加载自增 1
+    fetch('https://abacus.jasoncameron.dev/hit/gan-jibamao/repo')
+      .then(function(r){ return r.json(); })
+      .then(function(d){ if (d && d.value != null) document.getElementById('hitnum').textContent = d.value; })
+      .catch(function(){ document.getElementById('hitnum').textContent = '—'; });
     function copyURL() {
       var url = 'https://gan-jibamao.github.io/';
       var btn = document.querySelector('.copy');
