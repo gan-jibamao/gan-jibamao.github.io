@@ -1,0 +1,96 @@
+/* 做爱源 · 共享主题变量
+   亮色为默认，跟随 iOS 系统外观自动切深色。
+   三个页面（index / status / packages）共用此文件。 */
+
+:root{
+  /* 表面 */
+  --bg:#f2f3f8;
+  --panel:rgba(255,255,255,.85);
+  --panel-2:rgba(255,255,255,.95);
+  --line:rgba(20,26,50,.09);
+  --line-2:rgba(20,26,50,.16);
+  /* 文字 */
+  --txt:#171a26;
+  --dim:#525b73;
+  --dim-2:#6b7387;
+  --ok:#059669;
+  /* 环境光 */
+  --a1:#a5b4fc; --a1o:.42;
+  --a2:#d8b4fe; --a2o:.30;
+  --a3:#7dd3fc; --a3o:.28;
+  /* 头部 */
+  --ring-grad:linear-gradient(145deg,rgba(99,102,241,.55),rgba(168,85,247,.4),rgba(52,211,153,.3));
+  --ring-shadow:0 14px 32px rgba(99,102,241,.2), inset 0 0 0 1px rgba(255,255,255,.7);
+  --logo-bg:#fff;
+  /* 统计 */
+  --stat-shadow:0 2px 8px rgba(20,26,50,.04);
+  --stat-blue:#4f46e5; --stat-violet:#7c3aed; --stat-green:#047857;
+  /* 添加源卡 */
+  --card-grad:linear-gradient(160deg,rgba(99,102,241,.08),rgba(139,92,246,.05) 55%,rgba(255,255,255,.7));
+  --card-border:rgba(99,102,241,.2);
+  --card-shadow:0 12px 32px rgba(99,102,241,.08);
+  --addlabel:#6d5fd0;
+  --ghost-txt:#3d4358;
+  /* 搜索 */
+  --focus-bg:#fff;
+  --focus-shadow:0 0 0 3px rgba(99,102,241,.1);
+  --clear-bg:rgba(20,26,50,.1);
+  /* 分类 */
+  --chip-on-bg:#171a26; --chip-on-txt:#fff;
+  /* 卡片 */
+  --pkg-shadow:0 2px 6px rgba(20,26,50,.03);
+  --ico-shadow:0 3px 8px rgba(20,26,50,.15), inset 0 1px 0 rgba(255,255,255,.2);
+  --ver-fg:#5b4fd6; --ver-bg:rgba(99,102,241,.08); --ver-bd:rgba(99,102,241,.22);
+  --tag-bg:rgba(20,26,50,.025);
+  --arm-fg:#0369a1;  --arm-bg:rgba(3,105,161,.06);   --arm-bd:rgba(3,105,161,.22);
+  --rl-fg:#047857;   --rl-bg:rgba(4,120,87,.06);     --rl-bd:rgba(4,120,87,.22);
+  --more-fg:#6d28d9; --more-bg:rgba(109,40,217,.06); --more-bd:rgba(109,40,217,.22);
+  --del-fg:#b91c1c;
+  /* 次级按钮 */
+  --btn2-bg:rgba(20,26,50,.055);
+  --btn2-bd:rgba(20,26,50,.16);
+  --btn2-fg:#3d4358;
+  --r:22px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#08090e;
+    --panel:rgba(255,255,255,.045);
+    --panel-2:rgba(255,255,255,.07);
+    --line:rgba(255,255,255,.09);
+    --line-2:rgba(255,255,255,.14);
+    --txt:#eef1f7;
+    --dim:#9aa2b6;
+    --dim-2:#7d8599;
+    --ok:#34d399;
+    --a1:#4f46e5; --a1o:.5;
+    --a2:#7c3aed; --a2o:.42;
+    --a3:#0ea5e9; --a3o:.28;
+    --ring-grad:linear-gradient(145deg,rgba(122,162,255,.85),rgba(168,85,247,.55),rgba(94,225,168,.35));
+    --ring-shadow:0 16px 40px rgba(99,102,241,.28), inset 0 0 0 1px rgba(255,255,255,.1);
+    --logo-bg:#0a0b10;
+    --stat-shadow:none;
+    --stat-blue:#8bb4ff; --stat-violet:#b794ff; --stat-green:#5ee1a8;
+    --card-grad:linear-gradient(160deg,rgba(99,102,241,.16),rgba(139,92,246,.08) 55%,rgba(255,255,255,.03));
+    --card-border:rgba(139,124,255,.28);
+    --card-shadow:0 18px 44px rgba(79,70,229,.16);
+    --addlabel:#b8b3e8;
+    --ghost-txt:#c9cfe0;
+    --focus-bg:rgba(255,255,255,.06);
+    --focus-shadow:none;
+    --clear-bg:rgba(255,255,255,.12);
+    --chip-on-bg:#fff; --chip-on-txt:#0b0c12;
+    --pkg-shadow:none;
+    --ico-shadow:0 4px 12px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.14);
+    --ver-fg:#a5b4fc; --ver-bg:rgba(99,102,241,.16); --ver-bd:rgba(99,102,241,.3);
+    --tag-bg:rgba(255,255,255,.02);
+    --arm-fg:#7dd3fc;  --arm-bg:rgba(56,189,248,.08);   --arm-bd:rgba(56,189,248,.24);
+    --rl-fg:#6ee7b7;   --rl-bg:rgba(52,211,153,.08);    --rl-bd:rgba(52,211,153,.24);
+    --more-fg:#c4b5fd; --more-bg:rgba(167,139,250,.08); --more-bd:rgba(167,139,250,.26);
+    --del-fg:#fca5a5;
+    --btn2-bg:rgba(255,255,255,.10);
+    --btn2-bd:rgba(255,255,255,.18);
+    --btn2-fg:#dbe1ee;
+  }
+}
