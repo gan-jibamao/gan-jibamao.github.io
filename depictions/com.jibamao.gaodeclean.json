@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.112"
+          "text": "0.9.113"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.112\n插件内描述精简为「高德无设置，无广告。」；去掉首页顶部运营横幅广告（天猫双11 等），开屏广告与底栏引导同步清理。"
+          "markdown": "### 0.9.113\n正式构建版（GitHub Actions · theos）。去掉首页顶部运营横幅广告，开屏广告与底栏引导同步清理；插件纯运行时生效，无设置页。"
         }
       ]
     }
