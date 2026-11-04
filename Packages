@@ -734,6 +734,90 @@ Name: GaodeClean 高德精简
 
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.111
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 221
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.111_iphoneos-arm64.deb
+Size: 90932
+MD5sum: 7f84820e68833a4d02a1cb8bcfb7d057
+SHA1: 29d528781da4e017eeb45bcc06e7d4797252485a
+SHA256: 8ed43c4bf1d64eddaf57e8025125ba966de04804cfe5fc054fea4c8671aa6b53
+Section: jibamao-Tweaks
+Description: 高德无设置，无广告。
+ 无设置：装完即用，没有设置页、没有开关、没有偏好项要调。
+ 无广告：开屏广告、首页顶部运营横幅、底栏「上拉发现」引导，全部移除。
+ .
+ 添加源 https://gan-jibamao.github.io 后搜索 GaodeClean 即可安�
+ （RootHide 选 arm64e，Dopamine / rootless 选 arm64，两者不可同时安装）。
+ .
+ 界面精简：
+  • 去顶部高斯模糊带，去首页白块
+  • 去上拉白雾与闪白
+ .
+ 位置归位（对表高德原生布局）：
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，各归其位
+  • 2D·3D 按钮回到定位·路线胶囊正上方
+  • 连接车机按钮位于天气行上方，天气行与按钮左对齐
+ .
+ 稳定不闪：
+  • 切页、切 2D·3D 不再跳动
+  • 冷启动全程不会在屏幕中部闪出按钮
+ .
+ 全版本自适应：按控件特征判定，不绑定具体高德版本号。
+ 纯本地运行：不抓网络、不改安装包、不采集任何数据。
+ 只改界面显示，不影响搜索、导航、路线规划等原有功能。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.111
+Architecture: iphoneos-arm64e
+Maintainer: jibamao
+Installed-Size: 222
+Depends: firmware (>= 15.0), mobilesubstrate, oldabi
+Filename: debs/com.jibamao.gaodeclean_0.9.111_iphoneos-arm64e-roothide.deb
+Size: 89800
+MD5sum: 13c6d9070903df2704526a8358ead807
+SHA1: 984c7cfd4d8bbf37d685815a8c5e2c2f9b4d5e75
+SHA256: 874292119e3fe27eefb64d2ade01aa07c0efcbb40e626616e3feef2cb13f348d
+Section: jibamao-Tweaks
+Description: 高德无设置，无广告。
+ 无设置：装完即用，没有设置页、没有开关、没有偏好项要调。
+ 无广告：开屏广告、首页顶部运营横幅、底栏「上拉发现」引导，全部移除。
+ .
+ 添加源 https://gan-jibamao.github.io 后搜索 GaodeClean 即可安�
+ （RootHide 选 arm64e，Dopamine / rootless 选 arm64，两者不可同时安装）。
+ .
+ 界面精简：
+  • 去顶部高斯模糊带，去首页白块
+  • 去上拉白雾与闪白
+ .
+ 位置归位（对表高德原生布局）：
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，各归其位
+  • 2D·3D 按钮回到定位·路线胶囊正上方
+  • 连接车机按钮位于天气行上方，天气行与按钮左对齐
+ .
+ 稳定不闪：
+  • 切页、切 2D·3D 不再跳动
+  • 冷启动全程不会在屏幕中部闪出按钮
+ .
+ 全版本自适应：按控件特征判定，不绑定具体高德版本号。
+ 纯本地运行：不抓网络、不改安装包、不采集任何数据。
+ 只改界面显示，不影响搜索、导航、路线规划等原有功能。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.20
 Architecture: iphoneos-arm64
 Maintainer: jibamao
