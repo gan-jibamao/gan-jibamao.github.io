@@ -42,48 +42,61 @@ page = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f3f4f9">
 <title>插件列表 · 做爱源</title>
+<link rel="stylesheet" href="theme.css?v=1">
 <style>
-  * {{ margin:0; padding:0; box-sizing:border-box; }}
+  * {{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }}
   body {{
-    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;
-    background:linear-gradient(135deg,#0f172a,#1e1b4b); color:#e2e8f0;
+    font-family:-apple-system,"SF Pro Text","PingFang SC","Helvetica Neue",sans-serif;
+    background:var(--bg); color:var(--txt);
     min-height:100vh; padding:24px 16px 60px;
   }}
   .wrap {{ max-width:560px; margin:0 auto; }}
   header {{ text-align:center; padding:20px 0 8px; }}
-  header h1 {{ font-size:24px; }}
-  header p {{ color:#94a3b8; font-size:13px; margin-top:6px; }}
+  header h1 {{ font-size:24px; font-weight:800; letter-spacing:.01em; }}
+  header p {{ color:var(--dim-2); font-size:13px; margin-top:6px; }}
   .search {{
     width:100%; padding:14px 18px; margin:16px 0 20px;
-    border-radius:14px; border:1px solid rgba(255,255,255,0.12);
-    background:rgba(255,255,255,0.06); color:#e2e8f0; font-size:16px; outline:none;
+    border-radius:14px; border:1px solid var(--line);
+    background:var(--panel); color:var(--txt); font-size:16px; outline:none;
+    -webkit-appearance:none; appearance:none;
+    transition:border-color .18s, box-shadow .18s;
   }}
-  .search::placeholder {{ color:#64748b; }}
+  .search:focus {{ border-color:rgba(99,102,241,.45); box-shadow:var(--focus-shadow); }}
+  .search::-webkit-search-decoration,
+  .search::-webkit-search-cancel-button {{ -webkit-appearance:none; display:none; }}
+  .search::placeholder {{ color:var(--dim-2); }}
   .item {{
-    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+    background:var(--panel); border:1px solid var(--line);
     border-radius:18px; padding:18px; margin-bottom:12px;
+    box-shadow:var(--pkg-shadow);
   }}
-  .head {{ display:flex; justify-content:space-between; align-items:center; }}
+  .head {{ display:flex; justify-content:space-between; align-items:center; gap:10px; }}
   .pname {{ font-size:17px; font-weight:700; }}
   .pver {{
-    font-size:12px; color:#a5b4fc; background:rgba(99,102,241,0.15);
-    padding:3px 10px; border-radius:20px;
+    font-size:12px; color:var(--ver-fg); background:var(--ver-bg);
+    border:1px solid var(--ver-bd); padding:3px 10px; border-radius:20px;
+    white-space:nowrap; flex:none;
   }}
-  .pauthor {{ color:#94a3b8; font-size:12px; margin:4px 0 8px; }}
-  .pdesc {{ color:#cbd5e1; font-size:14px; line-height:1.5; }}
+  .pauthor {{ color:var(--dim-2); font-size:12px; margin:4px 0 8px; }}
+  .pdesc {{ color:var(--dim); font-size:14px; line-height:1.5; }}
   .btns {{ display:flex; gap:10px; margin-top:14px; }}
   .btn {{
     flex:1; text-align:center; padding:10px 0; border-radius:12px;
-    font-size:14px; font-weight:600; text-decoration:none; color:#fff;
+    font-size:14px; font-weight:600; text-decoration:none;
   }}
-  .btn.dl {{ background:#334155; }}
-  .btn.sileo {{ background:linear-gradient(90deg,#3b82f6,#8b5cf6); }}
+  .btn.dl {{ background:var(--btn2-bg); border:1px solid var(--btn2-bd); color:var(--btn2-fg); }}
+  .btn.sileo {{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed 55%,#9333ea);
+    color:#fff; box-shadow:0 6px 16px rgba(99,102,241,.28);
+  }}
   .back {{
-    display:inline-block; margin-top:20px; color:#94a3b8; font-size:14px; text-decoration:none;
+    display:inline-block; margin-top:20px; color:var(--dim);
+    font-size:14px; text-decoration:none;
   }}
-  .count {{ color:#64748b; font-size:12px; text-align:center; margin-bottom:12px; }}
+  .count {{ color:var(--dim-2); font-size:12px; text-align:center; margin-bottom:12px; }}
 </style>
 </head>
 <body>
