@@ -32,9 +32,23 @@ else:
     initnil_names = set()
 
 # 2) scanpackages 生成全部条目
+# 0.9.111 修：CI 上 sync_initnil.py 会从镜像拉新包，其中个别 deb 的 control
+# 是 GBK/GB18030 编码（老国区包常见）。原来 text=True 强制按 utf-8 解码，
+# 遇到这种包直接 UnicodeDecodeError 崩在 subprocess 里。
+# 改成 capture 字节流后逐级降级解码：utf-8 → utf-8(替换) → GB18030(替换)。
+# 用替换模式而不是报错 —— 索引里出现几个「」远好过整个源构建失败。
 out = subprocess.run(['dpkg-scanpackages', '-m', 'debs'],
-                     capture_output=True, text=True)
-all_entries = [p for p in out.stdout.split('\n\n') if p.strip()]
+                     capture_output=True)
+text = None
+for enc in ('utf-8', 'gb18030'):
+    try:
+        text = out.stdout.decode(enc)
+        break
+    except UnicodeDecodeError:
+        continue
+if text is None:
+    text = out.stdout.decode('utf-8', errors='replace')
+all_entries = [p for p in text.split('\n\n') if p.strip()]
 
 # 3) 本地条目 = 不在镜像清单里的
 local_entries = []
