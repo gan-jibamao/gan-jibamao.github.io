@@ -3,154 +3,500 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>做爱 · Sileo 源</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0a0b10">
+<title>做爱 · 源</title>
 <style>
-  :root {
-    --bg1: #0f172a;
-    --bg2: #1e1b4b;
-    --bg3: #0f172a;
-    --card: rgba(255,255,255,0.07);
-    --border: rgba(255,255,255,0.12);
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
-    background-size: 300% 300%;
-    animation: bgmove 18s ease infinite;
-    padding: 24px;
-    color: var(--text);
-  }
-  @keyframes bgmove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  .wrap { width: 100%; max-width: 400px; }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 28px;
-    padding: 40px 28px 30px;
-    text-align: center;
-    backdrop-filter: blur(18px) saturate(140%);
-    box-shadow: 0 24px 70px rgba(0,0,0,0.5);
-  }
-  .icon {
-    width: 92px; height: 92px;
-    border-radius: 22px;
-    object-fit: cover;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.15), 0 12px 30px rgba(0,0,0,0.4);
-  }
-  h1 { font-size: 27px; margin: 18px 0 6px; font-weight: 700; letter-spacing: 0.5px; }
-  .url {
-    font-size: 13px; color: var(--muted);
-    word-break: break-all; margin-bottom: 26px;
-  }
-  .btn {
-    display: block; width: 100%;
-    padding: 16px 0; border-radius: 16px;
-    font-size: 17px; font-weight: 600;
-    text-decoration: none; margin-bottom: 12px;
-    transition: transform .08s ease, opacity .2s ease, box-shadow .2s ease;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer; border: none; color: #fff;
-  }
-  .btn:active { transform: scale(0.97); }
-  .btn.sileo {
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    box-shadow: 0 10px 30px rgba(99,102,241,0.4);
-  }
-  .btn.sileo:hover { box-shadow: 0 14px 40px rgba(99,102,241,0.55); }
-  .btn.browse {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.2);
-    color: #a5b4fc;
-  }
-  .btn.copy {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: #cbd5e1;
-  }
-  .badge-row { display: flex; gap: 8px; justify-content: center; margin-bottom: 22px; flex-wrap: wrap; }
-  .badge {
-    font-size: 11px; padding: 5px 12px; border-radius: 20px;
-    background: rgba(255,255,255,0.08); border: 1px solid var(--border); color: #cbd5e1;
-  }
-  .counter {
-    display: inline-flex; align-items: stretch; height: 26px;
-    border-radius: 20px; overflow: hidden; vertical-align: middle;
-    font-size: 11px; font-weight: 600; line-height: 26px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-  }
-  .counter-label { background: #555; color: #fff; padding: 0 11px; letter-spacing: 0.02em; }
-  .counter-num {
-    background: #1283c3; color: #fff; padding: 0 11px; min-width: 30px;
-    text-align: center; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  }
-  .hint { font-size: 12px; color: #64748b; margin-top: 18px; line-height: 1.6; }
+:root{
+  --bg:#08090e;
+  --panel:rgba(255,255,255,.045);
+  --panel-2:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.14);
+  --txt:#eef1f7;
+  --dim:#8b93a7;
+  --dim-2:#5f6779;
+  --c1:#6366f1;
+  --c2:#8b5cf6;
+  --ok:#34d399;
+  --r:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{
+  font:15px/1.55 -apple-system,"SF Pro Text","PingFang SC","Helvetica Neue",sans-serif;
+  background:var(--bg); color:var(--txt); min-height:100vh;
+  padding:env(safe-area-inset-top) 0 calc(40px + env(safe-area-inset-bottom));
+  overflow-x:hidden;
+}
+
+/* ---------- 环境光 ---------- */
+.aura{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.aura i{position:absolute;display:block;border-radius:50%;filter:blur(70px);opacity:.5}
+.aura .a1{width:420px;height:420px;top:-160px;left:-120px;
+  background:radial-gradient(circle,#4f46e5,transparent 68%);animation:drift1 22s ease-in-out infinite}
+.aura .a2{width:380px;height:380px;top:120px;right:-180px;
+  background:radial-gradient(circle,#7c3aed,transparent 68%);animation:drift2 26s ease-in-out infinite}
+.aura .a3{width:340px;height:340px;bottom:-120px;left:10%;
+  background:radial-gradient(circle,#0ea5e9,transparent 70%);opacity:.28;animation:drift1 30s ease-in-out infinite reverse}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-26px) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-28px,34px) scale(1.08)}}
+
+.wrap{position:relative;z-index:1;width:100%;max-width:440px;margin:0 auto;padding:0 18px}
+
+/* ---------- 头部 ---------- */
+header{padding:34px 0 0;text-align:center}
+.logo-ring{
+  width:100px;height:100px;margin:0 auto;border-radius:26px;padding:2px;
+  background:linear-gradient(145deg,rgba(122,162,255,.85),rgba(168,85,247,.55),rgba(94,225,168,.35));
+  box-shadow:0 16px 40px rgba(99,102,241,.28), inset 0 0 0 1px rgba(255,255,255,.1);
+}
+.logo-ring img{
+  width:100%;height:100%;border-radius:24px;object-fit:cover;display:block;
+  background:#0a0b10;
+}
+h1{font-size:30px;font-weight:800;letter-spacing:.01em;margin:18px 0 4px;
+  background:linear-gradient(180deg,#fff,#b9c2d6);-webkit-background-clip:text;
+  background-clip:text;color:transparent}
+.sub{font-size:13px;color:var(--dim);letter-spacing:.02em}
+.url{
+  margin:14px auto 0;display:inline-flex;align-items:center;gap:7px;
+  font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--dim);
+  background:var(--panel);border:1px solid var(--line);border-radius:99px;
+  padding:8px 14px;max-width:100%;
+}
+.url span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ---------- 统计 ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:22px 0 0}
+.stat{
+  background:var(--panel);border:1px solid var(--line);border-radius:16px;
+  padding:13px 8px 12px;text-align:center;backdrop-filter:blur(10px);
+}
+.stat b{display:block;font-size:20px;font-weight:750;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.stat small{display:block;font-size:10.5px;color:var(--dim-2);margin-top:3px;letter-spacing:.06em}
+.stat.blue b{color:#8bb4ff}
+.stat.violet b{color:#b794ff}
+.stat.green b{color:#5ee1a8}
+
+/* ---------- 添加源 ---------- */
+.addcard{
+  margin:18px 0 0;padding:16px;border-radius:var(--r);
+  background:linear-gradient(160deg,rgba(99,102,241,.16),rgba(139,92,246,.08) 55%,rgba(255,255,255,.03));
+  border:1px solid rgba(139,124,255,.28);
+  box-shadow:0 18px 44px rgba(79,70,229,.16);
+}
+.addlabel{font-size:11px;color:#b8b3e8;letter-spacing:.14em;font-weight:600;margin-bottom:11px}
+.addbtn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;padding:15px;border-radius:15px;text-decoration:none;
+  font-size:16.5px;font-weight:700;color:#fff;border:none;
+  background:linear-gradient(135deg,#4f46e5,#7c3aed 55%,#9333ea);
+  box-shadow:0 10px 26px rgba(99,102,241,.4),inset 0 1px 0 rgba(255,255,255,.18);
+  transition:transform .12s,box-shadow .2s;
+}
+.addbtn:active{transform:scale(.975);box-shadow:0 6px 16px rgba(99,102,241,.36)}
+.addbtn svg{width:19px;height:19px;flex:none}
+.addrow{display:flex;gap:8px;margin-top:9px}
+.ghost{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:6px;
+  padding:11px;border-radius:13px;font-size:13.5px;font-weight:600;
+  text-decoration:none;color:#c9cfe0;background:var(--panel);
+  border:1px solid var(--line);transition:background .15s,transform .1s;
+  cursor:pointer;font-family:inherit;
+}
+.ghost:active{transform:scale(.97);background:var(--panel-2)}
+.ghost svg{width:15px;height:15px;opacity:.75}
+.copied{color:var(--ok)!important;border-color:rgba(52,211,153,.4)!important}
+
+/* ---------- 搜索 ---------- */
+.searchbox{position:relative;margin:24px 0 14px}
+.searchbox svg{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  width:16px;height:16px;color:var(--dim-2);pointer-events:none
+}
+#q{
+  width:100%;padding:13px 40px 13px 39px;border-radius:14px;
+  background:var(--panel);border:1px solid var(--line);color:var(--txt);
+  font-size:15px;font-family:inherit;outline:none;transition:border-color .18s,background .18s;
+  -webkit-appearance:none;appearance:none;
+}
+#q::-webkit-search-decoration,
+#q::-webkit-search-cancel-button,
+#q::-webkit-search-results-button,
+#q::-webkit-search-results-decoration{-webkit-appearance:none;display:none}
+#q::placeholder{color:var(--dim-2)}
+#q:focus{border-color:rgba(139,124,255,.5);background:rgba(255,255,255,.06)}
+#clear{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  width:22px;height:22px;border-radius:50%;border:none;display:none;
+  background:rgba(255,255,255,.12);color:var(--dim);font-size:13px;
+  line-height:1;cursor:pointer;font-family:inherit;
+}
+#clear.on{display:block}
+
+/* ---------- 分类 ---------- */
+.filters{display:flex;gap:7px;overflow-x:auto;padding:2px 0 12px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  -webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent 100%);
+  mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent 100%);}
+.filters::-webkit-scrollbar{display:none}
+.chip{
+  flex:none;padding:7px 14px;border-radius:99px;font-size:12.5px;font-weight:600;
+  background:var(--panel);border:1px solid var(--line);color:var(--dim);
+  cursor:pointer;font-family:inherit;white-space:nowrap;transition:all .15s;
+}
+.chip.on{background:#fff;color:#0b0c12;border-color:#fff}
+.chip .n{opacity:.5;margin-left:4px;font-size:11px}
+
+/* ---------- 包列表 ---------- */
+.listhead{display:flex;align-items:baseline;justify-content:space-between;margin:8px 0 12px}
+.listhead h2{font-size:12px;letter-spacing:.16em;color:var(--dim-2);font-weight:600}
+#count{font-size:11.5px;color:var(--dim-2);font-variant-numeric:tabular-nums}
+
+.pkg{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:14px;border-radius:18px;margin-bottom:9px;
+  background:var(--panel);border:1px solid var(--line);
+  transition:background .15s,border-color .15s,transform .1s;
+}
+.pkg:active{transform:scale(.99);background:var(--panel-2)}
+.ico{
+  width:46px;height:46px;border-radius:13px;flex:none;
+  display:grid;place-items:center;font-size:19px;font-weight:750;color:#fff;
+  letter-spacing:-.02em;box-shadow:0 4px 12px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.14);
+  position:relative;overflow:hidden;
+}
+.ico::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(255,255,255,.2),transparent 55%)}
+.pkg-main{flex:1;min-width:0}
+.pkg-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.pkg-name{font-size:15px;font-weight:680;letter-spacing:-.01em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.ver{
+  font:10.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  color:#a5b4fc;background:rgba(99,102,241,.16);
+  border:1px solid rgba(99,102,241,.3);padding:3px 6px;border-radius:6px;flex:none;
+}
+.pkg-id{font:11px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;
+  color:var(--dim-2);margin-top:4px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pkg-desc{font-size:12.5px;color:#a8b0c2;margin-top:7px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;line-height:1.45}
+.pkg-meta{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap;align-items:center}
+.tag{font-size:10.5px;color:var(--dim);border:1px solid var(--line);
+  padding:2.5px 7px;border-radius:6px;background:rgba(255,255,255,.02)}
+.tag.arm{color:#7dd3fc;border-color:rgba(56,189,248,.24);background:rgba(56,189,248,.08)}
+.tag.rootless{color:#6ee7b7;border-color:rgba(52,211,153,.24);background:rgba(52,211,153,.08)}
+.tag.more{color:#c4b5fd;border-color:rgba(167,139,250,.26);background:rgba(167,139,250,.08)}
+.size{margin-left:auto;font:10.5px/1 ui-monospace,Menlo,monospace;color:var(--dim-2)}
+
+.empty{text-align:center;padding:44px 20px;color:var(--dim-2);font-size:13.5px}
+.empty b{display:block;font-size:15px;color:var(--dim);margin-bottom:6px;font-weight:600}
+
+/* ---------- 页脚 ---------- */
+footer{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);
+  text-align:center;color:var(--dim-2);font-size:11.5px;line-height:1.8}
+footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line)}
+.dots{display:inline-flex;gap:5px;margin-top:10px}
+.dots i{width:5px;height:5px;border-radius:50%;background:var(--line-2);display:block}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <img class="icon" src="CydiaIcon.png" alt="源图标">
-      <h1>做爱</h1>
-      <p class="url">https://gan-jibamao.github.io/</p>
 
-      <div class="badge-row">
-        <span class="badge" id="pkgcount">— 插件</span>
-        <span class="badge">已签名</span>
-        <span class="badge">自动同步</span>
-        <span class="counter" title="访问量">
-          <span class="counter-label">访问量</span><span class="counter-num" id="hitnum">—</span>
-        </span>
-      </div>
+<div class="aura"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
 
-      <a class="btn sileo" href="sileo://source/https://gan-jibamao.github.io/">添加到 Sileo</a>
-      <a class="btn browse" href="packages.html">浏览全部插件</a>
-      <a class="btn browse" href="status.html">查看源状态</a>
-      <button class="btn copy" onclick="copyURL()">复制源地址</button>
+<div class="wrap">
 
-      <p class="hint">点击「添加到 Sileo」会直接唤起 Sileo 并添加本源。<br>若按钮无效，请复制源地址后手动在 Sileo 中粘贴添加。</p>
+  <header>
+    <div class="logo-ring"><img src="CydiaIcon.png" alt="源图标"></div>
+    <h1>做爱</h1>
+    <div class="sub">个人越狱源 · Tweak Repository</div>
+    <div class="url"><span>https://gan-jibamao.github.io/</span></div>
+  </header>
+
+  <div class="stats">
+    <div class="stat blue"><b id="s-pkg">—</b><small>插件</small></div>
+    <div class="stat violet"><b id="s-visit">—</b><small>访问量</small></div>
+    <div class="stat green"><b id="s-sync">—</b><small>最近同步</small></div>
+  </div>
+
+  <div class="addcard">
+    <div class="addlabel">添加到你的客户端</div>
+    <a class="addbtn" href="sileo://source/https://gan-jibamao.github.io/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      添加到 Sileo
+    </a>
+    <div class="addrow">
+      <button class="ghost" id="copybtn" onclick="copyURL()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        复制源地址
+      </button>
+      <a class="ghost" href="status.html">源状态</a>
     </div>
   </div>
 
-  <script>
-    fetch('status.json').then(function(r){return r.json();}).then(function(d){
-      if (d.package_count) document.getElementById('pkgcount').textContent = d.package_count + ' 插件';
-    }).catch(function(){});
+  <div class="searchbox">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="搜索插件名称、标识符" autocomplete="off" spellcheck="false">
+    <button id="clear" onclick="clearQ()" aria-label="清空">×</button>
+  </div>
 
-    // 访问量：abacus 计数服务，每次加载自增 1
-    fetch('https://abacus.jasoncameron.dev/hit/gan-jibamao/repo')
-      .then(function(r){ return r.json(); })
-      .then(function(d){ if (d && d.value != null) document.getElementById('hitnum').textContent = d.value; })
-      .catch(function(){ document.getElementById('hitnum').textContent = '—'; });
-    function copyURL() {
-      var url = 'https://gan-jibamao.github.io/';
-      var btn = document.querySelector('.copy');
-      function done() {
-        btn.textContent = '已复制 ✓';
-        setTimeout(function(){ btn.textContent = '复制源地址'; }, 2000);
+  <div class="filters" id="filters"></div>
+
+  <div class="listhead">
+    <h2>插件列表</h2>
+    <span id="count">—</span>
+  </div>
+
+  <div id="list"></div>
+
+  <footer>
+    <div>做爱 · iOS Tweak Repository</div>
+    <div class="dots"><i></i><i></i><i></i></div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var BASE = location.origin + location.pathname.replace(/index\.html?$/,'').replace(/\/$/,'');
+  var SRC  = BASE + '/';
+
+  /* ---------- 工具 ---------- */
+  function esc(s){
+    return String(s==null?'':s).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function hash(str){
+    var h=0;
+    for(var i=0;i<str.length;i++){ h=((h<<5)-h)+str.charCodeAt(i); h|=0; }
+    return Math.abs(h);
+  }
+  var GRADS=[
+    ['#6366f1','#8b5cf6'],['#0ea5e9','#6366f1'],['#14b8a6','#059669'],
+    ['#f59e0b','#ef4444'],['#ec4899','#8b5cf6'],['#3b82f6','#06b6d4'],
+    ['#8b5cf6','#d946ef'],['#f43f5e','#f97316'],['#10b981','#3b82f6'],
+    ['#a855f7','#6366f1'],['#eab308','#f97316'],['#06b6d4','#14b8a6']
+  ];
+  function grad(id){
+    var g=GRADS[hash(id)%GRADS.length];
+    return 'linear-gradient(140deg,'+g[0]+','+g[1]+')';
+  }
+  function initial(name,id){
+    var s=(name||id||'?').trim();
+    var m=s.match(/[\u4e00-\u9fa5]/);
+    if(m) return m[0];
+    return (s[0]||'?').toUpperCase();
+  }
+  function kb(n){
+    n=Number(n)||0;
+    if(n>=1048576) return (n/1048576).toFixed(1)+' MB';
+    return Math.max(1,Math.round(n/1024))+' KB';
+  }
+  function cleanDesc(s){
+    if(!s) return '';
+    return String(s).replace(/<br\s*\/?>/gi,' ').replace(/<[^>]+>/g,'')
+                    .replace(/\s+/g,' ').trim();
+  }
+
+  /* ---------- 解析 Packages ---------- */
+  function parse(text){
+    return text.split(/\n\s*\n/).map(function(block){
+      var o={}, last=null;
+      block.split('\n').forEach(function(line){
+        if(/^\s/.test(line)&&last){ o[last]+=' '+line.trim(); return; }
+        var i=line.indexOf(':');
+        if(i<0) return;
+        last=line.slice(0,i).trim();
+        o[last]=line.slice(i+1).trim();
+      });
+      return o;
+    }).filter(function(o){ return o.Package; });
+  }
+
+  var ALL=[], UNIQUE=[], SECTION='全部', QUERY='';
+
+  /* 按包 ID 归并：同一包的多版本/多架构只保留最新一条，
+     并把所有架构收进 archs 数组，供卡片合成标签。 */
+  function dedupe(list){
+    var map={};
+    list.forEach(function(p){
+      var id=p.Package;
+      var cur=map[id];
+      var arch=(p.Architecture||'').replace('iphoneos-','');
+      if(!cur){
+        p.archs=arch?[arch]:[];
+        p.variants=1;
+        map[id]=p;
+        return;
       }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(done, done);
-      } else {
-        var t = document.createElement('textarea');
-        t.value = url;
-        document.body.appendChild(t);
-        t.select();
-        try { document.execCommand('copy'); } catch(e) {}
-        document.body.removeChild(t);
-        done();
+      cur.variants++;
+      if(arch && cur.archs.indexOf(arch)<0) cur.archs.push(arch);
+      if(verCmp(p.Version, cur.Version)>0){
+        var archs=cur.archs, variants=cur.variants;
+        map[id]=p; p.archs=archs; p.variants=variants;
       }
+    });
+    return Object.keys(map).map(function(k){ return map[k]; });
+  }
+
+  /* dpkg 版本比较的简化版：拆成数字段与字符串段逐段比 */
+  function verCmp(a,b){
+    function tok(v){
+      return String(v||'0').replace(/\+/g,'.').split(/[.\-~:]/).filter(function(s){return s!==''});
     }
-  </script>
+    var x=tok(a), y=tok(b), n=Math.max(x.length,y.length);
+    for(var i=0;i<n;i++){
+      var m=x[i]||'0', k=y[i]||'0';
+      var mn=/^\d+$/.test(m), kn=/^\d+$/.test(k);
+      if(mn&&kn){ var d=parseInt(m,10)-parseInt(k,10); if(d) return d>0?1:-1; }
+      else if(m!==k){ return m>k?1:-1; }
+    }
+    return 0;
+  }
+
+  function render(){
+    var q=QUERY.toLowerCase();
+    var rows=UNIQUE.filter(function(p){
+      if(SECTION!=='全部' && (p.Section||'其他')!==SECTION) return false;
+      if(!q) return true;
+      return (p.Name||'').toLowerCase().indexOf(q)>-1 ||
+             p.Package.toLowerCase().indexOf(q)>-1 ||
+             (p.Description||'').toLowerCase().indexOf(q)>-1 ||
+             (p.Author||'').toLowerCase().indexOf(q)>-1;
+    });
+
+    var list=document.getElementById('list');
+    document.getElementById('count').textContent = rows.length+' / '+UNIQUE.length;
+
+    if(!rows.length){
+      list.innerHTML='<div class="empty"><b>没有匹配的插件</b>换个关键词或分类试试</div>';
+      return;
+    }
+
+    list.innerHTML = rows.map(function(p){
+      var name=p.Name||p.Package;
+      var desc=cleanDesc(p.Description);
+      var archs=p.archs||[];
+      var tags='';
+      archs.forEach(function(a){
+        var isRL=/arm64e/.test(a);
+        tags+='<span class="tag '+(isRL?'rootless':'arm')+'">'+esc(a)+(isRL?' · rootless':'')+'</span>';
+      });
+      if(p.Depends&&/mobilesubstrate/.test(p.Depends)) tags+='<span class="tag">Substrate</span>';
+      if(p.variants>1) tags+='<span class="tag more">'+p.variants+' 个版本</span>';
+
+      return '<div class="pkg">'+
+        '<div class="ico" style="background:'+grad(p.Package)+'">'+esc(initial(name,p.Package))+'</div>'+
+        '<div class="pkg-main">'+
+          '<div class="pkg-top"><span class="pkg-name">'+esc(name)+'</span>'+
+            '<span class="ver">'+esc(p.Version||'—')+'</span></div>'+
+          '<div class="pkg-id">'+esc(p.Package)+'</div>'+
+          (desc?'<div class="pkg-desc">'+esc(desc)+'</div>':'')+
+          '<div class="pkg-meta">'+tags+
+            '<span class="size">'+kb(p.Size)+'</span></div>'+
+        '</div>'+
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------- 分类 chip ---------- */
+  function buildFilters(){
+    var cnt={};
+    UNIQUE.forEach(function(p){
+      var s=p.Section||'其他';
+      cnt[s]=(cnt[s]||0)+1;
+    });
+    var names=['全部'].concat(Object.keys(cnt).sort(function(a,b){return cnt[b]-cnt[a]}));
+    document.getElementById('filters').innerHTML = names.map(function(n){
+      var c=n==='全部'?UNIQUE.length:cnt[n];
+      return '<button class="chip'+(n===SECTION?' on':'')+'" data-s="'+esc(n)+'">'+
+             esc(n)+'<span class="n">'+c+'</span></button>';
+    }).join('');
+    Array.prototype.forEach.call(document.querySelectorAll('.chip'),function(el){
+      el.onclick=function(){
+        SECTION=el.getAttribute('data-s');
+        buildFilters(); render();
+      };
+    });
+  }
+
+  /* ---------- 搜索 ---------- */
+  var qEl=document.getElementById('q'), cEl=document.getElementById('clear');
+  qEl.addEventListener('input',function(){
+    QUERY=qEl.value.trim();
+    cEl.className=QUERY?'on':'';
+    render();
+  });
+  window.clearQ=function(){
+    qEl.value=''; QUERY=''; cEl.className=''; render(); qEl.focus();
+  };
+
+  /* ---------- 复制 ---------- */
+  window.copyURL=function(){
+    var btn=document.getElementById('copybtn');
+    function done(){
+      btn.classList.add('copied');
+      btn.textContent='已复制 ✓';
+      setTimeout(function(){
+        btn.classList.remove('copied');
+        btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>复制源地址';
+      },1800);
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(SRC).then(done,done);
+    }else{
+      var t=document.createElement('textarea');
+      t.value=SRC; document.body.appendChild(t); t.select();
+      try{document.execCommand('copy')}catch(e){}
+      document.body.removeChild(t); done();
+    }
+  };
+
+  /* ---------- 数据加载 ---------- */
+  fetch('./Packages',{cache:'no-cache'})
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+    .then(function(t){
+      ALL=parse(t).sort(function(a,b){
+        return (a.Section||'').localeCompare(b.Section||'') ||
+               (a.Name||a.Package).localeCompare(b.Name||b.Package);
+      });
+      UNIQUE=dedupe(ALL).sort(function(a,b){
+        return (a.Section||'').localeCompare(b.Section||'') ||
+               (a.Name||a.Package).localeCompare(b.Name||b.Package);
+      });
+      document.getElementById('s-pkg').textContent=UNIQUE.length;
+      buildFilters(); render();
+    })
+    .catch(function(e){
+      document.getElementById('list').innerHTML=
+        '<div class="empty"><b>数据加载失败</b>'+esc(e.message)+'</div>';
+    });
+
+  fetch('status.json',{cache:'no-cache'})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d&&d.last_sync){
+        var t=new Date(d.last_sync);
+        // 用 UTC 日期，与「最近同步」标注保持一致，不随访问者时区漂移
+        var mm=('0'+(t.getUTCMonth()+1)).slice(-2), dd=('0'+t.getUTCDate()).slice(-2);
+        document.getElementById('s-sync').textContent=mm+'/'+dd;
+      }
+    })
+    .catch(function(){});
+
+  fetch('https://abacus.jasoncameron.dev/hit/gan-jibamao/repo')
+    .then(function(r){ return r.json(); })
+    .then(function(d){ if(d&&d.value!=null) document.getElementById('s-visit').textContent=d.value; })
+    .catch(function(){ document.getElementById('s-visit').textContent='—'; });
+
+})();
+</script>
 </body>
 </html>
