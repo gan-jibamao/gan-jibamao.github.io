@@ -18,7 +18,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "**高德地图界面精简**：把多余的视觉干扰去掉，把该在的位置摆回原样。\n\n纯本地运行 —— 不抓取网络、不修改 App 安装包、不采集任何数据。"
+          "markdown": "**高德无设置，无广告。**\n\n无设置 —— 装完即用，没有设置页、没有开关、没有偏好项要调。\n\n无广告 —— 开屏广告、首页顶部运营横幅、底栏「上拉发现」引导，全部移除。\n\n纯本地运行 —— 不抓取网络、不修改 App 安装包、不采集任何数据。"
         },
         {
           "class": "DepictionSpacerView"
@@ -34,7 +34,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "**界面精简**\n- 去掉底栏「上拉发现」引导提示\n- 去掉上拉白雾与闪白\n- 去掉顶部高斯模糊带\n- 去掉首页白块"
+          "markdown": "**界面精简**\n- 去掉开屏广告与首页顶部运营横幅广告\n- 去掉底栏「上拉发现」引导提示\n- 去掉上拉白雾与闪白\n- 去掉顶部高斯模糊带\n- 去掉首页白块"
         },
         {
           "class": "DepictionMarkdownView",
