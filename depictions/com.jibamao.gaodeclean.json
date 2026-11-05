@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.116"
+          "text": "0.9.117"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.116\n车机钮与 ⊙/↰ 放行判据改为「自身已钉位」，不再等搜索栏定型。"
+          "markdown": "### 0.9.117\n车机钮与 ⊙/↰ 已就位后拒绝被 App 隐藏（探针实证 NMMoveContentView 冷启动搬层）。"
         }
       ]
     }
