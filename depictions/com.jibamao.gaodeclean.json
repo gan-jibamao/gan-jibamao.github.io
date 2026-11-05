@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.119"
+          "text": "0.9.120"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.119\n广告判据取文本覆盖 AJX 自绘；关闭控件新增几何判据。"
+          "markdown": "### 0.9.120\n⊙/↰ 胶囊「发现即钉位」+ 几何兜底，出现时间 2.50s → 目标 1.0s。"
         }
       ]
     }
