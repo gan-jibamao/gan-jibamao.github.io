@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.114"
+          "text": "0.9.115"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.114\n修复冷启动右上胶囊「+」号闪烁（被 2D/3D 摆位逻辑误抓搬走）。"
+          "markdown": "### 0.9.115\n车机钮与 ⊙/↰ 胶囊提前出现：发现即钉位，不再等搜索栏定型。"
         }
       ]
     }
