@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.121"
+          "text": "0.9.122"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.121\n⊙/↰ 胶囊与车机钮**同拍出现**（约 0.97s）。解开四道 SearchBarSettled 锁：几何兜底自锁、脱窗识别、早退门、外壳按住。"
+          "markdown": "### 0.9.122\n胶囊残差 1.40s → 0.35s → 同拍。补上「外壳未打 AlignedKey」这个 0.35 秒的直接断点，并修掉锚点首次锁 fallback 导致的半秒滞后。"
         }
       ]
     }
