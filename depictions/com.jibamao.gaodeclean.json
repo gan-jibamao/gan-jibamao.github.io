@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.118"
+          "text": "0.9.119"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.118\n胶囊拦截类名修正（WINAJXCombinedWidgetView）；顶部广告新增「后缀角标」判据。"
+          "markdown": "### 0.9.119\n广告判据取文本覆盖 AJX 自绘；关闭控件新增几何判据。"
         }
       ]
     }
