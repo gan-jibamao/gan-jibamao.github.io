@@ -469,23 +469,6 @@ Name: Nspeed
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
 Version: 0.4.0
-Architecture: iphoneos-arm64e
-Maintainer: 82Flex <82flex@gmail.com>
-Installed-Size: 400
-Depends: mobilesubstrate
-Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64e.deb
-Size: 31218
-MD5sum: ae1d3573fabb1b5537338f889400c414
-SHA1: 624ed11468486fd732631861a7cf40bee2d396af
-SHA256: 7bcbcc111df0f4e07d2f5a4c08147cdc181bd02e1ac88bbfa57ed0f28f76be60
-Section: Tweaks
-Description: Face ID animation colorizer, with a settings panel.
-Author: 82Flex <82flex@gmail.com>
-Name: ColorSubstitute
-
-Package: com.82flex.colorsubstitute
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.0
 Architecture: iphoneos-arm64
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 400
@@ -495,6 +478,23 @@ Size: 31282
 MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
 SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
 SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.0
+Architecture: iphoneos-arm64e
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 400
+Depends: mobilesubstrate
+Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64e.deb
+Size: 31218
+MD5sum: ae1d3573fabb1b5537338f889400c414
+SHA1: 624ed11468486fd732631861a7cf40bee2d396af
+SHA256: 7bcbcc111df0f4e07d2f5a4c08147cdc181bd02e1ac88bbfa57ed0f28f76be60
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -735,15 +735,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.113
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 436
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.113_iphoneos-arm64.deb
-Size: 81774
-MD5sum: 6cac710027b7d10ab8d56bd3798705a3
-SHA1: 08ac73cb2255d1e30d00b56407217a04aeeccd09
-SHA256: 953fa75997cec963240f601f6336af4719f672836c86e7efd4f2e462e94a5343
+Filename: debs/com.jibamao.gaodeclean_0.9.113_iphoneos-arm64e.deb
+Size: 81566
+MD5sum: 244c67b932653fe98eb2a2f06db97d89
+SHA1: c623234a30a0c1fde382deed874e3609de113340
+SHA256: 64567d28acdae5fc8746aa3537ff80c7db78de04ee4d0c76a3730153bc9e793b
 Section: jibamao-Tweaks
 Description: 高德无设置，无广告。
  .
@@ -755,15 +755,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.113
-Architecture: iphoneos-arm64e
+Architecture: iphoneos-arm64
 Maintainer: jibamao
 Installed-Size: 436
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.113_iphoneos-arm64e.deb
-Size: 81566
-MD5sum: 244c67b932653fe98eb2a2f06db97d89
-SHA1: c623234a30a0c1fde382deed874e3609de113340
-SHA256: 64567d28acdae5fc8746aa3537ff80c7db78de04ee4d0c76a3730153bc9e793b
+Filename: debs/com.jibamao.gaodeclean_0.9.113_iphoneos-arm64.deb
+Size: 81774
+MD5sum: 6cac710027b7d10ab8d56bd3798705a3
+SHA1: 08ac73cb2255d1e30d00b56407217a04aeeccd09
+SHA256: 953fa75997cec963240f601f6336af4719f672836c86e7efd4f2e462e94a5343
 Section: jibamao-Tweaks
 Description: 高德无设置，无广告。
  .
@@ -855,15 +855,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.116
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 436
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.116_iphoneos-arm64.deb
-Size: 81606
-MD5sum: a39f628312c2acdc3bf71bc3b42d5ebd
-SHA1: 800f0f4bf855927be53f3be31f4f8cb0051c5bba
-SHA256: af4663fd85a8b545f3fa86b41182bd40796476cb5cc7781d46beea1500e116ef
+Filename: debs/com.jibamao.gaodeclean_0.9.116_iphoneos-arm64e.deb
+Size: 81466
+MD5sum: 9a27fb6f14cf0c828c0c62b8c80c4eb9
+SHA1: cee95122b1508e9e9433cfe09546f311a8ee1620
+SHA256: 9043c29eee4a50c3180d5a868f55899ca185dd423c80a7fbbdadf3cd4664ed4d
 Section: jibamao-Tweaks
 Description: 高德无设置，无广告。
  .
@@ -875,15 +875,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.116
-Architecture: iphoneos-arm64e
+Architecture: iphoneos-arm64
 Maintainer: jibamao
 Installed-Size: 436
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.116_iphoneos-arm64e.deb
-Size: 81466
-MD5sum: 9a27fb6f14cf0c828c0c62b8c80c4eb9
-SHA1: cee95122b1508e9e9433cfe09546f311a8ee1620
-SHA256: 9043c29eee4a50c3180d5a868f55899ca185dd423c80a7fbbdadf3cd4664ed4d
+Filename: debs/com.jibamao.gaodeclean_0.9.116_iphoneos-arm64.deb
+Size: 81606
+MD5sum: a39f628312c2acdc3bf71bc3b42d5ebd
+SHA1: 800f0f4bf855927be53f3be31f4f8cb0051c5bba
+SHA256: af4663fd85a8b545f3fa86b41182bd40796476cb5cc7781d46beea1500e116ef
 Section: jibamao-Tweaks
 Description: 高德无设置，无广告。
  .
@@ -934,33 +934,41 @@ Name: GaodeClean 高德精简
 
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
-Version: 0.9.20
+Version: 0.9.117
 Architecture: iphoneos-arm64e
 Maintainer: jibamao
-Installed-Size: 352
+Installed-Size: 436
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.20_iphoneos-arm64e.deb
-Size: 60092
-MD5sum: c9c6c0a86f83c347199caf49d4c3617f
-SHA1: 83926e0c1b61f521a3314483420be2c1e26696b5
-SHA256: 138a811d60a33a67417ecabbba89bc8041f87b011286e71653a86d4180a25c82
+Filename: debs/com.jibamao.gaodeclean_0.9.117_iphoneos-arm64e.deb
+Size: 81958
+MD5sum: dd37fbcfb8d55aabe1815935683ffab2
+SHA1: 9e316d28b91ea17f441eaa9ca84a5f218d22d328
+SHA256: 5526586a2b03a7c472405883c8e0300b6fcf74914766317dd4e4841d6ff638f5
 Section: jibamao-Tweaks
-Description: 高德地图 UI 精简 · 纯运行时 hook
- 按原生关系归位、去冗余视觉干扰；不抓网络、不改 IPA、不采集任何数据。
+Description: 高德无设置，无广告。
  .
- 主要效果：
-  • 去底栏「上拉发现」引导提示、去上拉白雾/闪白
-  • 去顶部高斯模糊带、去首页白块
-  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，按原生位置归位
-  • 切页与切 2D/3D 不再跳动；冷启动也不会在屏幕中部闪出按钮
+ Sileo 添加源 https://gan-jibamao.github.io，搜 GaodeClean 安装。
+ 装完注销（sbreload）或重启用户空间，再开高德。
+Author: jibamao
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.117
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 436
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.117_iphoneos-arm64.deb
+Size: 82040
+MD5sum: 0654233fa5ce02515720eac0b21aa515
+SHA1: 31bdb980b4bd6a257118b8268a54f215e87d8075
+SHA256: e0586ca31a6af2153bebaa5b70538a0924dd3e5b5937d0a4a7cf08be44458db4
+Section: jibamao-Tweaks
+Description: 高德无设置，无广告。
  .
- 已加固：链接期剥离全部本地符号，内部字符串一律混淆加密存储、运行时解密，
- 无任何诊断埋点与自定义日志。
- .
- 全版本自适应：按类名与几何特征判定，不依赖具体高德版本号。
- 装后请注销（sbreload）或重启用户空间再打开高德。
- .
- 常用说明与更新日志见仓库 Release 页面。
+ Sileo 添加源 https://gan-jibamao.github.io，搜 GaodeClean 安装。
+ 装完注销（sbreload）或重启用户空间，再开高德。
 Author: jibamao
 Name: GaodeClean 高德精简
 
@@ -998,38 +1006,30 @@ Name: GaodeClean 高德精简
 
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
-Version: 0.9.21
+Version: 0.9.20
 Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 352
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.21_iphoneos-arm64e.deb
-Size: 60204
-MD5sum: d0436dbbdc217f31e2af5e0b673af2db
-SHA1: 57a083b3925e214f1c8b884b03276237c1a63c56
-SHA256: 69723c373c34a28a44b8f13b10a927fe7599aa1683ef9c885548850e9be27646
+Filename: debs/com.jibamao.gaodeclean_0.9.20_iphoneos-arm64e.deb
+Size: 60092
+MD5sum: c9c6c0a86f83c347199caf49d4c3617f
+SHA1: 83926e0c1b61f521a3314483420be2c1e26696b5
+SHA256: 138a811d60a33a67417ecabbba89bc8041f87b011286e71653a86d4180a25c82
 Section: jibamao-Tweaks
-Description: 高德地图界面精简 · 纯本地运行
- 把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
+Description: 高德地图 UI 精简 · 纯运行时 hook
+ 按原生关系归位、去冗余视觉干扰；不抓网络、不改 IPA、不采集任何数据。
  .
- 添加源 https://gan-jibamao.github.io 后搜索 GaodeClean 即可安装（RootHide 选 arm64e，
- Dopamine / rootless 选 arm64，两者不可同时安装）。
+ 主要效果：
+  • 去底栏「上拉发现」引导提示、去上拉白雾/闪白
+  • 去顶部高斯模糊带、去首页白块
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，按原生位置归位
+  • 切页与切 2D/3D 不再跳动；冷启动也不会在屏幕中部闪出按钮
  .
- 界面精简：
-  • 去底栏「上拉发现」引导提示，去上拉白雾与闪白
-  • 去顶部高斯模糊带，去首页白块
+ 已加固：链接期剥离全部本地符号，内部字符串一律混淆加密存储、运行时解密，
+ 无任何诊断埋点与自定义日志。
  .
- 位置归位（对表高德原生布局）：
-  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，各归其位
-  • 2D·3D 按钮回到定位·路线胶囊正上方
-  • 连接车机按钮位于天气行上方，天气行与按钮左对齐
- .
- 稳定不闪：
-  • 切页、切 2D·3D 不再跳动
-  • 冷启动全程不会在屏幕中部闪出按钮
- .
- 全版本自适应：按控件特征判定，不绑定具体高德版本号。
- 只改界面显示，不影响搜索、导航、路线规划等原有功能。
+ 全版本自适应：按类名与几何特征判定，不依赖具体高德版本号。
  装后请注销（sbreload）或重启用户空间再打开高德。
  .
  常用说明与更新日志见仓库 Release 页面。
@@ -1078,16 +1078,16 @@ Name: GaodeClean 高德精简
 
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
-Version: 0.9.29
-Architecture: iphoneos-arm64
+Version: 0.9.21
+Architecture: iphoneos-arm64e
 Maintainer: jibamao
-Installed-Size: 368
+Installed-Size: 352
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.29_iphoneos-arm64.deb
-Size: 64610
-MD5sum: 0770fba619e55bb077256a74e7ceea3b
-SHA1: ea9a34289e821876af906745eb64817e050417f9
-SHA256: dc757128a90b0a7720ede2f50670b19107faa7bb3939273e5debba504bf40ea7
+Filename: debs/com.jibamao.gaodeclean_0.9.21_iphoneos-arm64e.deb
+Size: 60204
+MD5sum: d0436dbbdc217f31e2af5e0b673af2db
+SHA1: 57a083b3925e214f1c8b884b03276237c1a63c56
+SHA256: 69723c373c34a28a44b8f13b10a927fe7599aa1683ef9c885548850e9be27646
 Section: jibamao-Tweaks
 Description: 高德地图界面精简 · 纯本地运行
  把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
@@ -1158,16 +1158,16 @@ Name: GaodeClean 高德精简
 
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
-Version: 0.9.98
+Version: 0.9.29
 Architecture: iphoneos-arm64
 Maintainer: jibamao
-Installed-Size: 404
+Installed-Size: 368
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.98_iphoneos-arm64.deb
-Size: 76062
-MD5sum: 1327a8fb18978e0ff70b061437338f0a
-SHA1: 1f81210cdbecd8ea7bc2feb70c6073f3286156ff
-SHA256: c017bc91e7956056e4e7f451b14aed74db55fc4c38c4d8268c51972b9f5027a5
+Filename: debs/com.jibamao.gaodeclean_0.9.29_iphoneos-arm64.deb
+Size: 64610
+MD5sum: 0770fba619e55bb077256a74e7ceea3b
+SHA1: ea9a34289e821876af906745eb64817e050417f9
+SHA256: dc757128a90b0a7720ede2f50670b19107faa7bb3939273e5debba504bf40ea7
 Section: jibamao-Tweaks
 Description: 高德地图界面精简 · 纯本地运行
  把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
@@ -1208,6 +1208,46 @@ Size: 76040
 MD5sum: 7cf4934c1f766266c6c7a7ee2784ba37
 SHA1: 6a192789bc9922282619bbf194c7920ae30af4e4
 SHA256: cf699478711c0f8fb880dd681c866a4ad7d9ec2fdde01b23894fab135fd44a82
+Section: jibamao-Tweaks
+Description: 高德地图界面精简 · 纯本地运行
+ 把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
+ .
+ 添加源 https://gan-jibamao.github.io 后搜索 GaodeClean 即可安装（RootHide 选 arm64e，
+ Dopamine / rootless 选 arm64，两者不可同时安装）。
+ .
+ 界面精简：
+  • 去底栏「上拉发现」引导提示，去上拉白雾与闪白
+  • 去顶部高斯模糊带，去首页白块
+ .
+ 位置归位（对表高德原生布局）：
+  • 搜索栏 / 天气行 / 连接车机 / 2D·3D / 定位·路线胶囊，各归其位
+  • 2D·3D 按钮回到定位·路线胶囊正上方
+  • 连接车机按钮位于天气行上方，天气行与按钮左对齐
+ .
+ 稳定不闪：
+  • 切页、切 2D·3D 不再跳动
+  • 冷启动全程不会在屏幕中部闪出按钮
+ .
+ 全版本自适应：按控件特征判定，不绑定具体高德版本号。
+ 只改界面显示，不影响搜索、导航、路线规划等原有功能。
+ 装后请注销（sbreload）或重启用户空间再打开高德。
+ .
+ 常用说明与更新日志见仓库 Release 页面。
+Author: jibamao
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.98
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 404
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.98_iphoneos-arm64.deb
+Size: 76062
+MD5sum: 1327a8fb18978e0ff70b061437338f0a
+SHA1: 1f81210cdbecd8ea7bc2feb70c6073f3286156ff
+SHA256: c017bc91e7956056e4e7f451b14aed74db55fc4c38c4d8268c51972b9f5027a5
 Section: jibamao-Tweaks
 Description: 高德地图界面精简 · 纯本地运行
  把多余的视觉干扰去掉，把该在的位置摆回原样；不抓网络、不改安装包、不采集任何数据。
