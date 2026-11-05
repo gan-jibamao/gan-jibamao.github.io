@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.117"
+          "text": "0.9.118"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.117\n车机钮与 ⊙/↰ 已就位后拒绝被 App 隐藏（探针实证 NMMoveContentView 冷启动搬层）。"
+          "markdown": "### 0.9.118\n胶囊拦截类名修正（WINAJXCombinedWidgetView）；顶部广告新增「后缀角标」判据。"
         }
       ]
     }
