@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.115"
+          "text": "0.9.116"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.115\n车机钮与 ⊙/↰ 胶囊提前出现：发现即钉位，不再等搜索栏定型。"
+          "markdown": "### 0.9.116\n车机钮与 ⊙/↰ 放行判据改为「自身已钉位」，不再等搜索栏定型。"
         }
       ]
     }
