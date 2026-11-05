@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.120"
+          "text": "0.9.121"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.120\n⊙/↰ 胶囊「发现即钉位」+ 几何兜底，出现时间 2.50s → 目标 1.0s。"
+          "markdown": "### 0.9.121\n⊙/↰ 胶囊与车机钮**同拍出现**（约 0.97s）。解开四道 SearchBarSettled 锁：几何兜底自锁、脱窗识别、早退门、外壳按住。"
         }
       ]
     }
