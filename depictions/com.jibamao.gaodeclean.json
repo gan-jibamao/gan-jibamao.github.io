@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.122"
+          "text": "0.9.123"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.122\n胶囊残差 1.40s → 0.35s → 同拍。补上「外壳未打 AlignedKey」这个 0.35 秒的直接断点，并修掉锚点首次锁 fallback 导致的半秒滞后。"
+          "markdown": "### 0.9.123\n右下胶囊「时快时慢」根除：修掉 tag 短路（一个不含约定关键词的 tag 会把整条几何兜底关死）。另移除顶部「请查收：【…】」这类运营通知条。"
         }
       ]
     }
