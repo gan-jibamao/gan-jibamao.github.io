@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.123"
+          "text": "0.9.124"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.123\n右下胶囊「时快时慢」根除：修掉 tag 短路（一个不含约定关键词的 tag 会把整条几何兜底关死）。另移除顶部「请查收：【…】」这类运营通知条。"
+          "markdown": "### 0.9.124\n顶部运营条彻底拦下：改为「文案直取」为主通道（不再依赖形状判据命中），并修掉「形状与内容不在同一节点」这个会导致漏网的结构性错误。"
         }
       ]
     }
