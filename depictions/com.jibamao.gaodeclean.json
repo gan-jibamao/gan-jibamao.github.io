@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.125"
+          "text": "0.9.124"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.125\n新增设置项：**在高德地图主界面双指长按**打开。八个开关全部默认关闭，按需打开。另修正顶部运营条在换文案后漏网的问题。"
+          "markdown": "### 0.9.124\n顶部运营条彻底拦下：改为「文案直取」为主通道（不再依赖形状判据命中），并修掉「形状与内容不在同一节点」这个会导致漏网的结构性错误。"
         }
       ]
     }
