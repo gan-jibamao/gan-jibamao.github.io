@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.124"
+          "text": "0.9.126"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.124\n顶部运营条彻底拦下：改为「文案直取」为主通道（不再依赖形状判据命中），并修掉「形状与内容不在同一节点」这个会导致漏网的结构性错误。"
+          "markdown": "### 0.9.126\n顶部运营条改用**纯结构判据**：不再看文案内容（运营改一次文案就漏一次），改按几何 + 右侧关闭控件判定。"
         }
       ]
     }
