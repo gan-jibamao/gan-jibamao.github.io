@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.129"
+          "text": "0.9.130"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.129\n深色模式修好了：真因是 `systemBackgroundColor` 在高德进程里被解析成**白色**（高德不跟随系统 trait）。深色下改用固定深色值。"
+          "markdown": "### 0.9.130\n深色「先变深又变白」修好了：缓存被空采样覆盖 + layer 未同步两个问题。"
         }
       ]
     }
