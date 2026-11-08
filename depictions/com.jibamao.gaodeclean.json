@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.131"
+          "text": "0.9.132"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.131\n「我的」页两个圆钮不跟随深色的问题修好了（压白遍历范围指错了树）。"
+          "markdown": "### 0.9.132\n深色判定彻底修好：采样实现从第一版起就没采到过指定区域（画进 4×4 画布时整屏被缩放，偏移量从未生效）。"
         }
       ]
     }
