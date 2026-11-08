@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.130"
+          "text": "0.9.131"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.130\n深色「先变深又变白」修好了：缓存被空采样覆盖 + layer 未同步两个问题。"
+          "markdown": "### 0.9.131\n「我的」页两个圆钮不跟随深色的问题修好了（压白遍历范围指错了树）。"
         }
       ]
     }
