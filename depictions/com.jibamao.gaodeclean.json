@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.128"
+          "text": "0.9.129"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.128\n深色模式修好了：「我的」页下半屏白块的真因是**采样区自锁**（用自己铺的白去判深色，必然判成亮色）。已改采样区并加结构性排除。"
+          "markdown": "### 0.9.129\n深色模式修好了：真因是 `systemBackgroundColor` 在高德进程里被解析成**白色**（高德不跟随系统 trait）。深色下改用固定深色值。"
         }
       ]
     }
