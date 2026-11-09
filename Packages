@@ -706,6 +706,22 @@ Description: WorkBuddy2API 网关服务端（后台常驻，不依赖 App）
 Author: gan-jibamao
 Name: wb2api daemon
 
+Package: com.gan.wb2api
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.gan.wb2api.json
+Version: 2026.11.9-daemon-arm64e-18
+Architecture: iphoneos-arm64e
+Maintainer: gan-jibamao
+Depends: firmware (>= 15.0)
+Filename: debs/com.gan.wb2api_2026.11.9-daemon-arm64e-18_iphoneos-arm64e.deb
+Size: 5224990
+MD5sum: b6064bf3b7e96915f819d13ab9ba1374
+SHA1: 4eea2c38519205932db5e11c6487945bba443040
+SHA256: 132bbd40d1680456454506239092fa5c2a023b17cbef00293e2e155263b15c92
+Section: Networking
+Description: WorkBuddy2API 网关服务端（后台常驻，不依赖 App）
+Author: gan-jibamao
+Name: wb2api daemon
+
 Package: com.hang.zzzj
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.hang.zzzj.json
 Version: 0.0.1-8+debug
