@@ -321,7 +321,9 @@ footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--lin
   var ALL=[], UNIQUE=[], SECTION='全部', QUERY='';
 
   /* 按包 ID 归并：同一包的多版本/多架构只保留最新一条，
-     并把所有架构收进 archs 数组，供卡片合成标签。 */
+     并把所有架构收进 archs、所有不同版本号收进 vers，供卡片合成标签。
+     注意 vers 记的是「不同版本号」，不是 stanza 数 —— 一个版本两个架构
+     只算 1 版，否则「6 版」实际只有 3 个版本。 */
   function dedupe(list){
     var map={};
     list.forEach(function(p){
@@ -329,16 +331,16 @@ footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--lin
       var cur=map[id];
       var arch=(p.Architecture||'').replace('iphoneos-','');
       if(!cur){
-        p.archs=arch?[arch]:[];
-        p.variants=1;
+        p.archs = arch?[arch]:[];
+        p.vers = [p.Version];
         map[id]=p;
         return;
       }
-      cur.variants++;
       if(arch && cur.archs.indexOf(arch)<0) cur.archs.push(arch);
+      if(cur.vers.indexOf(p.Version)<0) cur.vers.push(p.Version);
       if(verCmp(p.Version, cur.Version)>0){
-        var archs=cur.archs, variants=cur.variants;
-        map[id]=p; p.archs=archs; p.variants=variants;
+        var archs=cur.archs, vers=cur.vers;
+        map[id]=p; p.archs=archs; p.vers=vers;
       }
     });
     return Object.keys(map).map(function(k){ return map[k]; });
@@ -390,7 +392,8 @@ footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--lin
       if(p.Depends&&/preferenceloader/.test(p.Depends)) tags+='<span class="tag">偏好设置</span>';
 
       var right=kb(p.Size);
-      if(p.variants>1) right='<span class="more">'+p.variants+' 版</span> '+right;
+      var nver = (p.vers||[]).length;
+      if(nver>1) right='<span class="more">'+nver+' 版</span> '+right;
 
       return '<a class="pkg" href="sileo://package/'+encodeURIComponent(p.Package)+'">'+
         '<div class="ico" style="background:'+grad(p.Package)+'">'+esc(initial(name,p.Package))+'</div>'+

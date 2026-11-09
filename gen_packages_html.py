@@ -26,8 +26,9 @@ def ver_key(v):
 
 
 def dedupe(rows):
-    """同一包的多版本 / 多架构只保留最新一条，架构合并。"""
-    best, archs, variants = {}, {}, {}
+    """同一包的多版本 / 多架构只保留最新一条，架构合并。
+    versions 记不同版本号，不是 stanza 数（一版两架构只算 1 版）。"""
+    best, archs, versions = {}, {}, {}
     for r in rows:
         pid = r['package']
         if not pid:
@@ -36,16 +37,16 @@ def dedupe(rows):
         if pid not in best:
             best[pid] = r
             archs[pid] = [arch] if arch else []
-            variants[pid] = 1
+            versions[pid] = {r['version']}
             continue
-        variants[pid] += 1
+        versions[pid].add(r['version'])
         if arch and arch not in archs[pid]:
             archs[pid].append(arch)
         if ver_key(r['version']) > ver_key(best[pid]['version']):
             best[pid] = r
     for pid, r in best.items():
         r['archs'] = archs[pid]
-        r['variants'] = variants[pid]
+        r['versions'] = versions[pid]
     return list(best.values())
 
 
@@ -59,8 +60,8 @@ for p in pkgs:
     fn = html.escape(p['filename']); pkg = html.escape(p['package'])
     key = html.escape((p['name'] + ' ' + p['package'] + ' ' + p['desc']).lower())
     meta = ' · '.join(p['archs']) if p.get('archs') else ''
-    if p.get('variants', 1) > 1:
-        meta += f" · {p['variants']} 个版本"
+    if len(p.get('versions', [])) > 1:
+        meta += f" · {len(p['versions'])} 个版本"
     items.append(f'''
     <div class="item" data-search="{key}">
       <div class="head"><span class="pname">{name}</span><span class="pver">v{ver}</span></div>
