@@ -34,6 +34,7 @@ GitHub Actions 每 6 小时自动：
 |---|---|
 | `debs/` | 所有 .deb 包（镜像 + 本地） |
 | `Packages*` / `Release*` | 源索引与签名（自动生成） |
+| `theme.css` | **三页共用的主题变量**（亮色默认 + 跟随系统深色） |
 | `depictions/` | 原生详情页 JSON + 头图（`manual.txt` 手工清单，列出的包不自动覆盖） |
 | `mirror/initnil.Packages` | initnil 源的包清单快照 |
 | `.github/workflows/sync.yml` | 自动同步工作流 |
@@ -41,3 +42,42 @@ GitHub Actions 每 6 小时自动：
 | `fetch_depictions.py` | 抓取详情页 |
 | `build_packages.py` / `build_repo.sh` | 生成索引 + Release + 签名 |
 | `gen_packages_html.py` / `gen_status.py` | 生成网页 |
+
+## 网页主题
+
+三个页面共用 `theme.css`，**不要在页面里写死颜色**：
+
+```css
+:root{ /* 52 个亮色变量 */ }
+@media (prefers-color-scheme: dark){ :root{ /* 51 个深色变量 */ } }
+```
+
+改配色只改 `theme.css` 一处，三页同步生效。
+
+**改完必须把版本戳加一**（三个文件 + 生成器模板）：
+
+```bash
+sed -i 's/theme.css?v=2/theme.css?v=3/' index.html status.html gen_packages_html.py
+python3 gen_packages_html.py
+```
+
+否则 GitHub Pages 的 CDN 缓存 600 秒，用户看到的还是旧样式。
+
+### 页面结构
+
+| 页面 | 是否手写 | 说明 |
+|---|---|---|
+| `index.html` | 手写 | 落地页。内联 `dedupe()` 按包 ID 归并，55+ stanza → 35 项 |
+| `status.html` | 手写 | 同步历史 |
+| `packages.html` | **生成** | 由 `gen_packages_html.py` 产出，每 6 小时被 sync.yml 重写，**改产物无效，必须改生成器** |
+
+### 关键设计决策
+
+**按包 ID 去重**：`Packages` 里同一包的多版本 × 多架构会平铺成多条（如
+`com.jibamao.gaodeclean` 曾占 49 条）。网页两个列表都做了归并，只显示最新版，
+架构合并显示，附「N 个版本」徽记。版本比较用 dpkg 语义（`ver_key()`），
+已与 `dpkg --compare-versions` 交叉验证。
+
+> 注意：去重只作用于网页展示。`Packages` 索引本身仍保留全部版本，
+> 客户端（Sileo）里仍会看到多版本。要裁剪索引需改 `build_repo.sh`。
+

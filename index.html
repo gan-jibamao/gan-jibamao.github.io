@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#f3f4f9">
 <title>做爱 · 源</title>
-<link rel="stylesheet" href="theme.css?v=1">
+<link rel="stylesheet" href="theme.css?v=2">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{-webkit-text-size-adjust:100%}
@@ -150,12 +150,14 @@ h1{font-size:30px;font-weight:800;letter-spacing:.01em;margin:18px 0 4px;
   transition:background .15s,border-color .15s,transform .1s;
 }
 .pkg:active{transform:scale(.99);background:var(--panel-2)}
+/* 对比度实测：opacity .45 时亮色仅 1.76:1、深色 1.95:1，低于
+   非文本 UI 的 3:1 门槛。.85 时亮色 3.28、深色 4.16，刚好达标且不抢戏。 */
 .chev{
   width:14px;height:14px;flex:none;align-self:center;
-  color:var(--dim-2);opacity:.45;margin-left:-8px;
+  color:var(--dim-2);opacity:.85;margin-left:-8px;
   transition:opacity .15s,transform .15s;
 }
-.pkg:active .chev{opacity:.9;transform:translateX(2px)}
+.pkg:active .chev{opacity:1;transform:translateX(2px)}
 .ico{
   width:46px;height:46px;border-radius:13px;flex:none;
   display:grid;place-items:center;font-size:19px;font-weight:750;color:#fff;
