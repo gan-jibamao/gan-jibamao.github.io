@@ -674,6 +674,22 @@ Tag: supports::roothide
 Author: doimty
 Name: ProMotion 120Hz
 
+Package: com.gan.wb2api
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.gan.wb2api.json
+Version: 2026.11.9-daemon-arm64e-16
+Architecture: iphoneos-arm64e
+Maintainer: gan-jibamao
+Depends: firmware (>= 15.0)
+Filename: debs/com.gan.wb2api_2026.11.9-daemon-arm64e-16_iphoneos-arm64e.deb
+Size: 5221788
+MD5sum: 4b7cb3feb88d5b52068a5d4e903915dc
+SHA1: 219e763679c510a2d7d6ea443c86787bdcd816dc
+SHA256: 5544f160a18a1999b03643712da276da0b0f6d1e52af5debd6ebec0746266597
+Section: Networking
+Description: WorkBuddy2API 网关服务端（后台常驻，不依赖 App）
+Author: gan-jibamao
+Name: wb2api daemon
+
 Package: com.hang.zzzj
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.hang.zzzj.json
 Version: 0.0.1-8+debug
