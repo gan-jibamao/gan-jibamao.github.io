@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.134"
+          "text": "0.9.135"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.134\n源码再清理 880 行（累计 -1309 行 / -14.7%），删掉过时探针子系统。二进制与上一版完全一致，功能零变化。"
+          "markdown": "### 0.9.135\n文案整理：README 重写、Release 说明去版本化、包描述改为能力清单。功能与上一版一致。"
         }
       ]
     }
