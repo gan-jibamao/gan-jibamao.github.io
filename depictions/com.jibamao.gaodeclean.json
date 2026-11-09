@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.132"
+          "text": "0.9.133"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.132\n深色判定彻底修好：采样实现从第一版起就没采到过指定区域（画进 4×4 画布时整屏被缩放，偏移量从未生效）。"
+          "markdown": "### 0.9.133\n源码清理：删掉 2D 钮死代码链（Cached2D 从不赋值）与 P19 探针段。功能零变化。"
         }
       ]
     }
