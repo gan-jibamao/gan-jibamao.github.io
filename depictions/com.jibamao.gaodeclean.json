@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "0.9.133"
+          "text": "0.9.134"
         },
         {
           "class": "DepictionTableTextView",
@@ -71,7 +71,7 @@
         {
           "class": "DepictionMarkdownView",
           "useRawFormat": true,
-          "markdown": "### 0.9.133\n源码清理：删掉 2D 钮死代码链（Cached2D 从不赋值）与 P19 探针段。功能零变化。"
+          "markdown": "### 0.9.134\n源码再清理 880 行（累计 -1309 行 / -14.7%），删掉过时探针子系统。二进制与上一版完全一致，功能零变化。"
         }
       ]
     }
