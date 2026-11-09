@@ -146,10 +146,16 @@ h1{font-size:30px;font-weight:800;letter-spacing:.01em;margin:18px 0 4px;
   display:flex;gap:13px;align-items:flex-start;
   padding:14px;border-radius:18px;margin-bottom:9px;
   background:var(--panel);border:1px solid var(--line);
-  box-shadow:var(--pkg-shadow);
+  box-shadow:var(--pkg-shadow);text-decoration:none;color:inherit;
   transition:background .15s,border-color .15s,transform .1s;
 }
 .pkg:active{transform:scale(.99);background:var(--panel-2)}
+.chev{
+  width:14px;height:14px;flex:none;align-self:center;
+  color:var(--dim-2);opacity:.45;margin-left:-8px;
+  transition:opacity .15s,transform .15s;
+}
+.pkg:active .chev{opacity:.9;transform:translateX(2px)}
 .ico{
   width:46px;height:46px;border-radius:13px;flex:none;
   display:grid;place-items:center;font-size:19px;font-weight:750;color:#fff;
@@ -377,14 +383,14 @@ footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--lin
       var tags='';
       archs.forEach(function(a){
         var isRL=/arm64e/.test(a);
-        tags+='<span class="tag '+(isRL?'rootless':'arm')+'">'+esc(a)+(isRL?' · RL':'')+'</span>';
+        tags+='<span class="tag '+(isRL?'rootless':'arm')+'">'+esc(a)+'</span>';
       });
       if(p.Depends&&/preferenceloader/.test(p.Depends)) tags+='<span class="tag">偏好设置</span>';
 
       var right=kb(p.Size);
       if(p.variants>1) right='<span class="more">'+p.variants+' 版</span> '+right;
 
-      return '<div class="pkg">'+
+      return '<a class="pkg" href="sileo://package/'+encodeURIComponent(p.Package)+'">'+
         '<div class="ico" style="background:'+grad(p.Package)+'">'+esc(initial(name,p.Package))+'</div>'+
         '<div class="pkg-main">'+
           '<div class="pkg-top"><span class="pkg-name">'+esc(name)+'</span>'+
@@ -394,7 +400,8 @@ footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--lin
           '<div class="pkg-meta">'+tags+
             '<span class="size">'+right+'</span></div>'+
         '</div>'+
-      '</div>';
+        '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg>'+
+      '</a>';
     }).join('');
   }
 

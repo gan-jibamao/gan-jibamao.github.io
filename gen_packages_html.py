@@ -15,10 +15,41 @@ def parse(path):
             'package': f('Package'), 'name': f('Name') or f('Package'),
             'version': f('Version'), 'author': f('Author') or f('Maintainer'),
             'desc': f('Description'), 'filename': f('Filename'), 'section': f('Section'),
+            'arch': f('Architecture'),
         })
     return out
 
-pkgs = parse('Packages')
+def ver_key(v):
+    """dpkg 版本比较键：数字段按数值、字母段按字典序，逐段比较。"""
+    parts = [s for s in re.split(r'[.\-~:]', str(v or '0').replace('+', '.')) if s]
+    return [(0, int(s), '') if s.isdigit() else (1, 0, s) for s in parts]
+
+
+def dedupe(rows):
+    """同一包的多版本 / 多架构只保留最新一条，架构合并。"""
+    best, archs, variants = {}, {}, {}
+    for r in rows:
+        pid = r['package']
+        if not pid:
+            continue
+        arch = r['arch'].replace('iphoneos-', '')
+        if pid not in best:
+            best[pid] = r
+            archs[pid] = [arch] if arch else []
+            variants[pid] = 1
+            continue
+        variants[pid] += 1
+        if arch and arch not in archs[pid]:
+            archs[pid].append(arch)
+        if ver_key(r['version']) > ver_key(best[pid]['version']):
+            best[pid] = r
+    for pid, r in best.items():
+        r['archs'] = archs[pid]
+        r['variants'] = variants[pid]
+    return list(best.values())
+
+
+pkgs = dedupe(parse('Packages'))
 pkgs.sort(key=lambda x: x['name'].lower())
 
 items = []
@@ -27,11 +58,15 @@ for p in pkgs:
     author = html.escape(p['author']); desc = html.escape(p['desc'])
     fn = html.escape(p['filename']); pkg = html.escape(p['package'])
     key = html.escape((p['name'] + ' ' + p['package'] + ' ' + p['desc']).lower())
+    meta = ' · '.join(p['archs']) if p.get('archs') else ''
+    if p.get('variants', 1) > 1:
+        meta += f" · {p['variants']} 个版本"
     items.append(f'''
     <div class="item" data-search="{key}">
       <div class="head"><span class="pname">{name}</span><span class="pver">v{ver}</span></div>
       <div class="pauthor">{author}</div>
       <div class="pdesc">{desc}</div>
+      <div class="pmeta">{meta}</div>
       <div class="btns">
         <a class="btn dl" href="{BASE}/{fn}">下载 deb</a>
         <a class="btn sileo" href="sileo://package/{pkg}">在 Sileo 打开</a>
@@ -82,6 +117,8 @@ page = f'''<!DOCTYPE html>
   }}
   .pauthor {{ color:var(--dim-2); font-size:12px; margin:4px 0 8px; }}
   .pdesc {{ color:var(--dim); font-size:14px; line-height:1.5; }}
+  .pmeta {{ color:var(--dim-2); font-size:11px; margin-top:8px;
+           font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }}
   .btns {{ display:flex; gap:10px; margin-top:14px; }}
   .btn {{
     flex:1; text-align:center; padding:10px 0; border-radius:12px;
