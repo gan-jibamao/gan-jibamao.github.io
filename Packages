@@ -571,23 +571,6 @@ Name: ColorSubstitute
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
 Version: 0.0.3
-Architecture: iphoneos-arm64
-Maintainer: be-huge
-Installed-Size: 484
-Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
-Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64.deb
-Size: 57810
-MD5sum: 73404d4650e3d1e099210c5216dc6717
-SHA1: 9cc54cb851309c4e448da948e0f626967d50da37
-SHA256: 48c543616e3eca34a3d90fa682969efaa9e1f39c004533f41d22c6e010033114
-Section: Tweaks
-Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
-Author: be-huge
-Name: insulation(解除温控)-rootless
-
-Package: com.be-huge.insulation
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
-Version: 0.0.3
 Architecture: iphoneos-arm64e
 Maintainer: be-huge
 Installed-Size: 484
@@ -601,6 +584,23 @@ Section: Tweaks
 Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
 Author: be-huge
 Name: insulation(解除温控)-roothide
+
+Package: com.be-huge.insulation
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
+Version: 0.0.3
+Architecture: iphoneos-arm64
+Maintainer: be-huge
+Installed-Size: 484
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
+Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64.deb
+Size: 57810
+MD5sum: 73404d4650e3d1e099210c5216dc6717
+SHA1: 9cc54cb851309c4e448da948e0f626967d50da37
+SHA256: 48c543616e3eca34a3d90fa682969efaa9e1f39c004533f41d22c6e010033114
+Section: Tweaks
+Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
+Author: be-huge
+Name: insulation(解除温控)-rootless
 
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
@@ -706,22 +706,6 @@ Description: WorkBuddy2API 网关服务端（后台常驻，不依赖 App）
 Author: gan-jibamao
 Name: wb2api daemon
 
-Package: com.gan.wb2api
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.gan.wb2api.json
-Version: 2026.11.9-daemon-arm64e-18
-Architecture: iphoneos-arm64e
-Maintainer: gan-jibamao
-Depends: firmware (>= 15.0)
-Filename: debs/com.gan.wb2api_2026.11.9-daemon-arm64e-18_iphoneos-arm64e.deb
-Size: 5224990
-MD5sum: b6064bf3b7e96915f819d13ab9ba1374
-SHA1: 4eea2c38519205932db5e11c6487945bba443040
-SHA256: 132bbd40d1680456454506239092fa5c2a023b17cbef00293e2e155263b15c92
-Section: Networking
-Description: WorkBuddy2API 网关服务端（后台常驻，不依赖 App）
-Author: gan-jibamao
-Name: wb2api daemon
-
 Package: com.hang.zzzj
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.hang.zzzj.json
 Version: 0.0.1-8+debug
@@ -743,15 +727,15 @@ Name: 转转找鸡
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.133
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 484
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.133_iphoneos-arm64.deb
-Size: 100972
-MD5sum: 9424d55f239eadf061fc389043f50605
-SHA1: fab303285bd4bfc439a7b34b864e114385a8b11e
-SHA256: 519801fe0ddb73ac373a75143311b91effc3e76660cff729697c62a73eebf5da
+Filename: debs/com.jibamao.gaodeclean_0.9.133_iphoneos-arm64e.deb
+Size: 100858
+MD5sum: 228db6a7b09e4d81c6a17805648c95a0
+SHA1: 68ba3c52944ce23a99a1010d7a113baa11f3ff6e
+SHA256: 51d5b68f046d291f3228453620d32f40877555ab6325d8ed278e852e2b661cba
 Section: jibamao-Tweaks
 Description: 高德无设置，无广告。
  .
@@ -763,15 +747,15 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.133
-Architecture: iphoneos-arm64e
+Architecture: iphoneos-arm64
 Maintainer: jibamao
 Installed-Size: 484
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.133_iphoneos-arm64e.deb
-Size: 100858
-MD5sum: 228db6a7b09e4d81c6a17805648c95a0
-SHA1: 68ba3c52944ce23a99a1010d7a113baa11f3ff6e
-SHA256: 51d5b68f046d291f3228453620d32f40877555ab6325d8ed278e852e2b661cba
+Filename: debs/com.jibamao.gaodeclean_0.9.133_iphoneos-arm64.deb
+Size: 100972
+MD5sum: 9424d55f239eadf061fc389043f50605
+SHA1: fab303285bd4bfc439a7b34b864e114385a8b11e
+SHA256: 519801fe0ddb73ac373a75143311b91effc3e76660cff729697c62a73eebf5da
 Section: jibamao-Tweaks
 Description: 高德无设置，无广告。
  .
@@ -909,25 +893,6 @@ Name: Sundiro BLE Unlock (SpringBoard)
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
 Version: 1.2.4
-Architecture: iphoneos-arm64
-Maintainer: jibamao
-Installed-Size: 236
-Depends: mobilesubstrate
-Conflicts: com.huayuarc.spsundiro
-Replaces: com.huayuarc.spsundiro
-Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64.deb
-Size: 23632
-MD5sum: 24fa48bcce266defd7a7e6049e55604c
-SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
-SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
-Section: Tweaks
-Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
-Author: jibamao
-Name: Sundiro BLE Unlock (SpringBoard)
-
-Package: com.jibamao.spsundiro
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
-Version: 1.2.4
 Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 236
@@ -939,6 +904,25 @@ Size: 23654
 MD5sum: 85efa2c80c05c3237a2089bfdba5fc8c
 SHA1: 9253e507d532574451dff624f9cc131976a5c524
 SHA256: cf798dbbb63566668dca019df3d341cd75292d40970053aae3fc60cce8305248
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.4
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 236
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64.deb
+Size: 23632
+MD5sum: 24fa48bcce266defd7a7e6049e55604c
+SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
+SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
 Section: Tweaks
 Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
 Author: jibamao
