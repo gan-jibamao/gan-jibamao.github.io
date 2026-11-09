@@ -78,6 +78,22 @@ python3 gen_packages_html.py
 架构合并显示，附「N 个版本」徽记。版本比较用 dpkg 语义（`ver_key()`），
 已与 `dpkg --compare-versions` 交叉验证。
 
-> 注意：去重只作用于网页展示。`Packages` 索引本身仍保留全部版本，
-> 客户端（Sileo）里仍会看到多版本。要裁剪索引需改 `build_repo.sh`。
+> 注意：去重只作用于网页展示。`Packages` 索引本身由下面的版本裁剪控制，
+> 客户端（Sileo）里看到的是裁剪后的版本列表。
+
+### 索引版本裁剪
+
+`build_packages.py` 末尾有 `KEEP_VERSIONS = 3`，构建时每个包**只保留最新 3 个版本**：
+
+- 同一版本的多个架构（`iphoneos-arm64` / `iphoneos-arm64e`）**全部保留**，架构不是版本
+- 版本比较用 dpkg 语义（`_ver_key()`），已与 `dpkg --compare-versions` 交叉验证
+- 被裁掉的版本 **deb 文件仍在 `debs/`**，可通过
+  `https://gan-jibamao.github.io/debs/<文件名>` 直接下载回滚，只是不出现在源里
+- `initnil` 镜像块是一整个多 stanza 字符串，裁剪前必须先 `split('\n\n')` 拆开，
+  否则整块会被当成单个元素原样通过
+
+实测：95 条 → 52 条（`com.jibamao.gaodeclean` 49 条 → 6 条），索引 76KB → 36KB。
+
+想保留更多回滚余地就调大 `KEEP_VERSIONS`，改完推上去等 CI 重建即可。
+
 

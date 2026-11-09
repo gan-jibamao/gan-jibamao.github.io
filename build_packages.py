@@ -71,8 +71,49 @@ for para in local_entries:
             new.append(dep)
     local_final.append('\n'.join(new))
 
-# 5) 合并写入
-parts = [p for p in ([initnil] + local_final) if p]
+# 5) 版本裁剪：每个包只保留最新 KEEP_VERSIONS 个版本
+#    同一版本的多个架构全部保留（架构不是版本，不该被截断）
+KEEP_VERSIONS = 3
+
+def _field(para, key):
+    m = re.search(rf'^{key}:\s*(.*)$', para, re.M)
+    return m.group(1).strip() if m else ''
+
+def _ver_key(v):
+    parts = [x for x in re.split(r'[.\-~:]', str(v or '0').replace('+', '.')) if x]
+    return [(0, int(x), '') if x.isdigit() else (1, 0, x) for x in parts]
+
+def prune(paras, keep=KEEP_VERSIONS):
+    groups = {}
+    order = []
+    for para in paras:
+        pid = _field(para, 'Package')
+        ver = _field(para, 'Version')
+        if pid not in groups:
+            groups[pid] = {}
+            order.append(pid)
+        groups[pid].setdefault(ver, []).append(para)
+    out = []
+    for pid in order:
+        vers = groups[pid]
+        kept = sorted(vers.keys(), key=_ver_key, reverse=True)[:keep]
+        for ver in vers:              # 按原始顺序输出，避免索引顺序抖动
+            if ver in kept:
+                out.extend(vers[ver])
+    return out
+
+# 6) 合并写入
+#    注意：initnil 是一个「含 N 条 stanza 的大字符串」，必须先拆成单条再裁剪，
+#    否则整块会被当成一个元素，只认到第一个 Package 就原样通过。
+parts = []
+for chunk in ([initnil] + local_final):
+    if chunk:
+        parts.extend(p for p in chunk.split('\n\n') if p.strip())
+
+before = len(parts)
+parts = prune(parts)
+
 open('Packages', 'w', encoding='utf-8').write('\n\n'.join(parts) + '\n')
 
-print(f'Packages 生成完成：镜像 {len(initnil_names)} + 本地 {len(local_final)} = {len(initnil_names) + len(local_final)} 个包')
+print(f'Packages 生成完成：镜像 {len(initnil_names)} + 本地 {len(local_final)} = {before} 个包')
+print(f'版本裁剪（每包保留最新 {KEEP_VERSIONS} 版）：{before} -> {len(parts)} 条')
