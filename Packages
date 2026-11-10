@@ -469,23 +469,6 @@ Name: Nspeed
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
 Version: 0.4.0
-Architecture: iphoneos-arm64
-Maintainer: 82Flex <82flex@gmail.com>
-Installed-Size: 400
-Depends: mobilesubstrate
-Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64.deb
-Size: 31282
-MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
-SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
-SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
-Section: Tweaks
-Description: Face ID animation colorizer, with a settings panel.
-Author: 82Flex <82flex@gmail.com>
-Name: ColorSubstitute
-
-Package: com.82flex.colorsubstitute
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.0
 Architecture: iphoneos-arm64e
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 400
@@ -495,6 +478,23 @@ Size: 31218
 MD5sum: ae1d3573fabb1b5537338f889400c414
 SHA1: 624ed11468486fd732631861a7cf40bee2d396af
 SHA256: 7bcbcc111df0f4e07d2f5a4c08147cdc181bd02e1ac88bbfa57ed0f28f76be60
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.0
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 400
+Depends: mobilesubstrate
+Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64.deb
+Size: 31282
+MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
+SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
+SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -537,23 +537,6 @@ Name: ColorSubstitute
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
 Version: 0.4.3
-Architecture: iphoneos-arm64
-Maintainer: 82Flex <82flex@gmail.com>
-Installed-Size: 416
-Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
-Filename: debs/com.82flex.colorsubstitute_0.4.3_iphoneos-arm64.deb
-Size: 34900
-MD5sum: 0f929b559c11a8ee3a4c33719993708c
-SHA1: b49252094c72fbc9f371f8eb2ec40806fe230af8
-SHA256: cb724fad0e522a7ec8c7ba9933e6e0fb634debe3cace7c54c9ed3a82df062fd7
-Section: Tweaks
-Description: Face ID animation colorizer, with a settings panel.
-Author: 82Flex <82flex@gmail.com>
-Name: ColorSubstitute
-
-Package: com.82flex.colorsubstitute
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.3
 Architecture: iphoneos-arm64e
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 416
@@ -563,6 +546,23 @@ Size: 34846
 MD5sum: 54c2624d62608e5c6841ed4bf72b3d84
 SHA1: e1d4dfcc790827bb271f280eb7afcb56b205c97c
 SHA256: 20deb4cccd941c056a8689fdc541264aaef655f9ae4b5a27a53d9d8b00fab040
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.3
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 416
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
+Filename: debs/com.82flex.colorsubstitute_0.4.3_iphoneos-arm64.deb
+Size: 34900
+MD5sum: 0f929b559c11a8ee3a4c33719993708c
+SHA1: b49252094c72fbc9f371f8eb2ec40806fe230af8
+SHA256: cb724fad0e522a7ec8c7ba9933e6e0fb634debe3cace7c54c9ed3a82df062fd7
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -726,46 +726,6 @@ Name: 转转找鸡
 
 Package: com.jibamao.gaodeclean
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
-Version: 0.9.134
-Architecture: iphoneos-arm64e
-Maintainer: jibamao
-Installed-Size: 484
-Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.134_iphoneos-arm64e.deb
-Size: 100810
-MD5sum: 4234ac19cb8667bb08922b1945836547
-SHA1: b306b2e03971747efc988d00f3b235b8d0f1ad22
-SHA256: 9dd513824c1bb4dc5d26ca5448fb0aa3a6edaa033a86a96e06af62794b109052
-Section: jibamao-Tweaks
-Description: 高德无设置，无广告。
- .
- Sileo 添加源 https://gan-jibamao.github.io，搜 GaodeClean 安装。
- 装完注销（sbreload）或重启用户空间，再开高德。
-Author: jibamao
-Name: GaodeClean 高德精简
-
-Package: com.jibamao.gaodeclean
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
-Version: 0.9.134
-Architecture: iphoneos-arm64
-Maintainer: jibamao
-Installed-Size: 484
-Depends: firmware (>= 15.0), mobilesubstrate
-Filename: debs/com.jibamao.gaodeclean_0.9.134_iphoneos-arm64.deb
-Size: 100882
-MD5sum: b6fa6df46d2c07cb1c4a33f7571f4ae3
-SHA1: d7b5f8df1592a0e03f4224858bc120a0769c3eb9
-SHA256: fbea7403273ea89074332473370f997f9f9a1634004aea03e38102419a576789
-Section: jibamao-Tweaks
-Description: 高德无设置，无广告。
- .
- Sileo 添加源 https://gan-jibamao.github.io，搜 GaodeClean 安装。
- 装完注销（sbreload）或重启用户空间，再开高德。
-Author: jibamao
-Name: GaodeClean 高德精简
-
-Package: com.jibamao.gaodeclean
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
 Version: 0.9.135
 Architecture: iphoneos-arm64e
 Maintainer: jibamao
@@ -781,7 +741,7 @@ Description: 高德地图界面精简：去广告、去白雾、控件归位，�
  .
  删掉：开屏广告 · 顶部运营横幅与通知条 · 底栏上滑白雾 · 顶部模糊带 · 首页白块 · 上拉发现引导
  归位：定位/路线胶囊、连接车机、搜索栏、天气行按原生关系摆放；切页不闪、冷启动不在屏幕中部裸奔
- 适配：全版本自适应（按类名与几何特征判定）；rootless 与 RootHide 各一份�
+ 适配：全版本自适应（按类名与几何特征判定）；rootless 与 RootHide 各一份包
  .
  装完即用，无需设置。注销（sbreload）或重启用户空间后再打开高德。
  添加源 https://gan-jibamao.github.io 可获取更新。
@@ -805,7 +765,7 @@ Description: 高德地图界面精简：去广告、去白雾、控件归位，�
  .
  删掉：开屏广告 · 顶部运营横幅与通知条 · 底栏上滑白雾 · 顶部模糊带 · 首页白块 · 上拉发现引导
  归位：定位/路线胶囊、连接车机、搜索栏、天气行按原生关系摆放；切页不闪、冷启动不在屏幕中部裸奔
- 适配：全版本自适应（按类名与几何特征判定）；rootless 与 RootHide 各一份�
+ 适配：全版本自适应（按类名与几何特征判定）；rootless 与 RootHide 各一份包
  .
  装完即用，无需设置。注销（sbreload）或重启用户空间后再打开高德。
  添加源 https://gan-jibamao.github.io 可获取更新。
@@ -846,24 +806,39 @@ Description: 高德精简，无设置
 Author: jibamao
 Name: GaodeClean 高德精简
 
-Package: com.jibamao.spsundiro
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
-Version: 1.2.3
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.139
 Architecture: iphoneos-arm64
 Maintainer: jibamao
-Installed-Size: 220
-Depends: mobilesubstrate
-Conflicts: com.huayuarc.spsundiro
-Replaces: com.huayuarc.spsundiro
-Filename: debs/com.jibamao.spsundiro_1.2.3_iphoneos-arm64.deb
-Size: 23668
-MD5sum: 8e0de22c97fe9f408ec7100748710a78
-SHA1: 608e0ddc53222dc6a515b4c56174d4f07dd26d6c
-SHA256: 7855fa626de6f152789e943da14da4f50cee4445afaae8bfde9d4761f7bef270
-Section: Tweaks
-Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Installed-Size: 484
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.139_iphoneos-arm64.deb
+Size: 102080
+MD5sum: 86642890c790dfe5bda805181de2fa7c
+SHA1: 7c0f81602eeaa1a5f95fffda1439be15c6b87457
+SHA256: 1cfdf1ff8427a34bef48001a23227d4d096a9d8659e32b06922763d367d337d8
+Section: jibamao-Tweaks
+Description: 高德精简，无设置
 Author: jibamao
-Name: Sundiro BLE Unlock (SpringBoard)
+Name: GaodeClean 高德精简
+
+Package: com.jibamao.gaodeclean
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.gaodeclean.json
+Version: 0.9.139
+Architecture: iphoneos-arm64e
+Maintainer: jibamao
+Installed-Size: 484
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.jibamao.gaodeclean_0.9.139_iphoneos-arm64e.deb
+Size: 102012
+MD5sum: be924e49c3fadd52c4d60dc0b877b575
+SHA1: 87b654cd31f5b42a44044a2f428d0238d3d0cae3
+SHA256: 396a33beab60619e5998b30db9fbe107feeb0543ed7fcc43fdbf05d231f5dead
+Section: jibamao-Tweaks
+Description: 高德精简，无设置
+Author: jibamao
+Name: GaodeClean 高德精简
 
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
@@ -886,18 +861,18 @@ Name: Sundiro BLE Unlock (SpringBoard)
 
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
-Version: 1.2.4
+Version: 1.2.3
 Architecture: iphoneos-arm64
 Maintainer: jibamao
-Installed-Size: 236
+Installed-Size: 220
 Depends: mobilesubstrate
 Conflicts: com.huayuarc.spsundiro
 Replaces: com.huayuarc.spsundiro
-Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64.deb
-Size: 23632
-MD5sum: 24fa48bcce266defd7a7e6049e55604c
-SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
-SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
+Filename: debs/com.jibamao.spsundiro_1.2.3_iphoneos-arm64.deb
+Size: 23668
+MD5sum: 8e0de22c97fe9f408ec7100748710a78
+SHA1: 608e0ddc53222dc6a515b4c56174d4f07dd26d6c
+SHA256: 7855fa626de6f152789e943da14da4f50cee4445afaae8bfde9d4761f7bef270
 Section: Tweaks
 Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
 Author: jibamao
@@ -917,6 +892,25 @@ Size: 23654
 MD5sum: 85efa2c80c05c3237a2089bfdba5fc8c
 SHA1: 9253e507d532574451dff624f9cc131976a5c524
 SHA256: cf798dbbb63566668dca019df3d341cd75292d40970053aae3fc60cce8305248
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.4
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 236
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.4_iphoneos-arm64.deb
+Size: 23632
+MD5sum: 24fa48bcce266defd7a7e6049e55604c
+SHA1: fc9345c071ae6f170f5ff2c082f3ebef22c12627
+SHA256: 6d59661f35aea3dee6b737a5dd56358e90b2a2956f490ec974f764f5d644e342
 Section: Tweaks
 Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
 Author: jibamao
