@@ -1,79 +1,18 @@
 {
-  "minVersion": "0.1",
-  "tintColor": "#1F91DC",
-  "class": "DepictionTabView",
-  "tabs": [
-    {
-      "tabname": "详情",
-      "class": "DepictionStackView",
-      "views": [
+    "minVersion": "0.1",
+    "tintColor": "#1F91DC",
+    "class": "DepictionTabView",
+    "tabs": [
         {
-          "class": "DepictionLabelView",
-          "text": "插件描述",
-          "fontWeight": "semibold",
-          "fontSize": 16,
-          "useMargins": true,
-          "margins": "{10,0,10,0}"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "**高德无设置，无广告。**"
-        },
-        {
-          "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionLabelView",
-          "text": "安装说明",
-          "fontWeight": "semibold",
-          "fontSize": 16,
-          "useMargins": true,
-          "margins": "{10,0,10,0}"
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "Sileo 添加源 `https://gan-jibamao.github.io`，搜 **GaodeClean** 安装。\n\n装完注销（`sbreload`）或重启用户空间，再开高德。"
-        },
-        {
-          "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "作者",
-          "text": "jibamao"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "版本",
-          "text": "0.9.135"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "架构",
-          "text": "iphoneos-arm64e / iphoneos-arm64"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "title": "源地址",
-          "text": "https://gan-jibamao.github.io"
-        },
-        {
-          "class": "DepictionSpacerView"
+            "tabname": "详情",
+            "class": "DepictionStackView",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "useRawFormat": true,
+                    "markdown": "高德精简，无设置"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "tabname": "更新日志",
-      "class": "DepictionStackView",
-      "views": [
-        {
-          "class": "DepictionMarkdownView",
-          "useRawFormat": true,
-          "markdown": "### 0.9.135\n文案整理：README 重写、Release 说明去版本化、包描述改为能力清单。功能与上一版一致。"
-        }
-      ]
-    }
-  ]
+    ]
 }
