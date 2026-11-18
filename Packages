@@ -676,6 +676,22 @@ Name: ProMotion 120Hz
 
 Package: com.gan.wb2api
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.gan.wb2api.json
+Version: 2026.11.18-daemon-arm64e-90
+Architecture: iphoneos-arm64e
+Maintainer: gan-jibamao
+Depends: firmware (>= 15.0)
+Filename: debs/com.gan.wb2api_2026.11.18-daemon-arm64e-90_iphoneos-arm64e.deb
+Size: 5538350
+MD5sum: 16ce7e8ddb645fb3444197f468c38e4e
+SHA1: b081a44589042971fc263db1a41e210e204b9f84
+SHA256: 717baf6de27a258da32e6461dd44c1a0b284c6809164bc114cb7c85099e8d0b0
+Section: Networking
+Description: WorkBuddy2API 网关服务端（后台常驻，不依赖 App）
+Author: gan-jibamao
+Name: wb2api daemon
+
+Package: com.gan.wb2api
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.gan.wb2api.json
 Version: 2026.11.9-daemon-arm64e-16
 Architecture: iphoneos-arm64e
 Maintainer: gan-jibamao
