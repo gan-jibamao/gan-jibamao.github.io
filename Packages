@@ -469,23 +469,6 @@ Name: Nspeed
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
 Version: 0.4.0
-Architecture: iphoneos-arm64
-Maintainer: 82Flex <82flex@gmail.com>
-Installed-Size: 400
-Depends: mobilesubstrate
-Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64.deb
-Size: 31282
-MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
-SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
-SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
-Section: Tweaks
-Description: Face ID animation colorizer, with a settings panel.
-Author: 82Flex <82flex@gmail.com>
-Name: ColorSubstitute
-
-Package: com.82flex.colorsubstitute
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.0
 Architecture: iphoneos-arm64e
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 400
@@ -502,16 +485,16 @@ Name: ColorSubstitute
 
 Package: com.82flex.colorsubstitute
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
-Version: 0.4.1
+Version: 0.4.0
 Architecture: iphoneos-arm64
 Maintainer: 82Flex <82flex@gmail.com>
 Installed-Size: 400
-Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
-Filename: debs/com.82flex.colorsubstitute_0.4.1_iphoneos-arm64.deb
-Size: 32492
-MD5sum: cc1a8e6c42623fd77644a04535efd1e7
-SHA1: f9ba71c395a75fb6d48d79006e9047bdde350948
-SHA256: 1a8015575267687186c31734ed2199479d2feb6ebd8cf5e53dfe71f918866e29
+Depends: mobilesubstrate
+Filename: debs/com.82flex.colorsubstitute_0.4.0_iphoneos-arm64.deb
+Size: 31282
+MD5sum: 4a7106571686e4fdff28ddc5c0ccb5b9
+SHA1: 15e49191d4642d4423d70ee4c49d7bd2e58263ae
+SHA256: 490b8e13fec8163a4f720067b955c2d874a87dc9fda14e06187b9a141e89222f
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -529,6 +512,23 @@ Size: 32418
 MD5sum: 6170ad2b20ea8bec0defba96696f32ac
 SHA1: 90b2e8f3ab4f3a7c1ffa15399e7dac7532e35bde
 SHA256: 7c409ded5103294a7a1b8d53df6b0db393a04ebc8ec10151863ed05f35f98b3a
+Section: Tweaks
+Description: Face ID animation colorizer, with a settings panel.
+Author: 82Flex <82flex@gmail.com>
+Name: ColorSubstitute
+
+Package: com.82flex.colorsubstitute
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.82flex.colorsubstitute.json
+Version: 0.4.1
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 400
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
+Filename: debs/com.82flex.colorsubstitute_0.4.1_iphoneos-arm64.deb
+Size: 32492
+MD5sum: cc1a8e6c42623fd77644a04535efd1e7
+SHA1: f9ba71c395a75fb6d48d79006e9047bdde350948
+SHA256: 1a8015575267687186c31734ed2199479d2feb6ebd8cf5e53dfe71f918866e29
 Section: Tweaks
 Description: Face ID animation colorizer, with a settings panel.
 Author: 82Flex <82flex@gmail.com>
@@ -571,23 +571,6 @@ Name: ColorSubstitute
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
 Version: 0.0.3
-Architecture: iphoneos-arm64
-Maintainer: be-huge
-Installed-Size: 484
-Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
-Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64.deb
-Size: 57810
-MD5sum: 73404d4650e3d1e099210c5216dc6717
-SHA1: 9cc54cb851309c4e448da948e0f626967d50da37
-SHA256: 48c543616e3eca34a3d90fa682969efaa9e1f39c004533f41d22c6e010033114
-Section: Tweaks
-Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
-Author: be-huge
-Name: insulation(解除温控)-rootless
-
-Package: com.be-huge.insulation
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
-Version: 0.0.3
 Architecture: iphoneos-arm64e
 Maintainer: be-huge
 Installed-Size: 484
@@ -601,6 +584,23 @@ Section: Tweaks
 Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
 Author: be-huge
 Name: insulation(解除温控)-roothide
+
+Package: com.be-huge.insulation
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
+Version: 0.0.3
+Architecture: iphoneos-arm64
+Maintainer: be-huge
+Installed-Size: 484
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
+Filename: debs/com.be-huge.insulation_0.0.3_iphoneos-arm64.deb
+Size: 57810
+MD5sum: 73404d4650e3d1e099210c5216dc6717
+SHA1: 9cc54cb851309c4e448da948e0f626967d50da37
+SHA256: 48c543616e3eca34a3d90fa682969efaa9e1f39c004533f41d22c6e010033114
+Section: Tweaks
+Description: 解除温控，一切从简即可。代码已开源：https://github.com/be-huge/insulation
+Author: be-huge
+Name: insulation(解除温控)-rootless
 
 Package: com.be-huge.insulation
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.be-huge.insulation.json
@@ -845,25 +845,6 @@ Name: GaodeClean 高德精简
 Package: com.jibamao.spsundiro
 Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
 Version: 1.2.3
-Architecture: iphoneos-arm64
-Maintainer: jibamao
-Installed-Size: 220
-Depends: mobilesubstrate
-Conflicts: com.huayuarc.spsundiro
-Replaces: com.huayuarc.spsundiro
-Filename: debs/com.jibamao.spsundiro_1.2.3_iphoneos-arm64.deb
-Size: 23668
-MD5sum: 8e0de22c97fe9f408ec7100748710a78
-SHA1: 608e0ddc53222dc6a515b4c56174d4f07dd26d6c
-SHA256: 7855fa626de6f152789e943da14da4f50cee4445afaae8bfde9d4761f7bef270
-Section: Tweaks
-Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
-Author: jibamao
-Name: Sundiro BLE Unlock (SpringBoard)
-
-Package: com.jibamao.spsundiro
-Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
-Version: 1.2.3
 Architecture: iphoneos-arm64e
 Maintainer: jibamao
 Installed-Size: 220
@@ -875,6 +856,25 @@ Size: 23634
 MD5sum: a03b00b3a8cd0723bce3fd31212165f7
 SHA1: f8100c40b2eeaab095686fb6f044a21f9c1630a3
 SHA256: 60f1e1d017a777c0dd0b8a8500f4b4fe7edf6cae455bdd262fa046685957b94d
+Section: Tweaks
+Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
+Author: jibamao
+Name: Sundiro BLE Unlock (SpringBoard)
+
+Package: com.jibamao.spsundiro
+Sileodepiction: https://gan-jibamao.github.io/depictions/com.jibamao.spsundiro.json
+Version: 1.2.3
+Architecture: iphoneos-arm64
+Maintainer: jibamao
+Installed-Size: 220
+Depends: mobilesubstrate
+Conflicts: com.huayuarc.spsundiro
+Replaces: com.huayuarc.spsundiro
+Filename: debs/com.jibamao.spsundiro_1.2.3_iphoneos-arm64.deb
+Size: 23668
+MD5sum: 8e0de22c97fe9f408ec7100748710a78
+SHA1: 608e0ddc53222dc6a515b4c56174d4f07dd26d6c
+SHA256: 7855fa626de6f152789e943da14da4f50cee4445afaae8bfde9d4761f7bef270
 Section: Tweaks
 Description: 新大洲本田蓝牙无感解锁，直接跑在 SpringBoard 内，不依赖官方 App。解锁协议完全离线（49 组配对 + 4 帧报文），不联网、不采集数据。安全阀：创建 /var/mobile/Library/Preferences/com.jibamao.spsundiro.off 后注销桌面即停用。
 Author: jibamao
